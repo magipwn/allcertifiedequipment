@@ -7,20 +7,26 @@
     font-display: block
 }
 
-[class * =" awsm-job-icon-"], [class^=awsm-job-icon-] {
+/* from [class * =" awsm-job-icon-"], [class^=awsm-job-icon-] to NO ASTERISK
+    FOR JOB OPENINGS CAN BE FOUND IN LINE 44 OR AROUND
+*/
+
+[class=" awsm-job-icon-"],
+[class^=awsm-job-icon-] {
     font-family: awsm-jobs-icomoon !important;
+    speak-as: none;
     speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale
+    -moz-osx-font-smoothing: grayscale
 }
 
 .awsm-job-icon-close-circle:before {
     content: "\e900";
-    color:#a6a6a6
+    color: #a6a6a6
 }
 
 .awsm-job-icon-asterisk:before {
