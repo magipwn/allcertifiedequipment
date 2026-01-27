@@ -1,0 +1,20 @@
+form#pi-eqw-enquiry-form{
+    display:grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 5%;
+}
+
+
+#field-container-pi_tandc, #field-container-pi_submit{
+    grid-column:1/3;
+}
+
+@media(max-width:968px){
+    #pi-eqw-enquiry-form{
+       grid-template-columns:1fr;
+    }
+
+    #field-container-pi_tandc, #field-container-pi_submit{
+    grid-column:1/2;
+    }
+}
