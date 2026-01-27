@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+
         max-width:100%
     }
 }
@@ -68,42 +69,59 @@
 
     #secondary-banner {
         margin-top: 0;
+
         padding-top:160px
     }
 
     .boxed_layout #secondary-banner {
         margin-top: 0;
+
         padding-top:160px
     }
 
     #secondary-banner .main-heading {
         font-size: 34px;
+
         padding-left: 0;
+
         font-weight:700
     }
 
     #secondary-banner .secondary-heading {
         font-size: 22px;
+
         padding-left: 0;
+
         font-weight: 300;
+
         letter-spacing: 0.1px;
+
         margin-top:13px
     }
 
     .shadow {
         background-position: center top;
+
         background-repeat:repeat-x
     }
 
     .video-link {
         float: left;
+
         margin-left: 0;
+
         font-size: 12px;
+
         font-weight: 600;
+
         margin-top: 0;
+
         text-shadow: 0 1px 0 #fff;
+
         color: #3a3a3a;
+
         padding: 4px 8px;
+
         margin-bottom:0
     }
 
@@ -121,20 +139,27 @@
 
     .price {
         font-size: 12px;
+
         display: block;
+
         text-align:left
     }
 
     .form-links {
         float: right;
+
         margin: 0 -12px 0 0;
+
         padding: 0;
+
         list-style:none
     }
 
     .form-links li {
         float: left;
+
         width: auto;
+
         margin-right:8px
     }
 
@@ -144,17 +169,25 @@
 
     .form-links li a {
         color: #3a3a3a;
+
         font-size: 12px;
+
         width: auto;
+
         text-shadow: 0 1px 0 #fff;
+
         font-weight: 600;
+
         padding-left: 8px;
+
         padding-right: 8px;
+
         text-decoration:none
     }
 
     .form-links li:nth-child(3), .form-links li:nth-child(3) a {
         width: auto;
+
         margin:0 7px 0 0
     }
 
@@ -168,11 +201,13 @@
 
     .ribbon-item {
         clear: none;
+
         display:block
     }
 
     .content h2.error {
         font-size: 260px;
+
         display:block
     }
 
@@ -198,6 +233,7 @@
 
     .boxed_layout .flip, .boxed_layout .flip .card, .boxed_layout .flip .card .face {
         width: 310px;
+
         height:168px
     }
 
@@ -207,12 +243,15 @@
 
     .blog-content img.featured_image {
         display: inline-block;
-        float: left;
+
+        float: left;/*possibility for flexbox? requesting for confirmation*/
+
         margin:7px 25px 10px 0
     }
 
     .boxed_layout, .boxed_layout header.affix, .boxed_layout header.affix-top, .boxed_layout .message-shadow {
         width: 85%;
+
         max-width:1270px
     }
 
@@ -226,11 +265,13 @@
 
     .boxed_layout .listing_sort, .boxed_layout .listing-view {
         padding-left: 0;
+
         padding-right:0
     }
 
     .listing_sort, .listing-view {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -244,6 +285,7 @@
 
     .boxed_layout .car_listings, .boxed_layout .copyright-wrap .container .row > div {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -253,6 +295,7 @@
 
     .copyright-wrap .container .row > div, .boxed_layout section.content, .boxed_layout .car-block-wrap, .boxed_layout .car-info-wrap, .boxed_layout .welcome-wrap, .boxed_layout .car-block-wrap .container .row {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -262,11 +305,13 @@
 
     .boxed_layout.margin header.affix-top {
         width: 100%;
+
         margin-top:40px
     }
 
     .boxed_layout.margin {
         margin-top: 40px;
+
         margin-bottom:40px
     }
 
@@ -290,11 +335,17 @@
 
     .woocommerce div.product .woocommerce-tabs .panel {
         padding-left: 0;
+
         padding-right: 0;
+
         border-left: 0;
+
         border-right: 0;
+
         border-top: 0;
+
         padding-top: 0;
+
         padding-bottom:20px
     }
 }
@@ -332,7 +383,9 @@
 
     .navbar-default .navbar-toggle {
         border-color: transparent;
+
         background-color: transparent;
+
         margin-top:17px
     }
 
@@ -360,12 +413,13 @@
         padding-bottom: 0
     }
 
-    footer div[class * ="col-"] {
+    footer div[class *="col-"] {
         padding-bottom:25px
     }
 
     header .navbar-nav.pull-right > li > .dropdown-menu, header .navbar-nav > li > .dropdown-menu {
         margin-left: 0 !important;
+
         background:none !important
     }
 
@@ -389,7 +443,9 @@
 
     header.no_header_resize_mobile.affix .bottom-header .navbar-default .navbar-brand .logo .primary_text {
         font-size: 40px;
+
         margin-bottom: 10px;
+
         margin-top:3px
     }
 
@@ -399,7 +455,9 @@
 
     .mobile_dropdown_menu {
         display: block;
+
         margin-top: 10px;
+
         margin-bottom:5px
     }
 
@@ -425,7 +483,9 @@
 
     header .bottom-header .navbar-nav {
         float: none !important;
+
         max-height: 400px;
+
         overflow-y:scroll
     }
 
@@ -469,6 +529,7 @@
 
     .flip .card .back .hover_title, .card-container .flipping-card .side .hover_title {
         margin-top: 20px;
+
         font-size:24px
     }
 
@@ -478,7 +539,9 @@
 
     #secondary-banner .main-heading {
         font-size: 28px;
+
         margin-top: 0;
+
         padding-top:0
     }
 
@@ -492,7 +555,9 @@
 
     .hours_operation table.table {
         text-align: center;
+
         width: 170px;
+
         margin:0 auto
     }
 
@@ -501,9 +566,12 @@
     }
 
     .default-btn {
-        float: right;
+        float: right;/*possibility for flexbox? requesting for confirmation*/
+
         display: inline-block;
+
         clear: both;
+
         margin-top:10px
     }
 
@@ -517,6 +585,7 @@
 
     .content h2.error {
         font-size: 80px;
+
         line-height:40px
     }
 
@@ -534,11 +603,13 @@
 
     .listing_sort, .listing-view {
         padding-left: 15px;
+
         padding-right:15px
     }
 
     .boxed_layout .copyright-wrap .container .row > div {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -552,12 +623,15 @@
 
     .inventory-wide-sidebar-left > div {
         padding-right: 0;
+
         padding-left:0
     }
 
     .select-wrapper span.sort-by {
         margin-right: 10px;
+
         float: none;
+
         vertical-align:top
     }
 
@@ -567,11 +641,13 @@
 
     .car_listings.boxed.boxed_right {
         margin-right: 0;
+
         margin-left:0
     }
 
     .listing_sort, .listing-view {
         padding-right: 0;
+
         padding-left:0
     }
 
@@ -581,7 +657,9 @@
 
     .blog-content img.featured_image {
         display: block;
+
         float: none;
+
         margin:7px auto 10px
     }
 
@@ -603,7 +681,9 @@
 
     #features ul {
         -moz-column-count: 2;
+
         -webkit-column-count: 2;
+
         column-count:2
     }
 
@@ -615,20 +695,27 @@
 @media (min-width: 480px) {
     .left-none, .right-none {
         float: none;
+
         margin: 0 auto;
+
         width: 100%;
+
         overflow:hidden
     }
 
     .boxed_layout.margin header .bottom-header .navbar-nav {
         margin-left: 0;
+
         margin-right:0
     }
 
     .toolbar .right-none.pull-right {
         float: right;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
@@ -650,6 +737,7 @@
 
     .f-nav {
         width: 100%;
+
         display:block
     }
 
@@ -663,7 +751,9 @@
 
     #secondary-banner .main-heading {
         font-size: 28px;
+
         padding-top: 0;
+
         margin-top:0
     }
 
@@ -673,35 +763,45 @@
 
     .shadow {
         background-position: left top;
+
         background-repeat:repeat-x
     }
 
     .align-right {
         float: left;
+
         clear: left;
+
         margin-right: 10px;
+
         line-height:45px
     }
 
     .form-links {
         margin: 0 0 20px -5px;
+
         float:left
     }
 
     .page-view {
         float: left;
+
         margin-left: 0;
+
         margin-top:10px
     }
 
     .video-link {
         float: left;
+
         color: #3a3a3a;
+
         margin-left:0
     }
 
     .content h2.error {
         font-size: 80px;
+
         line-height:50px
     }
 
@@ -759,6 +859,7 @@
 
     .inventory-wide-sidebar-left > div, .boxed_layout .listing_sort, .boxed_layout .listing-view, .listing-view, .listing_sort, .inventory-heading .row > div {
         padding-right: 0;
+
         padding-left:0
     }
 
@@ -776,6 +877,7 @@
 
     table.left_table, table.right_table {
         width: 49%;
+
         float:left
     }
 
@@ -799,61 +901,81 @@
 
     #secondary-banner {
         margin-top: -21px;
+
         padding-top:164px
     }
 
     #secondary-banner .main-heading {
         font-size: 28px;
+
         padding-top: 0;
+
         padding-left:0
     }
 
     #secondary-banner .secondary-heading {
         font-size: 16px;
+
         padding-left:0
     }
 
     .shadow {
         background-position: left top;
+
         background-repeat:repeat-x
     }
 
     .align-right {
         float: left;
+
         clear:left
     }
 
     .video-link {
         float: left;
+
         color:#3a3a3a
     }
 
     .form-links {
         margin: 0 0 5px -15px;
+
         float: left;
+
         width: 100%;
+
         padding-left:0
     }
 
     .form-links li {
         margin: 0;
+
         float: left;
+
         width: auto;
+
         list-style:none
     }
 
     .form-links li a {
         color: #3a3a3a;
+
         margin: 0 5px 0 0;
+
         font-size: 12px;
+
         width: auto;
+
         font-weight: 600;
+
         padding-left: 8px;
+
         padding-right:8px
     }
 
     .content h2.error {
         font-size: 120px;
+
         line-height:95px
     }
 
@@ -883,8 +1005,11 @@
 
     .hours_operation table.table {
         text-align: center;
+
         display: table;
+
         margin: 0 auto;
+
         width:170px
     }
 
@@ -910,6 +1035,7 @@
 
     .boxed_layout section.content {
         padding-left: 15px;
+
         padding-right:15px
     }
 
@@ -919,7 +1045,9 @@
 
     #features ul {
         -moz-column-count: 3;
+
         -webkit-column-count: 3;
+
         column-count:3
     }
 }
@@ -949,22 +1077,27 @@
 
     .layout-3 .main_pricing .inside span.amt, .layout-4 .main_pricing .inside span.amt {
         font-size: 63px;
+
         line-height:63px
     }
 
     .layout-3 .main_pricing .inside span.sub1, .layout-4 .main_pricing .inside span.sub1 {
         font-size: 22px;
+
         top:-31px
     }
 
     .layout-3 .main_pricing .inside span.sub, .layout-4 .main_pricing .inside span.sub {
         font-size: 24px;
+
         top: 0;
+
         left:-36px
     }
 
     .layout-3 .main_pricing .inside span.super, .layout-4 .main_pricing .inside span.super {
         font-size: 22px;
+
         top:-18px
     }
 
@@ -996,11 +1129,13 @@
 
     .financing_calculator {
         margin-left: 0;
+
         float:left
     }
 
     .car-type .col-width-50 {
         width: 100%;
+
         padding:0
     }
 
@@ -1010,21 +1145,33 @@
 
     .boxed div.inventory .view-video {
         position: absolute;
+
         left: 11px;
+
         top: auto;
+
         bottom: 10px;
+
         float: left;
+
         clear: right;
+
         z-index: 5;
+
         right:initial
     }
 
     .boxed div.inventory .view-details {
         position: absolute;
+
         right: 11px;
+
         top: auto;
+
         bottom: 10px;
+
         float: right;
+
         display:block
     }
 }
@@ -1032,6 +1179,7 @@
 @media only screen and (max-width: 800px) {
     .select-wrapper .link-vehicle .form-links {
         margin-top: 10px;
+
         padding:0
     }
 
@@ -1045,6 +1193,7 @@
 
     .inner-page.row {
         margin-top: 70px;
+
         margin-bottom:70px
     }
 
@@ -1054,6 +1203,7 @@
 
     .layout-4 .main_pricing .inside span.sub {
         top: 0;
+
         left:-36px
     }
 
@@ -1063,12 +1213,15 @@
 
     .leave-comments form input[type=text] {
         width: 100%;
+
         margin-left:0
     }
 
     header.no_header_resize_mobile.affix .bottom-header .navbar-default .navbar-nav > li > a {
         padding: 4px 11px !important;
+
         line-height: 31px;
+
         font-size:14px
     }
 
@@ -1092,21 +1245,25 @@
 @media only screen and (min-width: 960px) and(max-width: 1199px) {
     .inventory .title {
         max-width: 700px;
+
         white-space:normal
     }
 
     div .carfax {
         left: 705px;
+
         top:124px
     }
 
     .boxed_layout div .carfax {
         left: 725px;
+
         top:120px
     }
 
     .inventory .price {
         right: 25px;
+
         top:30px
     }
 
@@ -1128,7 +1285,9 @@
 
     .inventory-wide-sidebar-right div.inventory .carfax, .inventory-wide-sidebar-left div.inventory .carfax {
         left: 479px;
+
         top: 120px;
+
         width:auto
     }
 
@@ -1160,15 +1319,21 @@
 @media (min-width: 768px) {
     .left-none {
         float: left;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
     .right-none {
         float: right;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
@@ -1182,8 +1347,11 @@
 
     .f-nav {
         float: right;
+
         width: auto;
+
         margin: 14px 0 0 0;
+
         display:block
     }
 
@@ -1193,44 +1361,55 @@
 
     #secondary-banner {
         margin-top: 0;
+
         padding-top:167px
     }
 
     #secondary-banner .main-heading {
         font-size: 26px;
+
         padding-top: 0;
+
         padding-left:0
     }
 
     #secondary-banner .secondary-heading {
         font-size: 17px;
+
         padding-left:0
     }
 
     .shadow {
         background-position: center top;
+
         background-repeat:repeat-x
     }
 
     .align-right {
         float: left;
+
         clear:right
     }
 
     .page-view {
         float: right;
+
         margin-right: 0;
+
         margin-top:10px
     }
 
     .price {
         font-size: 12px;
+
         display: block;
+
         text-align:left
     }
 
     .video-link {
         float: left;
+
         color:#3a3a3a
     }
 
@@ -1240,6 +1419,7 @@
 
     .content h2.error {
         font-size: 180px;
+
         line-height:150px
     }
 
@@ -1253,6 +1433,7 @@
 
     .content .error-message .exclamation {
         margin-right: 40px;
+
         line-height:230px
     }
 
@@ -1290,7 +1471,9 @@
 
     .flip .card .back .hover_title, .card-container .flipping-card .side .hover_title {
         margin-top: 10px;
+
         margin-bottom: -5px;
+
         font-size:24px
     }
 
@@ -1304,9 +1487,13 @@
 
     .inventory-heading .text-right h2 {
         font-size: 33px;
+
         font-weight: 700;
+
         margin: 0;
+
         letter-spacing: -2.5px;
+
         line-height:33px
     }
 
@@ -1328,6 +1515,7 @@
 
     .efficiency-rating ul li.fuel img {
         width: 42px;
+
         top:16px
     }
 
@@ -1349,16 +1537,19 @@
 
     .listing_sort, .listing-view {
         padding-left: 0;
+
         padding-right:0
     }
 
     .copyright-wrap .container .row > div {
         padding-left: 0;
+
         padding-right:0
     }
 
     .inventory-wide-sidebar-left > div {
         padding-right: 0;
+
         padding-left:0
     }
 
@@ -1368,6 +1559,7 @@
 
     .boxed_layout .recent-vehicles-wrap .row, .welcome-wrap .recent-vehicles-wrap .row {
         margin-left: 0;
+
         margin-right:0
     }
 
@@ -1395,6 +1587,7 @@
 @media only screen and (max-width: 991px) {
     .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
         width: 29.05%;
+
         clear:none
     }
 
@@ -1420,6 +1613,7 @@
 
     .breadcrumb {
         margin-left: 0;
+
         padding-top:0
     }
 
@@ -1443,10 +1637,15 @@
 
     .recent_car.car-block:hover .img-flex i {
         font-size: 1.5em;
+
         position: absolute;
+
         top: 50%;
+
         margin-top: -10.5px;
+
         left: 50%;
+
         margin-left:-8.5px
     }
 }
@@ -1454,7 +1653,9 @@
 @media only screen and (min-width: 768px) and(max-width: 991px) {
     .car_listings {
         width: 762px;
+
         margin: 0 auto;
+
         padding-right:0
     }
 
@@ -1468,8 +1669,11 @@
 
     .sidebar div.inventory .inventory .title, div.inventory .inventory .title {
         max-width: 450px;
+
         white-space: normal;
+
         padding-bottom: 3px;
+
         left:229px
     }
 
@@ -1479,8 +1683,11 @@
 
     div.inventory .price {
         position: absolute;
+
         left: initial;
+
         top: 57px;
+
         right:20px
     }
 
@@ -1490,11 +1697,13 @@
 
     div.inventory .video-icon {
         top: 18px;
+
         right:14px
     }
 
     div.inventory .options-primary {
         left: 229px;
+
         top:-2px
     }
 
@@ -1504,7 +1713,9 @@
 
     div.inventory .inventory .title {
         white-space: normal;
+
         max-width: 420px;
+
         left:230px
     }
 
@@ -1514,28 +1725,35 @@
 
     .car_listings div.inventory .carfax {
         left: 440px;
+
         top: 133px;
+
         width:75px
     }
 
     .inventory_listings.grid div.inventory .title {
         max-width: 200px;
+
         font-size: 20px;
+
         margin-bottom:27px
     }
 
     .inventory_listings.grid div.inventory .checkbox {
         top: 7px;
+
         left:217px
     }
 
     .inventory_listings.grid div.inventory .options-primary {
         width: 180px;
+
         margin:8px auto 0 auto
     }
 
     .inventory_listings.grid div.inventory .price {
         left: 77px;
+
         top:-21px
     }
 
@@ -1545,20 +1763,27 @@
 
     .inventory_listings.grid div.inventory .carfax {
         left: 32px;
+
         width: 50px;
+
         bottom:24px
     }
 
     .inventory_listings.grid div.inventory .view-details, .inventory_listings.grid div.inventory .view-video, .inventory_listings div.inventory .view-details, .inventory_listings div.inventory .view-video {
         position: absolute;
+
         top: auto;
+
         bottom:10px
     }
 
     .boxed div.inventory .carfax {
         left: 40px;
+
         bottom: 42px;
+
         top: auto;
+
         bottom:42px
     }
 
@@ -1596,10 +1821,11 @@
 
     .car_listings.boxed.boxed_full {
         margin-left: -15px;
+
         margin-right: 0
     }
 
-    .detail-service div[class * ="col-"]:nth-child(5n + 1) {
+    .detail-service div[class *="col-"]:nth-child(5n + 1) {
         clear:both
     }
 }
@@ -1611,15 +1837,21 @@
 
     .left-none {
         float: left;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
     .right-none {
         float: right;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
@@ -1629,6 +1861,7 @@
 
     .navbar-collapse {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -1638,12 +1871,15 @@
 
     .default-btn {
         float: left;
+
         margin:0
     }
 
     .social {
         float: right;
+
         margin: 32px 0 0 0;
+
         padding:0
     }
 
@@ -1653,53 +1889,69 @@
 
     #secondary-banner {
         margin-top: 0;
+
         padding-top:160px
     }
 
     #secondary-banner .main-heading {
         font-size: 34px;
+
         padding-left: 0;
+
         margin-top:20px
     }
 
     #secondary-banner .secondary-heading {
         font-size: 22px;
+
         padding-left:0
     }
 
     .shadow {
         background-position: center top;
+
         background-repeat:repeat-x
     }
 
     .form-links {
         float: right;
+
         margin: 0;
+
         padding: 0;
+
         list-style:none
     }
 
     .form-links li {
         float: right;
+
         width:auto
     }
 
     .form-links li a {
         color: #3a3a3a;
+
         font-size: 12px;
+
         width: auto;
+
         font-weight: 600;
+
         padding-left: 8px;
+
         padding-right:8px
     }
 
     .video-link {
         float: left;
+
         color:#3a3a3a
     }
 
     .content h2.error {
         font-size: 260px;
+
         line-height:250px
     }
 
@@ -1737,6 +1989,7 @@
 
     .hours_operation table.table {
         text-align: initial;
+
         width:100%
     }
 
@@ -1774,6 +2027,7 @@
 
     .efficiency-rating ul li.fuel img {
         width: 51px;
+
         top:13px
     }
 
@@ -1799,7 +2053,9 @@
 
     .blog-content img.featured_image {
         display: block;
+
         float: none;
+
         margin:7px auto 10px
     }
 
@@ -1809,11 +2065,13 @@
 
     .copyright-wrap .container .row > div {
         padding-left: 0;
+
         padding-right:0
     }
 
     .boxed_layout section.content {
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -1823,11 +2081,13 @@
 
     .boxed_layout .container {
         padding-left: 15px;
+
         padding-right:15px
     }
 
     .select-wrapper ul.top_buttons li {
         margin-bottom: 5px;
+
         margin-right:0
     }
 
@@ -1837,6 +2097,7 @@
 
     .car_listings.boxed.boxed_right {
         margin-left: -15px;
+
         margin-right:15px
     }
 
@@ -1858,7 +2119,9 @@
 
     .flip .card .back .hover_title, .card-container .flipping-card .side .hover_title {
         margin-top: 25px;
+
         margin-bottom: -5px;
+
         font-size:24px
     }
 
@@ -1870,7 +2133,9 @@
 @media (min-width: 1200px) {
     .flip .card .back .hover_title, .card-container .flipping-card .side .hover_title {
         margin-top: 40px;
+
         margin-bottom: 14px;
+
         font-size:38px
     }
 
@@ -1882,8 +2147,11 @@
 @media only screen and (max-width: 767px) and(min-width: 480px) {
     .car_listings {
         width: 455px;
+
         margin: 0 auto;
+
         padding-left: 0;
+
         padding-right:0
     }
 
@@ -1893,16 +2161,23 @@
 
     div.inventory .preview, .boxed div.inventory .preview {
         position: relative;
+
         margin-bottom: 60px;
+
         float: left;
+
         top:7px
     }
 
     .sidebar div.inventory .inventory .title, div.inventory .inventory .title, .boxed div.inventory .inventory .title {
         left: 11px;
+
         max-width: 335px;
+
         margin-bottom: 3px;
+
         word-break: break-word;
+
         white-space:normal
     }
 
@@ -1912,9 +2187,13 @@
 
     div.inventory .options-primary, .boxed div.inventory .options-primary {
         left: 24px;
+
         top: 3px;
+
         width: 185px;
+
         margin: 0;
+
         position:relative
     }
 
@@ -1924,10 +2203,15 @@
 
     .car_listings div.inventory .carfax {
         right: 95px;
+
         bottom: 13px;
+
         left: auto;
+
         width: 59px;
+
         top: auto;
+
         position:absolute
     }
 
@@ -1937,16 +2221,19 @@
 
     div.inventory .tax, .boxed div.inventory .tax {
         left: 85px;
+
         top:-22px
     }
 
     div.inventory .video-icon {
         left: -5px;
+
         top:0
     }
 
     div.inventory .view-details {
         bottom: 13px;
+
         top:auto
     }
 
@@ -1956,7 +2243,9 @@
 
     .boxed div.inventory .price b {
         position: relative;
+
         left: auto;
+
         top:auto
     }
 
@@ -1966,6 +2255,7 @@
 
     .post-tags {
         padding: 0;
+
         margin-top:10px
     }
 
@@ -1987,9 +2277,13 @@
 
     .select-wrapper ul.top_buttons {
         padding: 0;
+
         text-align: center;
+
         margin: 10px auto;
+
         float: none;
+
         display:inline-block
     }
 
@@ -2003,6 +2297,7 @@
 
     .select-wrapper span.sort-by {
         float: none;
+
         vertical-align:top
     }
 
@@ -2036,6 +2331,7 @@
 
     .car_listings.boxed {
         margin-left: 0;
+
         margin-right:0
     }
 }
@@ -2043,22 +2339,31 @@
 @media only screen and (max-width: 479px) {
     .car_listings {
         width: 330px;
+
         margin: 0 auto;
+
         padding:0
     }
 
     div.inventory .preview {
         position: relative;
+
         margin: 0 auto;
+
         left: 49px;
+
         top: 0;
+
         float:none
     }
 
     div.inventory .inventory .title, .sidebar div.inventory .inventory .title {
         left: 11px;
+
         max-width: 260px;
+
         word-break: break-word;
+
         white-space:normal
     }
 
@@ -2076,45 +2381,61 @@
 
     .car_listings div.inventory .price.custom_message {
         left: 138px;
+
         font-size:12px
     }
 
     .car_listings div.inventory .carfax {
         position: absolute;
+
         left: 50px;
+
         bottom: 42px;
+
         width: 58px;
+
         top:auto
     }
 
     div.inventory .figure {
         left: 89px;
+
         top: -20px;
+
         font-weight: 600;
+
         font-size:30px
     }
 
     div.inventory .tax {
         left: 90px;
+
         top:-25px
     }
 
     div.inventory .view-video {
         left: 11px;
+
         bottom: 10px;
+
         top: auto;
+
         font-size: 12px;
+
         position:absolute
     }
 
     div.inventory .video-icon {
         left: -5px;
+
         top:-20px
     }
 
     div.inventory .view-details {
         bottom: 10px;
+
         font-size: 12px;
+
         top:auto
     }
 
@@ -2124,8 +2445,11 @@
 
     .boxed.car_listings div.inventory .inventory .price {
         left: 147px;
+
         right: initial;
+
         bottom: initial;
+
         top:-22px
     }
 
@@ -2143,11 +2467,13 @@
 
     .select-wrapper ul.top_buttons li {
         display: inline-block;
+
         margin-bottom:5px
     }
 
     .select-wrapper ul.top_buttons li a {
         float: none;
+
         display:inline-block
     }
 
@@ -2169,6 +2495,7 @@
 
     .post-tags {
         padding: 0;
+
         margin-top:10px
     }
 
@@ -2190,6 +2517,7 @@
 
     .parallax_scroll h1 {
         font-size: 60px;
+
         margin-bottom:10px
     }
 }
@@ -2217,8 +2545,11 @@
 
     .left-none, .right-none {
         float: none;
+
         margin: 0 auto;
+
         width: 100%;
+
         overflow:hidden
     }
 
@@ -2228,6 +2559,7 @@
 
     #secondary-banner {
         margin-top: -21px;
+
         padding-top:164px
     }
 
@@ -2245,8 +2577,11 @@
 
     .default-btn {
         float: none;
+
         display: block;
+
         clear: both;
+
         margin-top:10px
     }
 
@@ -2256,7 +2591,9 @@
 
     .f-nav li {
         float: none;
+
         display: inline;
+
         text-align:center
     }
 
@@ -2278,18 +2615,23 @@
 
     #secondary-banner .main-heading {
         font-size: 28px;
+
         padding-top: 0;
+
         padding-left: 0;
+
         margin-top:0
     }
 
     #secondary-banner .secondary-heading {
         font-size: 16px;
+
         padding-left:0
     }
 
     .shadow {
         background-position: left top;
+
         background-repeat:repeat-x
     }
 
@@ -2307,6 +2649,7 @@
 
     .page-view {
         float: right;
+
         margin-left:0
     }
 
@@ -2316,32 +2659,47 @@
 
     .form-links {
         float: left;
+
         width: 100%;
+
         padding-left: 0;
+
         margin-bottom:10px
     }
 
     .form-links li {
         display: block;
+
         width: 100%;
+
         margin-bottom:8px
     }
 
     .form-links li a {
         text-align: center;
+
         display: block;
+
         width: 100%;
+
         color: #3a3a3a;
+
         font-size: 12px;
+
         line-height: 26px;
+
         font-weight: 600;
+
         margin-bottom:5px
     }
 
     .video-link {
         padding-left: 10px;
+
         padding-right: 10px;
+
         margin-bottom: 10px;
+
         color:#3a3a3a
     }
 
@@ -2379,13 +2737,17 @@
 
     .toolbar .right-none.pull-right {
         float: right;
+
         width: auto;
+
         clear: none;
+
         margin:0 auto
     }
 
     .car-block-wrap .container .row > div {
         margin: 0 auto 50px;
+
         text-align:center
     }
 
@@ -2403,6 +2765,7 @@
 
     .content .error-message {
         padding-top: 40px;
+
         padding-bottom:55px
     }
 
@@ -2456,6 +2819,7 @@
 @media (max-width: 768px) {
     .fullwidth_element .parallax_parent .vc_row {
         margin-right: 0;
+
         margin-left:0
     }
 
@@ -2469,6 +2833,7 @@
 
     .woocommerce .woocommerce-message .wc-forward {
         display: block;
+
         margin-top:4px
     }
 
@@ -2490,6 +2855,7 @@
 
     .single-product .product .summary.entry-summary {
         padding-right: 15px;
+
         padding-left:15px
     }
 
@@ -2499,11 +2865,17 @@
 
     .woocommerce-message, .single-product .woocommerce-message {
         position: relative;
+
         top: initial;
+
         left: initial;
+
         right: 0;
+
         bottom: initial;
+
         margin: 0 auto;
+
         max-width:100%
     }
 
@@ -2517,6 +2889,7 @@
 
     .woocommerce-cart .woocommerce table.shop_table td, .woocommerce-cart .woocommerce table.shop_table td.product-name, .woocommerce table.shop_table tr.woocommerce-cart-form__cart-item td.product-remove {
         padding-left: 20px;
+
         padding-right:20px
     }
 
@@ -2526,6 +2899,7 @@
 
     .woocommerce ul.products li.product:nth-of-type(1n + 1) {
         clear: both;
+
         margin-right:0
     }
 
@@ -2563,12 +2937,13 @@
 }
 
 @media screen and (max-width: 468px) {
-    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class * =columns-] ul.products li.product, .woocommerce[class * =columns-] ul.products li.product, .woocommerce .woocommerce-regular ul.products li.product, .woocommerce-page .woocommerce-regular ul.products li.product {
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class *=columns-] ul.products li.product, .woocommerce[class *=columns-] ul.products li.product, .woocommerce .woocommerce-regular ul.products li.product, .woocommerce-page .woocommerce-regular ul.products li.product {
         width:100%
     }
 
     .woocommerce .related.products ul.products li.product {
         width: 100%;
+
         float:none
     }
 
@@ -2604,6 +2979,7 @@
 @media (max-width: 991px) {
     body header .bottom-header .navbar-default .navbar-nav > li > a, header.affix .container .navbar .navbar-nav li a {
         font-size: 10px;
+
         padding:38px 6px 20px
     }
 }
@@ -2647,18 +3023,23 @@
 
     body header .bottom-header .navbar-default .navbar-nav > li > a {
         font-size: 14px;
+
         padding:4px 11px
     }
 
     .dropdown .dropdown-menu li.dropdown .dropdown-menu > li > a {
         font-size: 14px;
+
         line-height: 31px;
+
         padding:4px 11px
     }
 
     .dropdown .dropdown-menu li.dropdown .dropdown-menu > li > a, .navbar .navbar-nav li .dropdown-menu > li > a, header.affix .container .navbar .navbar-nav li .dropdown-menu > li > a, header.affix .container .navbar .navbar-nav li a {
         font-size: 14px;
+
         line-height: 31px;
+
         padding:4px 11px
     }
 
@@ -2668,7 +3049,9 @@
 
     body header .bottom-header .navbar-default .navbar-nav > li .dropdown-menu {
         border: 0;
+
         position: relative;
+
         float:none
     }
 
