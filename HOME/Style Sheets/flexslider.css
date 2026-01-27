@@ -31,6 +31,8 @@
 
 .flexslider .slides>li {
     display: none;
+    backface-visibility: hidden;
+    /*made another standard property*/
     -webkit-backface-visibility: hidden
 }
 
@@ -81,6 +83,8 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
     height: auto;
+    user-select: none;
+    /*antoher standard property*/
     -moz-user-select: none
 }
 
@@ -267,6 +271,8 @@ html[xmlns] .flexslider .slides {
     display: block;
     opacity: .7;
     cursor: pointer;
+    user-select: none;
+    /*another standard property*/
     -moz-user-select: none;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;

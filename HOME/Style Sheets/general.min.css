@@ -7,6 +7,10 @@
     font-display: block
 }
 
+/*this is for the job applications or number of job application icon
+idk how to change speak although its fine
+maybe the related to another part of css file
+*/
 [class*=" awsm-job-icon-"],
 [class^=awsm-job-icon-] {
     font-family: awsm-jobs-icomoon !important;
