@@ -1,3 +1,7 @@
+/*
+    element will wiggle upon hover // "our population" icons -> dealers
+*/
+
 @keyframes elementor-animation-wobble-top{16.65%{transform:skew(-12deg)}
 
 33.3%{transform:skew(10deg)}

@@ -1,3 +1,7 @@
+/*
+    Used for formatting/styling how assets/logos are displayed (for any device layout)
+*/
+
 .tax-product_brand .brand-description{overflow:hidden;zoom:1}
 
 .tax-product_brand .brand-description img.brand-thumbnail{width:25%;float:right}
