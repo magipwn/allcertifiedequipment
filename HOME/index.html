@@ -6323,33 +6323,96 @@
 						<div class="elementor-element elementor-element-897ae8b e-con-full e-flex e-con e-child"
 							data-id="897ae8b" data-element_type="container">
 						</div>
+						<!--Whole Directory-->
+						<!--//////////////////////////////////////////-->
+						<style>
+							.directory-fade {
+								position: relative;
+								width: 100%;
+								aspect-ratio: 2560 / 576;
+								border-radius: 20px;
+								overflow: hidden;
+								background-image: url("https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/JCB-ACETC-Horizontal-1-scaled-1.webp");
+								background-size: cover;
+								background-position: center;
+								transition: transform 0.4s ease;
+							}
+
+							.directory-fade::after {
+								content: "";
+								position: absolute;
+								inset: 0;
+								background-color: rgb(252, 175, 38);
+								background-image: url("https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/JCB-ACETCagri.webp?fit=300%2C167&ssl=1");
+								background-size: contain;
+								background-repeat: no-repeat;
+								background-position: center center;
+								border-radius: 20px;
+								opacity: 0;
+								transition: opacity 0.4s ease;
+								z-index: 1;
+							}
+
+							.directory-fade:hover::after {
+								opacity: 1;
+							}
+
+							.directory-fade:hover {
+								transform: scale(1.10);
+
+							}
+
+							.directory-text {
+								position: absolute;
+								top: 60%;
+								left: 10%;
+								transform: translate(-50%, -50%);
+								display: inline-block;
+								font-size: 22px;
+								margin: 0;
+								color: white;
+								position: relative;
+								transition: opacity 0.3s ease;
+								z-index: 2;
+								opacity: 0;
+							}
+
+							.directory-fade:hover .directory-text {
+								opacity: 1;
+								/* show on hover */
+							}
+
+							.directory-text h3 {
+								margin: center;
+								font-size: 22px;
+								display: inline-block;
+								position: relative;
+							}
+
+							.directory-text h3::after {
+								opacity: 0;
+								margin-left: 5px;
+								transition: opacity 0.3 ease;
+							}
+
+							.directory-text h3:hover::after {
+								opacity: 1;
+
+							}
+						</style>
+						<!--//////////////////////////////////////////-->
 						<div class="elementor-element elementor-element-6449ea4 e-con-full e-flex e-con e-child"
 							data-id="6449ea4" data-element_type="container">
-							<div class="elementor-element elementor-element-a4dda5f elementor-flip-box--direction-down elementor-flip-box--3d elementor-widget__width-initial elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box"
-								data-id="a4dda5f" data-element_type="widget" data-widget_type="flip-box.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-flip-box" tabindex="0">
-										<div class="elementor-flip-box__layer elementor-flip-box__front">
-											<div class="elementor-flip-box__layer__overlay">
-												<div class="elementor-flip-box__layer__inner">
+							<!--//////////////////////////////////////////-->
+							<a href="https://jcb.allcertifiedequipment.com/" class="directory-link">
+								<div class="directory-fade">
+									<div class="directory-text">
 
-
-												</div>
-											</div>
-										</div>
-										<a class="elementor-flip-box__layer elementor-flip-box__back"
-											href="https://jcb.allcertifiedequipment.com/" target="_blank">
-											<div class="elementor-flip-box__layer__overlay">
-												<div class="elementor-flip-box__layer__inner">
-
-
-												</div>
-											</div>
-										</a>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
+						<!--//////////////////////////////////////////-->
 						<div class="elementor-element elementor-element-a6ad6fd e-con-full e-flex e-con e-child"
 							data-id="a6ad6fd" data-element_type="container">
 						</div>
