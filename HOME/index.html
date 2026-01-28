@@ -4,16 +4,17 @@
 <head>
 	<title>All Certified Equipment Trading Corporation</title>
 	<!-- Meta Tags -->
-	<meta name="description" content="All Certified Equipment Trading Corporation">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="All Certified Equipment Trading Corporation">
 	<meta name='robots' content='max-image-preview:large' />
 
 	<script>window._wca = window._wca || [];</script>
 	<link rel='dns-prefetch' href='//stats.wp.com' />
 	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 	<link rel='preconnect' href='//i0.wp.com' />
+
 	<link rel="alternate" type="application/rss+xml" title="All Certified Equipment Trading Corporation &raquo; Feed"
 		href="https://www.allcertifiedequipment.com/feed/" />
 	<link rel="alternate" type="application/rss+xml"
@@ -23,14 +24,17 @@
 		href="https://www.allcertifiedequipment.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.allcertifiedequipment.com%2F" />
 	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
 		href="https://www.allcertifiedequipment.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.allcertifiedequipment.com%2F&#038;format=xml" />
+	
+	<link rel='stylesheet' id='font-awesome-css'
+		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
+		type='text/css' media='all' />
+
 	<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
 		img:is([sizes=auto i], [sizes^="auto," i]) {
 			contain-intrinsic-size: 3000px 1500px
 		}
 	</style>
-	<link rel='stylesheet' id='font-awesome-css'
-		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
-		type='text/css' media='all' />
+
 	<style id='wp-emoji-styles-inline-css' type='text/css'>
 		img.wp-smiley,
 		img.emoji {
@@ -47,6 +51,7 @@
 
 		/*# sourceURL=wp-emoji-styles-inline-css */
 	</style>
+	
 	<style id='classic-theme-styles-inline-css' type='text/css'>
 		/*! This file is auto-generated */
 		.wp-block-button__link {
@@ -64,9 +69,9 @@
 			color: #fff;
 			text-decoration: none
 		}
-
 		/*# sourceURL=/wp-includes/css/classic-themes.min.css */
 	</style>
+
 	<style id='wp-job-openings-blocks-style-inline-css' type='text/css'>
 		.wp-block-create-block-wjo-block {
 			background-color: #21759b;
@@ -76,18 +81,11 @@
 		}
 
 		.awsm-b-row {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			display: flexbox;
-			-webkit-flex-flow: row wrap;
+            display: flex; 
+			flex-flow: row wrap; 
 			margin: 0 -15px;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			-ms-flex-flow: row wrap;
-			flex-flow: row wrap
-		}
+            box-sizing: border-box;
+        }
 
 		.awsm-b-row,
 		.awsm-b-row *,
@@ -98,20 +96,14 @@
 		}
 
 		.awsm-b-grid-item {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
 			display: flex;
 			float: left;
 			padding: 0 15px !important;
 			width: 33.333%;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-webkit-flex-direction: column
 		}
 
+		/* Column widths */
 		.awsm-b-grid-col-4 .awsm-b-grid-item {
 			width: 25%
 		}
@@ -124,6 +116,8 @@
 			width: 100%
 		}
 
+		/* Visibility Toggles */
+
 		.awsm-b-job-hide {
 			display: none !important
 		}
@@ -132,6 +126,17 @@
 			display: block !important
 		}
 
+		/* Clearfix for container */
+		.awsm-b-job-wrap:after {
+			clear: both;
+			content: "";
+			display: table
+		}
+
+	/* ============================================================
+			CARD SECTION (Agriculture/Equipment/Jobs)
+			Styles for individual cards and hover effects
+   	============================================================ */
 		.awsm-b-job-item {
 			background: #fff;
 			font-size: 14px;
@@ -142,34 +147,26 @@
 			text-decoration: none !important
 		}
 
+		/* Item Container */
 		.awsm-b-grid-item .awsm-b-job-item {
 			border: 1px solid #dddfe3;
 			border-radius: 2px;
-			-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
 			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
 			display: flex;
-			margin-bottom: 30px;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-webkit-flex-direction: column;
-			-webkit-box-flex: 1;
-			-ms-flex-positive: 1;
 			flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-webkit-transition: all .3s ease;
+			margin-bottom: 30px;
 			transition: all .3s ease
 		}
 
+		/* Hover Effect */
+
 		.awsm-b-grid-item .awsm-b-job-item:focus,
 		.awsm-b-grid-item .awsm-b-job-item:hover {
-			-webkit-box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .2);
 			box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .2)
 		}
+
+		/* Card Elements: Title, Image, Information */
 
 		.awsm-b-grid-item .awsm-job-featured-image {
 			margin-bottom: 14px
@@ -194,15 +191,13 @@
 			margin: 0 0 8px
 		}
 
-		.awsm-b-job-wrap:after {
-			clear: both;
-			content: "";
-			display: table
-		}
+	/* ============================================================
+						FILTER & SEARCH SECTION
+					(Search bar and category filters)
+   	   ============================================================ */
 
 		.awsm-b-filter-wrap,
 		.awsm-b-filter-wrap * {
-			-webkit-box-sizing: border-box;
 			box-sizing: border-box
 		}
 
@@ -211,34 +206,27 @@
 		}
 
 		.awsm-b-filter-wrap form {
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
 			flex-wrap: wrap
 		}
 
 		.awsm-b-filter-wrap .awsm-b-filter-items {
-			display: none
+			display: none /* Hidden by default, toggled via JS */
 		}
 
+		/* Search Controls */
 		.awsm-b-filter-wrap.awsm-b-full-width-search-filter-wrap .awsm-b-filter-item-search,
 		.awsm-b-filter-wrap.awsm-b-full-width-search-filter-wrap .awsm-b-filter-items,
 		.awsm-b-filter-wrap.awsm-b-no-search-filter-wrap .awsm-b-filter-items {
 			width: 100%
 		}
 
+		/* Filter Toggle (PHONE) */
+
 		.awsm-b-filter-toggle {
 			border: 1px solid #ccc;
 			border-radius: 4px;
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-flex-flow: wrap;
-			-ms-flex-flow: wrap;
 			flex-flow: wrap;
 			margin: 0 10px 10px;
 			outline: none !important;
@@ -246,6 +234,7 @@
 			width: 46px
 		}
 
+		/* Filter menu is active/clicked */
 		.awsm-b-filter-toggle.awsm-on {
 			background: #ccc
 		}
@@ -255,15 +244,10 @@
 			width: 20px
 		}
 
+		/* Toggle layout when no search bar is present */
 		.awsm-b-filter-wrap.awsm-b-no-search-filter-wrap .awsm-b-filter-toggle {
 			width: 100%;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
 			align-items: center;
-			-webkit-box-pack: justify;
-			-webkit-justify-content: space-between;
-			-ms-flex-pack: justify;
 			justify-content: space-between;
 			text-decoration: none
 		}
@@ -273,17 +257,20 @@
 			width: 22px
 		}
 
+		/* ============================================================
+						RESPONSIVE LAYOUT (Desktop vs. Mobile)
+		   ============================================================ */
+		   
+		/* Desktop view with screens wider than 768px */
+
 		@media(min-width:768px) {
 			.awsm-b-filter-wrap .awsm-b-filter-items {
-				display: -webkit-box !important;
-				display: -webkit-flex !important;
-				display: -ms-flexbox !important;
 				display: flex !important;
-				-webkit-flex-wrap: wrap;
-				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
 				width: calc(100% - 250px)
 			}
+
+			/* Hides the mobile toggle button on desktop */
 
 			.awsm-b-filter-toggle {
 				display: none
@@ -294,14 +281,7 @@
 			}
 		}
 
-		.awsm-b-filter-wrap .awsm-b-filter-item {
-			padding: 0 10px 10px
-		}
-
-		.awsm-b-filter-item-search {
-			padding: 0 10px 10px;
-			position: relative
-		}
+		/* MOBILE VIEW */
 
 		@media(max-width:768px) {
 			.awsm-b-filter-wrap .awsm-b-filter-items {
@@ -317,19 +297,32 @@
 			}
 		}
 
-		.awsm-b-filter-wrap .awsm-b-filter-item .awsm-b-job-form-control {
-			min-height: 48px;
-			padding-right: 58px
+	/* ============================================================
+   						SEARCH INPUT & ICONS
+   	   ============================================================ */
+
+		.awsm-b-filter-wrap .awsm-b-filter-item {
+			padding: 0 10px 10px
 		}
 
-		.awsm-b-filter-item-search .awsm-b-job-form-control {
-			min-height: 48px;
-			padding-right: 48px
+		.awsm-b-filter-item-search {
+			padding: 0 10px 10px;
+			position: relative
 		}
 
 		.awsm-b-filter-item-search-in {
 			position: relative
 		}
+
+		/* Standardizing Input Heights */
+
+		.awsm-b-filter-wrap .awsm-b-filter-item .awsm-b-job-form-control,
+		.awsm-b-filter-item-search .awsm-b-job-form-control {
+			min-height: 48px;
+			padding-right: 48px
+		}
+
+		/* SEARCH ICON */
 
 		.awsm-b-filter-item-search .awsm-b-job-search-icon-wrapper {
 			color: #ccc;
@@ -343,7 +336,10 @@
 			top: 0;
 			width: 48px
 		}
-
+	/* ============================================================
+   						EMPTY STATE SECTION
+					(No jobs or equipment found)
+   	   ============================================================ */
 		.awsm-b-jobs-none-container {
 			padding: 25px
 		}
@@ -353,6 +349,9 @@
 			padding: 5px
 		}
 
+	/* ============================================================
+   			CONTROLS THE "Next/Previous" and "Load More" BUTTONS
+   	   ============================================================ */
 		.awsm-b-row .awsm-b-jobs-pagination {
 			padding: 0 15px;
 			width: 100%
@@ -360,14 +359,15 @@
 
 		.awsm-b-jobs-pagination {
 			float: left;
-			width: 100%
+			width: 100%;
+			padding: 0 15px; /* Aligns with the row container */
 		}
 
+		/* Base style for Load More and Page Number buttons */
 		.awsm-b-load-more-main a.awsm-b-load-more,
 		.awsm-load-more-classic a.page-numbers {
 			background: #fff;
 			border: 1px solid #dddfe3;
-			-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
 			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
 			display: block;
 			margin: 0 !important;
@@ -375,26 +375,28 @@
 			padding: 20px;
 			text-align: center;
 			text-decoration: none !important;
-			-webkit-transition: all .3s ease;
 			transition: all .3s ease
+		}
+
+		/* Hover state for buttons */
+
+		.awsm-b-load-more-main a.awsm-load-more:focus,
+		.awsm-b-load-more-main a.awsm-load-more:hover,
+		.awsm-load-more-classic a.page-numbers:focus,
+		.awsm-load-more-classic a.page-numbers:hover {
+			box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .2)
+		}
+
+		/* Numbered List */
+
+		.awsm-load-more-classic {
+			text-align: center
 		}
 
 		.awsm-load-more-classic a.page-numbers,
 		.awsm-load-more-classic span.page-numbers {
 			font-size: 90%;
 			padding: 5px 10px
-		}
-
-		.awsm-load-more-classic {
-			text-align: center
-		}
-
-		.awsm-b-load-more-main a.awsm-load-more:focus,
-		.awsm-b-load-more-main a.awsm-load-more:hover,
-		.awsm-load-more-classic a.page-numbers:focus,
-		.awsm-load-more-classic a.page-numbers:hover {
-			-webkit-box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .2);
-			box-shadow: 0 3px 15px -5px rgba(0, 0, 0, .2)
 		}
 
 		.awsm-b-jobs-pagination.awsm-load-more-classic ul {
@@ -406,6 +408,11 @@
 		.awsm-b-jobs-pagination.awsm-load-more-classic ul li {
 			display: inline-block
 		}
+
+		/* ============================================================
+   								LIST VIEW SECTION
+   					Alternative layout for equipment (List vs Grid)
+   		   ============================================================ */
 
 		.awsm-b-lists {
 			border: 1px solid #ededed
@@ -419,6 +426,10 @@
 			margin-bottom: 0
 		}
 
+		/* ============================================================
+					The layout for compact row-based listings 
+		   ============================================================ */
+
 		.awsm-b-list-item .awsm-job-featured-image {
 			float: left;
 			margin-right: 10px
@@ -426,19 +437,24 @@
 
 		.awsm-b-list-item .awsm-job-featured-image img {
 			height: 50px;
-			width: 50px
+			width: 50px;
+			object-fit: cover; /* Ensures images don't stretch */
 		}
 
 		.awsm-b-list-item .awsm-b-job-item {
 			border-bottom: 1px solid rgba(0, 0, 0, .13)
 		}
 
+		/* Clearfix for floating elements inside the list item */
 		.awsm-b-list-item .awsm-b-job-item:after {
 			clear: both;
 			content: "";
 			display: table
 		}
 
+		/* ============================================================
+  			 Splits the list row into Left (Title) and Right (Details)
+   		   ============================================================ */
 		.awsm-b-list-left-col {
 			float: left;
 			width: 50%
@@ -450,7 +466,12 @@
 			width: 50%
 		}
 
-		.awsm-b-list-item .awsm-job-specification-wrapper {
+		/* ============================================================
+  			 Styles for icons, terms, and the "More" arrow
+   		   ============================================================ */
+
+		.awsm-b-list-item .awsm-job-specification-wrapper, 
+		.awsm-b-list-item .awsm-job-more-container{
 			display: inline-block;
 			vertical-align: middle
 		}
@@ -464,24 +485,13 @@
 		a.awsm-b-job-item .awsm-job-specification-item {
 			color: #4c4c4c
 		}
-
-		.awsm-b-list-item .awsm-job-more-container {
-			display: inline-block;
-			vertical-align: middle
-		}
-
-		.awsm-job-more-container .awsm-job-more span:before {
-			content: "→"
-		}
-
-		.awsm-b-lists .awsm-b-jobs-pagination {
-			margin-top: 30px
-		}
-
+		
+		/* Adds a spacing gap before icons */	
 		.awsm-job-specification-item>[class^=awsm-job-icon-] {
 			margin-right: 6px
 		}
 
+		/* List Separator */
 		.awsm-job-specification-term:after {
 			content: ", "
 		}
@@ -490,28 +500,43 @@
 			content: ""
 		}
 
+		/* Navigation Arrow */
+		.awsm-job-more-container .awsm-job-more span:before {
+			content: "→";
+			margin-right: 5px;
+		}
+
+		/* ============================================================
+   			Ensures consistent padding/sizing for the full page view
+   		   ============================================================ */
+		.awsm-b-lists .awsm-b-jobs-pagination {
+			margin-top: 30px
+		}
+		
 		.awsm-job-single-wrap,
 		.awsm-job-single-wrap *,
 		.awsm-job-single-wrap :after,
 		.awsm-job-single-wrap :before {
-			-webkit-box-sizing: border-box;
 			box-sizing: border-box
 		}
+
+		/* ============================================================
+   			Controls the split-screen view: Description vs. Sidebar Form
+   		   ============================================================ */
 
 		.awsm-job-single-wrap {
 			margin-bottom: 1.3em
 		}
 
+		/* Clearfix to prevent layout collapse */
 		.awsm-job-single-wrap:after {
 			clear: both;
 			content: "";
 			display: table
 		}
 
-		.awsm-job-content {
-			padding-bottom: 32px
-		}
-
+		
+		/* 55% Content | 45% Inquiry Form */
 		.awsm-job-single-wrap.awsm-col-2 .awsm-job-content {
 			float: left;
 			padding-right: 15px;
@@ -524,6 +549,9 @@
 			width: 45%
 		}
 
+		/* ============================================================
+   					Styles for titles, specs, and expiration labels
+   		   ============================================================ */
 		.awsm-job-head,
 		.awsm_job_spec_above_content {
 			margin-bottom: 20px
@@ -531,6 +559,10 @@
 
 		.awsm-job-head h1 {
 			margin: 0 0 20px
+		}
+
+		.awsm-job-content {
+			padding-bottom: 32px
 		}
 
 		.awsm-job-list-info span {
@@ -541,6 +573,9 @@
 			font-weight: 700
 		}
 
+		/* ============================================================
+   						INQUIRY / APPLICATION FORM
+  		   ============================================================ */
 		.awsm-job-form-inner {
 			background: #fff;
 			border: 1px solid #dddfe3;
@@ -555,14 +590,24 @@
 			margin-bottom: 20px
 		}
 
-		.awsm-job-form-group input[type=checkbox],
-		.awsm-job-form-group input[type=radio] {
-			margin-right: 5px
-		}
 
 		.awsm-job-form-group label {
 			display: block;
 			margin-bottom: 10px
+		}
+
+		
+
+		/* Form Controls (Inputs/Selects) */
+		.awsm-b-job-form-control {
+			display: block;
+			width: 100%
+		}
+
+		/* Checkboxes and Radio buttons */
+		.awsm-job-form-group input[type=checkbox],
+		.awsm-job-form-group input[type=radio] {
+			margin-right: 5px
 		}
 
 		.awsm-job-form-options-container label,
@@ -571,24 +616,27 @@
 			font-weight: 400
 		}
 
-		.awsm-b-job-form-control {
-			display: block;
-			width: 100%
-		}
-
 		.awsm-job-form-options-container span {
 			display: inline-block;
 			margin-bottom: 10px;
 			margin-left: 10px
-		}
+		}	
+
+		/* ============================================================
+   					 Submission states and error messaging
+   		   ============================================================ */
+		
 
 		.awsm-job-submit {
 			background: #0195ff;
 			border: 1px solid #0195ff;
 			color: #fff;
-			padding: 10px 30px
+			padding: 10px 30px;
+			cursor: pointer;
+			transition: all 0.3s ease;
 		}
-
+		
+		/* Button effect on hover */
 		.awsm-job-submit:focus,
 		.awsm-job-submit:hover {
 			background: rgba(0, 0, 0, 0);
@@ -605,6 +653,9 @@
 			border: 1px solid #db4c4c
 		}
 
+		/* ============================================================
+   					MESSAGES for Success, Error, and Expired states
+   		   ============================================================ */
 		.awsm-error-message,
 		.awsm-success-message {
 			padding: 12px 25px
@@ -642,15 +693,15 @@
 			margin: 1em 0
 		}
 
+		/* ============================================================
+   				Controls the main page width and AJAX loading overlay
+   		   ============================================================ */
+
 		.awsm-job-container {
 			margin: 0 auto;
 			max-width: 1170px;
 			padding: 50px 0;
 			width: 100%
-		}
-
-		.awsm-jobs-loading {
-			position: relative
 		}
 
 		.awsm-b-job-listings:after {
@@ -660,45 +711,50 @@
 			opacity: 0;
 			position: absolute;
 			top: 0;
-			-webkit-transition: all .3s ease;
 			transition: all .3s ease;
 			visibility: hidden;
 			width: 100%
 		}
 
+		/* Shows loading overlay when active */
 		.awsm-b-job-listings.awsm-jobs-loading:after {
 			opacity: 1;
 			visibility: visible
 		}
 
+		/* Screen Reader Only */
 		.awsm-b-sr-only {
+			position: absolute;
 			height: 1px;
+			width: 1px;
+			padding: 0;
 			margin: -1px;
 			overflow: hidden;
-			padding: 0;
-			position: absolute;
-			width: 1px;
 			clip: rect(0, 0, 0, 0);
 			border: 0
 		}
 
+		/* ============================================================
+   				Adjusts columns based on device screen size
+   		   ============================================================ */
+		
+		/* Large tablets and small laptops */
 		@media(max-width:1024px) {
 			.awsm-b-grid-col-4 .awsm-b-grid-item {
 				width: 33.333%
 			}
 		}
 
+		/* Medium tablets */
 		@media(max-width:992px) {
-			.awsm-job-single-wrap.awsm-col-2 .awsm-job-content {
-				padding-right: 0;
-				width: 100%
-			}
-
+			.awsm-job-single-wrap.awsm-col-2 .awsm-job-content,
 			.awsm-job-single-wrap.awsm-col-2 .awsm-job-form {
-				padding-left: 0;
-				width: 100%
+				width: 100%;
+				padding: 0;
 			}
 		}
+
+		/* Small Tablets, large phones */
 
 		@media(max-width:768px) {
 
@@ -708,37 +764,31 @@
 				width: 50%
 			}
 
-			.awsm-b-list-left-col {
-				padding-bottom: 10px;
-				width: 100%
-			}
-
+			.awsm-b-list-left-col,
 			.awsm-b-list-right-col {
 				text-align: left;
 				width: 100%
 			}
 		}
 
-		@media(max-width:648px) {
 
-			.awsm-b-grid-col-2 .awsm-b-grid-item,
-			.awsm-b-grid-col-3 .awsm-b-grid-item,
-			.awsm-b-grid-col-4 .awsm-b-grid-item,
-			.awsm-b-grid-item {
+		/* Small Phones */
+		@media(max-width:648px) {
+			.awsm-b-grid-item,
+    		[class*="awsm-b-grid-col-"] .awsm-b-grid-item {
 				width: 100%
 			}
 
-			.awsm-b-list-item .awsm-job-specification-wrapper {
-				display: block;
-				float: none;
-				padding-bottom: 5px
-			}
-
+			.awsm-b-list-item .awsm-job-specification-wrapper,
 			.awsm-b-list-item .awsm-job-more-container {
 				display: block;
 				float: none
 			}
 		}
+
+		/* ============================================================
+   				Consistent design for inputs and text areas
+   		============================================================ */
 
 		.awsm-job-form-plugin-style .awsm-b-job-form-control {
 			border: 1px solid #ccc;
@@ -749,15 +799,12 @@
 			line-height: 1;
 			min-height: 46px;
 			padding: 8px 15px;
-			-webkit-transition: all .3s ease;
 			transition: all .3s ease;
 			width: 100%
 		}
 
 		.awsm-job-form-plugin-style .awsm-b-job-form-control:focus {
 			border-color: #060606;
-			-webkit-box-shadow: none;
-			box-shadow: none;
 			outline: none
 		}
 
@@ -775,7 +822,6 @@
 			border-radius: 45px;
 			color: #fff;
 			padding: 16px 32px;
-			-webkit-transition: all .3s ease;
 			transition: all .3s ease
 		}
 
@@ -797,10 +843,10 @@
 			pointer-events: none
 		}
 
+		/* Custom Dropdown Styling */
 		.awsm-job-form-plugin-style .awsm-selectric {
 			border-color: #ccc;
-			border-radius: 4px;
-			-webkit-box-shadow: none;
+			border-radius: 4px; 
 			box-shadow: none
 		}
 
@@ -812,6 +858,7 @@
 			margin-left: 15px
 		}
 
+		/* Block Theme Layout Adjustments */
 		.awsm-jobs-is-block-theme .site-branding {
 			padding: 0 2.1rem
 		}
@@ -826,18 +873,25 @@
 
 		.awsm-b-job-wrap,
 		.awsm-b-job-wrap * {
-			-webkit-box-sizing: border-box;
 			box-sizing: border-box
 		}
 
 		/*# sourceURL=https://www.allcertifiedequipment.com/wp-content/plugins/wp-job-openings/blocks/build/style-index.css */
 	</style>
+
 	<link rel='stylesheet' id='mediaelement-css'
 		href='https://www.allcertifiedequipment.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17'
 		type='text/css' media='all' />
 	<link rel='stylesheet' id='wp-mediaelement-css'
 		href='https://www.allcertifiedequipment.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.9'
 		type='text/css' media='all' />
+	<link rel='stylesheet' id='awsm-jobs-general-css'
+		href='https://www.allcertifiedequipment.com/wp-content/plugins/wp-job-openings/assets/css/general.min.css?ver=3.5.4'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='awsm-jobs-style-css'
+		href='https://www.allcertifiedequipment.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.5.4'
+		type='text/css' media='all' />
+
 	<style id='jetpack-sharing-buttons-style-inline-css' type='text/css'>
 		.jetpack-sharing-buttons__services-list {
 			display: flex;
@@ -870,33 +924,15 @@
 				display: none !important
 			}
 		}
-
-		.editor-styles-wrapper .wp-block-jetpack-sharing-buttons {
-			gap: 0;
-			padding-inline-start: 0
-		}
-
-		ul.jetpack-sharing-buttons__services-list.has-background {
-			padding: 1.25em 2.375em
-		}
-
-		/*# sourceURL=https://www.allcertifiedequipment.com/wp-content/plugins/jetpack/_inc/blocks/sharing-buttons/view.css */
 	</style>
-	<link rel='stylesheet' id='awsm-jobs-general-css'
-		href='https://www.allcertifiedequipment.com/wp-content/plugins/wp-job-openings/assets/css/general.min.css?ver=3.5.4'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='awsm-jobs-style-css'
-		href='https://www.allcertifiedequipment.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.5.4'
-		type='text/css' media='all' />
+
 	<style id='global-styles-inline-css' type='text/css'>
 		:root {
+			/* Aspect Ratios */	
 			--wp--preset--aspect-ratio--square: 1;
-			--wp--preset--aspect-ratio--4-3: 4/3;
-			--wp--preset--aspect-ratio--3-4: 3/4;
-			--wp--preset--aspect-ratio--3-2: 3/2;
-			--wp--preset--aspect-ratio--2-3: 2/3;
 			--wp--preset--aspect-ratio--16-9: 16/9;
-			--wp--preset--aspect-ratio--9-16: 9/16;
+
+			/* Brand Colors */
 			--wp--preset--color--black: #000000;
 			--wp--preset--color--cyan-bluish-gray: #abb8c3;
 			--wp--preset--color--white: #ffffff;
@@ -909,6 +945,8 @@
 			--wp--preset--color--pale-cyan-blue: #8ed1fc;
 			--wp--preset--color--vivid-cyan-blue: #0693e3;
 			--wp--preset--color--vivid-purple: #9b51e0;
+
+			/* Gradients */
 			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgb(6, 147, 227) 0%, rgb(155, 81, 224) 100%);
 			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
 			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgb(252, 185, 0) 0%, rgb(255, 105, 0) 100%);

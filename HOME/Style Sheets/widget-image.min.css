@@ -1,1 +1,23 @@
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{display:inline-block;vertical-align:middle}
+/* --- Widget Container --- */
+.elementor-widget-image {
+  /* Ensures the widget respects the alignment settings (Left, Center, Right) set in the editor */
+  text-align: center;
+}
+
+/* --- Link & Wrapper Behavior --- */
+.elementor-widget-image a {
+  /* Ensures that if a link is added to the image, it behaves as a block for easier clicking */
+  display: inline-block;
+}
+
+/* --- Image Alignment & Scaling --- */
+.elementor-widget-image img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* --- SVG Specific Handling --- */
+.elementor-widget-image a img[src$=".svg"] {
+  /* Provides a default width for SVGs when they are wrapped in a link to prevent them from disappearing or blowing up to full size */
+  width: 48px;
+}
