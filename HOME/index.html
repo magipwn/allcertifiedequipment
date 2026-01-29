@@ -31,6 +31,214 @@
 	<link rel='stylesheet' id='font-awesome-css'
 		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
 		type='text/css' media='all' />
+
+	<style>
+        :root {
+			--samsung-blue: #034EA2;
+			--accent-1: rgba(35, 144, 69, 1); 
+			--accent-2: #6ad09d;
+			--accent-3: #379f8a;
+			--glass: rgba(255, 255, 255, 0.03);
+			--border-glass: rgba(255, 255, 255, 0.1);
+		}
+
+		p {
+			color: white;
+		}
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-black); 
+            margin: 0;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* --- Animated Background --- */
+        .hero {
+            position: relative;
+            padding: 150px 20px;
+            text-align: center;
+            background: 
+				radial-gradient(circle at 10% 20%, rgba(0, 255, 127, 0.4) 0%, transparent 40%),
+				radial-gradient(circle at 90% 80%, rgba(0, 200, 255, 0.4) 0%, transparent 40%),
+				linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+        }
+
+		@keyframes shine {
+			to { background-position: 200% center; }
+		}
+
+        .badge {
+            background: linear-gradient(90deg, #17693ddd, #2b9075);
+			color: #fff; 
+			padding: 8px 20px;
+			border-radius: 100px;
+			font-size: 0.7rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 30px;
+			display: inline-block;
+			box-shadow: 0 0 20px rgba(30, 227, 181, 0.4);
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 6.5rem);
+			font-weight: 900;
+			line-height: 0.9;
+			margin: 0 0 30px;
+			letter-spacing: -4px;
+			
+			/* The "Fun" Part: Animated Multi-color Gradient */
+			background: linear-gradient(
+				45deg, 
+				#ffffff 20%, 
+				var(--accent-1) 40%, 
+				var(--accent-2) 60%, 
+				var(--accent-3) 80%
+			);
+			background-size: 200% auto;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: shine 5s linear infinite;
+        }
+
+        .description {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #ffffff;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* --- Modern Samsung Glass Grid --- */
+        .grid-container {
+            max-width: 1400px;
+            margin: 0 auto 100px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 40px;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 400px;
+        }
+
+        /* Asymmetric Layouts */
+        .card-large { grid-column: span 7; }
+        .card-medium { grid-column: span 5; }
+        .card-full { grid-column: span 12; min-height: 500px; }
+
+        .card:hover {
+            border-color: var(--electric-lime);
+            background: rgb(44, 44, 44);
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+			color: var(--accent-1);
+            font-size: 2.2rem;
+            margin: 0 0 10px;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        /* --- Premium Pill Buttons --- */
+        .pill-btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.4s ease;
+            width: fit-content;
+        }
+
+        .primary-btn {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .primary-btn:hover {
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+			color: white;
+			transform: scale(1.05);
+        }
+
+        .secondary-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid rgba(255,255,255,0.3);
+            margin-left: 15px;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(255,255,255,0.1);
+			border-color: var(--accent-3);
+			color: var(--accent-3);
+			transform: scale(1.05);
+        }
+
+        /* --- Image Backgrounds for Cards --- */
+        .card-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+		.card:hover {
+			border-color: var(--accent-2);
+			box-shadow: 0 0 30px rgba(79, 172, 254, 0.2);
+		}
+
+        .card:hover .card-bg {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        /* --- Footer Video Wrapper --- */
+        .video-reveal {
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            border-radius: 50px;
+            overflow: hidden;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+        }
+
+        video { width: 100%; display: block; }
+
+        @media (max-width: 1000px) {
+            .card-large, .card-medium { grid-column: span 12; }
+            h1 { font-size: 4rem; letter-spacing: -2px; }
+        }
+    </style>
+	
 	<style id='wp-emoji-styles-inline-css' type='text/css'>
 		img.wp-smiley,
 		img.emoji {
@@ -6316,6 +6524,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="elementor-element elementor-element-f478629 e-flex e-con-boxed e-con e-parent"
 					data-id="f478629" data-element_type="container"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -6355,43 +6564,48 @@
 						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-69d16ac e-flex e-con-boxed e-con e-parent"
-					data-id="69d16ac" data-element_type="container">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-dce9636 e-con-full e-flex e-con e-child"
-							data-id="dce9636" data-element_type="container"
-							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-element elementor-element-9f8e9c6 e-flex e-con-boxed e-con e-child"
-								data-id="9f8e9c6" data-element_type="container">
-								<div class="e-con-inner">
-									<div class="elementor-element elementor-element-08908e9 elementor-widget elementor-widget-heading"
-										data-id="08908e9" data-element_type="widget" data-widget_type="heading.default">
-										<div class="elementor-widget-container">
-											<h2 class="elementor-heading-title elementor-size-default">Agriculture
-												Modernization</h2>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-45993ba elementor-widget elementor-widget-heading"
-										data-id="45993ba" data-element_type="widget" data-widget_type="heading.default">
-										<div class="elementor-widget-container">
-											<p class="elementor-heading-title elementor-size-default">Specialized
-												Agriculture </p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-a056afd e-con-full e-flex e-con e-child"
-								data-id="a056afd" data-element_type="container">
-								<div class="elementor-element elementor-element-1bcec1f elementor-widget elementor-widget-text-editor"
-									data-id="1bcec1f" data-element_type="widget" data-widget_type="text-editor.default">
-									<div class="elementor-widget-container">
-										<p><strong>DJI Agriculture</strong> not only empowers agriculture professionals
-											with powerful equipment but also provides intelligent solutions that save
-											time and increase workflow, benefiting a wide range of customers from
-											farmers and growers to agricultural cooperation and service agencies.</p>
-									</div>
-								</div>
-							</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -- >
+				<section class="hero">
+						<div class="badge">Next-Gen Intelligence</div>
+						<h1>Earth. Optimized.</h1>
+						<p class="description">
+							Redefining agricultural intelligence with the DJI Agras ecosystem. More power. Less waste. Complete precision.
+							</p>
+						<div class="hero-actions">
+							<a href="#" class="pill-btn primary-btn">Pre-order T50</a>
+							<a href="#" class="pill-btn secondary-btn">Watch the Keynote</a>
+						</div>
+				</section>
+
+    				<div class="grid-container">
+						<div class="card card-full">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI2523243-scaled.webp?fit=2560%2C1707&#038;ssl=1');"></div>
+							<h3>Intelligent Spraying</h3>
+							<p>Our dual-atomization system ensures every drop hits its target with surgical precision.</p>
+							<a href="#" class="pill-btn primary-btn">Explore Technology</a>
+						</div>
+
+						<div class="card card-large">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/4-T50KV-Fields-scaled.jpeg');"></div>
+							<h3>Grain Yield +20%</h3>
+							<p>Data-driven spreading for rice and corn.</p>
+							<a href="#" class="pill-btn primary-btn">See Results</a>
+						</div>
+
+						<div class="card card-medium">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/1-T50KV-scaled.webp');"></div>
+							<h3>Orchard Expert</h3>
+							<p>Navigating complex terrain with ease.</p>
+							<a href="#" class="pill-btn primary-btn">Learn More</a>
+						</div>
+    				</div>
+
+					<div class="video-reveal">
+						<video autoplay muted loop controls>
+							<source src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones-1.webm" type="video/webm">
+						</video>
+					</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -- >	
 							<div class="elementor-element elementor-element-406fcbf e-flex e-con-boxed e-con e-child"
 								data-id="406fcbf" data-element_type="container">
 								<div class="e-con-inner">
