@@ -1,1 +1,8 @@
-.elementor-animation-float{transition-duration:.3s;transition-property:transform;transition-timing-function:ease-out}.elementor-animation-float:active,.elementor-animation-float:focus,.elementor-animation-float:hover{transform:translateY(-8px)}
+/* 
+    element will float upward upon hover // possibly "read more" feature
+*/
+
+.elementor-animation-float{transition-duration:.3s;transition-property:transform;transition-timing-function:ease-out}
+
+.elementor-animation-float:active,.elementor-animation-float:focus,.elementor-animation-float:hover{transform:translateY(-8px)}
+
