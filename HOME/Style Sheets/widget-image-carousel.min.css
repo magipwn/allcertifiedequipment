@@ -1,1 +1,23 @@
-.elementor-widget-image-carousel .swiper{position:static}.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}
+/* --- Swiper Container Setup --- */
+.elementor-widget-image-carousel .swiper {
+  /* Keeps the swiper container from creating a new positioning context unless needed */
+  position: static;
+}
+
+/* --- Slide Alignment --- */
+.elementor-widget-image-carousel .swiper-slide {
+  text-align: center;
+}
+
+.elementor-widget-image-carousel .swiper .swiper-slide figure {
+  /* Ensures captions/images inside the figure tag inherit the correct spacing */
+  line-height: inherit;
+}
+
+/* --- Fallback for Loading State --- */
+.elementor-image-carousel-wrapper:not(.swiper-initialized) .swiper-slide {
+  /* Calculates the width of slides before JavaScript initializes the carousel.
+     Defaults to 3 slides if no specific count is set in the editor.
+  */
+  max-width: calc(100% / var(--e-image-carousel-slides-to-show, 3));
+}

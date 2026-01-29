@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded", // or "compressed", "compact", etc.
+            "extensionName": "mobile.css",
+            "savePath": "/allcertifiedequipment/HOME/Style Sheets" // This directs output to the 'css' folder
+        }
+    ]
+}
