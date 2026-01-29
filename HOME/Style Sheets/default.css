@@ -1,3 +1,7 @@
+/*
+	featured items area (mini-shop on homepage)
+*/
+
 .angled_badge,.featured.angled_badge{color:#FFF;position:absolute;right:0;top:0;width:100px;height:100px;text-align:center}
 
 .slide .angled_badge{z-index:600;pointer-events:none}
