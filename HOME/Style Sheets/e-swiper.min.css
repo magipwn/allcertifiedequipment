@@ -1,3 +1,7 @@
+/*
+    Slider elements (header, mini-shop)
+*/
+
 .elementor-element,.elementor-lightbox{--swiper-theme-color:#000;--swiper-navigation-size:44px;--swiper-pagination-bullet-size:6px;--swiper-pagination-bullet-horizontal-gap:6px}
 
 .elementor-element .swiper .swiper-slide figure,.elementor-lightbox .swiper .swiper-slide figure{line-height:0}

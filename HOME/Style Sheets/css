@@ -1,3 +1,7 @@
+/* 
+    Imports/configures fonts from Google Fonts in HOME page.
+*/
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';

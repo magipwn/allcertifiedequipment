@@ -1,3 +1,7 @@
+/*
+    Chaty frontend (styling Chat with Us feature on the page)
+*/
+
 .chaty *,.chaty-chat-view *,.chaty-outer-forms *{box-sizing:border-box}
 
 .chaty-agent-data,.chaty-whatsapp-field input[type=text],.chaty-whatsapp-message,.chaty-whatsapp-message p{font-family:Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif}

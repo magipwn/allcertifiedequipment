@@ -1,3 +1,7 @@
+/*
+    element will wiggle upon hover // "our population" icons -> employees
+*/
+
 @keyframes elementor-animation-wobble-horizontal{16.65%{transform:translateX(8px)}
 
 33.3%{transform:translateX(-6px)}
