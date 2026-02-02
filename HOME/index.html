@@ -1408,7 +1408,7 @@
 		/*# sourceURL=pi-enq-captch-custom-inline-css-inline-css */
 	</style>
 	<link rel='stylesheet' id='pisol-enquiry-quotation-woocommerce-css'
-		href='Style Sheets/pisol-enquiry-quotation-woocommerce.css?ver=1.11.11' type='text/css' media='all' />
+		href='Style Sheets/pisol-enquiry-quotation-woocommerce-public.css' type='text/css' media='all' />
 	<style id='pisol-enquiry-quotation-woocommerce-inline-css' type='text/css'>
 		.add-to-enquiry-loop {
 			background-color: #209730 !important;
@@ -1494,12 +1494,12 @@
 
 		/*# sourceURL=pisol-enquiry-quotation-woocommerce-inline-css */
 	</style>
-	<link rel='stylesheet' id='pisol-enquiry-quotation-woocommerce-two-column-css'
-		href='Style Sheets/two-column.css?ver=1.11.11' type='text/css' media='all' />
-	<link rel='stylesheet' id='pisol-enquiry-quotation-woocommerce-magnific-popup-css'
-		href='Style Sheets/magnific-popup.css?ver=1.11.11' type='text/css' media='all' />
-	<link rel='stylesheet' id='woocommerce-layout-css' href='Style Sheets/woocommerce-layout.css?ver=10.4.3'
+	<link rel='stylesheet' id='pisol-enquiry-quotation-woocommerce-two-column-css' href='Style Sheets/two-column.css'
 		type='text/css' media='all' />
+	<link rel='stylesheet' id='pisol-enquiry-quotation-woocommerce-magnific-popup-css'
+		href='Style Sheets/magnific-popup.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce-layout-css' href='Style Sheets/woocommerce-layout.css' type='text/css'
+		media='all' />
 	<style id='woocommerce-layout-inline-css' type='text/css'>
 		.infinite-scroll .woocommerce-pagination {
 			display: none;
@@ -5510,6 +5510,242 @@
 			}
 		</style>
 	</noscript>
+
+	<link rel='stylesheet' id='font-awesome-css'
+		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
+		type='text/css' media='all' />
+
+	<style>
+		:root {
+			--samsung-blue: #034EA2;
+			--accent-1: rgba(35, 144, 69, 1);
+			--accent-2: #6ad09d;
+			--accent-3: #379f8a;
+			--glass: rgba(255, 255, 255, 0.03);
+			--border-glass: rgba(255, 255, 255, 0.1);
+		}
+
+		p {
+			color: white;
+		}
+
+		body {
+			font-family: 'Inter', sans-serif;
+			background-color: var(--deep-black);
+			margin: 0;
+			color: #ffffff;
+			overflow-x: hidden;
+		}
+
+		/* --- Animated Background --- */
+		.hero {
+			position: relative;
+			padding: 150px 20px;
+			text-align: center;
+			background:
+				radial-gradient(circle at 10% 20%, rgba(0, 255, 127, 0.4) 0%, transparent 40%),
+				radial-gradient(circle at 90% 80%, rgba(0, 200, 255, 0.4) 0%, transparent 40%),
+				linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+		}
+
+		@keyframes shine {
+			to {
+				background-position: 200% center;
+			}
+		}
+
+		.badge {
+			background: linear-gradient(90deg, #17693ddd, #2b9075);
+			color: #fff;
+			padding: 8px 20px;
+			border-radius: 100px;
+			font-size: 0.7rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 30px;
+			display: inline-block;
+			box-shadow: 0 0 20px rgba(30, 227, 181, 0.4);
+		}
+
+		h1 {
+			font-size: clamp(3rem, 10vw, 6.5rem);
+			font-weight: 900;
+			line-height: 0.9;
+			margin: 0 0 30px;
+			letter-spacing: -4px;
+
+			/* The "Fun" Part: Animated Multi-color Gradient */
+			background: linear-gradient(45deg,
+					#ffffff 20%,
+					var(--accent-1) 40%,
+					var(--accent-2) 60%,
+					var(--accent-3) 80%);
+			background-size: 200% auto;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: shine 5s linear infinite;
+		}
+
+		.description {
+			font-size: 1.3rem;
+			max-width: 700px;
+			margin: 0 auto 50px;
+			color: #ffffff;
+			font-weight: 300;
+			line-height: 1.5;
+		}
+
+		/* --- Modern Samsung Glass Grid --- */
+		.grid-container {
+			max-width: 1400px;
+			margin: 0 auto 100px;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			gap: 25px;
+			padding: 0 20px;
+		}
+
+		.card {
+			background: var(--glass);
+			backdrop-filter: blur(20px);
+			border: 1px solid var(--border-glass);
+			border-radius: 40px;
+			padding: 50px;
+			position: relative;
+			overflow: hidden;
+			transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			min-height: 400px;
+		}
+
+		/* Asymmetric Layouts */
+		.card-large {
+			grid-column: span 7;
+		}
+
+		.card-medium {
+			grid-column: span 5;
+		}
+
+		.card-full {
+			grid-column: span 12;
+			min-height: 500px;
+		}
+
+		.card:hover {
+			border-color: var(--electric-lime);
+			background: rgb(44, 44, 44);
+			transform: translateY(-10px);
+		}
+
+		.card h3 {
+			color: var(--accent-1);
+			font-size: 2.2rem;
+			margin: 0 0 10px;
+			font-weight: 700;
+		}
+
+		.card p {
+			color: #ffffff;
+			font-size: 1.1rem;
+			margin-bottom: 30px;
+			max-width: 400px;
+		}
+
+		/* --- Premium Pill Buttons --- */
+		.pill-btn {
+			display: inline-block;
+			padding: 16px 40px;
+			border-radius: 100px;
+			font-weight: 600;
+			text-decoration: none;
+			font-size: 1rem;
+			transition: all 0.4s ease;
+			width: fit-content;
+		}
+
+		.primary-btn {
+			background-color: #ffffff;
+			color: #000000;
+		}
+
+		.primary-btn:hover {
+			background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+			color: white;
+			transform: scale(1.05);
+		}
+
+		.secondary-btn {
+			background-color: #ffffff;
+			color: #000000;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			margin-left: 15px;
+		}
+
+		.secondary-btn:hover {
+			background: rgba(255, 255, 255, 0.1);
+			border-color: var(--accent-3);
+			color: var(--accent-3);
+			transform: scale(1.05);
+		}
+
+		/* --- Image Backgrounds for Cards --- */
+		.card-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-size: cover;
+			background-position: center;
+			opacity: 0.4;
+			transition: opacity 0.6s, transform 0.6s;
+		}
+
+		.card:hover {
+			border-color: var(--accent-2);
+			box-shadow: 0 0 30px rgba(79, 172, 254, 0.2);
+		}
+
+		.card:hover .card-bg {
+			opacity: 0.7;
+			transform: scale(1.1);
+		}
+
+		/* --- Footer Video Wrapper --- */
+		.video-reveal {
+			max-width: 1200px;
+			margin: 0 auto 100px;
+			border-radius: 50px;
+			overflow: hidden;
+			border: 1px solid var(--border-glass);
+			box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+		}
+
+		video {
+			width: 100%;
+			display: block;
+		}
+
+		@media (max-width: 1000px) {
+
+			.card-large,
+			.card-medium {
+				grid-column: span 12;
+			}
+
+			h1 {
+				font-size: 4rem;
+				letter-spacing: -2px;
+			}
+		}
+	</style>
+
 </head>
 
 <!-- START OF BODY -->
@@ -5745,416 +5981,172 @@
 				<rs-slides style="overflow: hidden; position: absolute;">
 					<rs-slide style="position: absolute;" data-key="rs-39" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF1650E-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:slidebased;" data-in="prst:rndany;y:(100%);m:true;col:5;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img fetchpriority="high"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF1650E &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF1650E-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:left center;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-39-layer-1" class="white_thick" data-type="text" data-color="#FFF"
-							data-rsp_ch="on" data-xy="xo:684px;yo:433px;" data-text="s:76;l:42;fw:800;a:inherit;"
-							data-dim="w:594px;h:70px;" data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-53px;"
-							data-frame_1="st:1010;sR:1010;" data-frame_999="st:w;sR:7690;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">REAL RESULTS
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-39-layer-3" class="white_thin_smaller" data-type="text" data-color="#d60020"
-							data-rsp_ch="on" data-xy="xo:685px,599px,455px,280px;yo:318px,278px,211px,130px;"
-							data-text="s:83,72,54,33;l:103,90,68,41;fw:900;a:inherit;"
-							data-dim="w:534px,467px,354px,218px;minh:0,none,none,none;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-103px,-90px,-68px,-41px;"
-							data-frame_1="st:720;sR:720;" data-frame_999="st:w;sR:7980;auto:true;"
-							style="z-index:9;font-family:'Montserrat';text-transform:uppercase;">RED POWER,
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-61" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Backhoe-Loaders-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product/2dx/" data-tag="l" data-target="_self"
-						data-seoz="front" data-filter="e:late;h:200;" data-in="prst:rndany;o:0;e:power1.in;">
+						data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Backhoe Loaders" width="2000" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Backhoe-Loaders.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-61-layer-7" class="white_thick" data-type="text" data-rsp_ch="on"
-							data-xy="xo:440px;yo:488px;" data-text="s:91;l:50;ls:-4;fw:800;a:inherit;" data-dim="w:698;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-63px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">
-						</rs-layer><!--
---> </rs-slide>
+					</rs-slide>
+
 					<rs-slide style="position: absolute;" data-key="rs-4" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/03/maxcanecover-100x50.webp"
-						data-anim="d:40;ms:1200;f:random;"
-						data-in="prst:rndany;o:0;x:ran(-10|100);y:ran(-50|50);r:cyc((180)|(-180)|(90)|(-90)|(270)|(-270));sx:5;sy:5;e:power2.out;row:30;col:30;"
-						data-out="o:0;x:ran(-50|50);y:ran(-50|50);r:cyc((-180)|(180)|(-90)|(90)|(-270)|(270));sx:6;sy:6;e:power2.in;row:30;col:30;"
-						data-d3="f:cube;d:vertical;z:450;t:-20;e:back.out;su:true;sma:1;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="maxcanecover" width="1400" height="400"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/03/maxcanecover.webp"
 							data-bg="p:left center;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-4-layer-0" class="blue_cursive" data-type="text" data-rsp_ch="on"
-							data-xy="xo:961px;yo:482px;" data-text="s:122;l:42;ls:2;" data-dim="w:272;h:90;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-padding="r:7;l:7;"
-							data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1);sY:ran(0|1);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-360|360);"
-							data-frame_1="st:1500;sR:1500;" data-frame_999="st:w;sR:7200;auto:true;"
-							style="z-index:6;font-family:'Yellowtail';">Productivity
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-4-layer-1" class="white_thick" data-type="text" data-color="#f16514"
-							data-rsp_ch="on" data-xy="xo:630px;yo:330px;" data-text="s:131;l:72;fw:800;"
-							data-dim="w:338;h:81;" data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-90px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">MAX
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-4-layer-4" class="blue_cursive" data-type="text" data-rsp_ch="on"
-							data-xy="xo:967px;yo:346px;" data-text="s:137;l:46;ls:2;" data-dim="w:345;h:96;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-padding="r:9;l:9;"
-							data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1);sY:ran(0|1);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-360|360);"
-							data-frame_1="st:1500;sR:1500;" data-frame_999="st:w;sR:7200;auto:true;"
-							style="z-index:6;font-family:'Yellowtail';">Power,
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-4-layer-15" class="white_thick" data-type="text" data-color="#f16514"
-							data-rsp_ch="on" data-xy="xo:628px;yo:465px;" data-text="s:131;l:72;fw:800;"
-							data-dim="w:338;h:81;" data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-90px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">MAX
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-5" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Telescopic-Handlers-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/telehandler/"
-						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:1;x:-100%;"
-						data-out="x:60%;">
+						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Telescopic Handlers" width="2000" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Telescopic-Handlers.webp"
 							data-no-retina>
-						<!----> </rs-slide>
+					</rs-slide>
+
 					<rs-slide style="position: absolute;" data-key="rs-6" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5708-X-KUHN-PLANTER-3M-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="p:light;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF5708 X KUHN PLANTER 3M &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
 							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5708-X-KUHN-PLANTER-3M-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:center top;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-6-layer-1" class="green_thin" data-type="text" data-rsp_ch="on"
-							data-xy="xo:724px,633px,480px,296px;yo:146px,127px,96px,59px;"
-							data-text="s:81,70,53,32;l:93,81,61,37;ls:-2,-1,0,0;fw:800;a:inherit;"
-							data-dim="w:678,593,450,277;minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-50px,-43px,-32px,-19px;" data-frame_1="st:900;sR:900;"
-							data-frame_999="st:w;sR:7800;auto:true;" style="z-index:5;font-family:'Montserrat';">Perfect
-							Pairing for
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-6-layer-2" class="white_thick" data-type="text" data-color="#ee2e24"
-							data-rsp_ch="on" data-xy="xo:721px;yo:361px;" data-text="s:74;l:41;ls:-2;fw:800;a:inherit;"
-							data-dim="w:735;" data-tst="c:#000000;" data-frame_0="x:right;o:1;"
-							data-frame_1="st:1100;sR:1100;" data-frame_999="st:w;sR:7600;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">Trusted Technology,
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-6-layer-9" class="white_thick" data-type="text" data-color="#ee2e24"
-							data-rsp_ch="on" data-xy="xo:725px;yo:449px;" data-text="s:71;l:40;ls:-1;fw:800;a:inherit;"
-							data-dim="w:736;" data-tst="c:#000000;" data-frame_0="x:right;o:1;"
-							data-frame_1="st:1100;sR:1100;" data-frame_999="st:w;sR:7600;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">Maximum Efficiency.
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-6-layer-10" class="green_thin" data-type="text" data-rsp_ch="on"
-							data-xy="xo:724px,633px,480px,296px;yo:243px,212px,161px,99px;"
-							data-text="s:81,70,53,32;l:93,81,61,37;ls:-2,-1,0,0;fw:800;a:inherit;"
-							data-dim="w:697,610,463,285;minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-50px,-43px,-32px,-19px;" data-frame_1="st:900;sR:900;"
-							data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">Powerful Planting.
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-7" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/BANNER-WEBSITE-2001-X-625PX22-100x50.webp"
-						data-anim="ms:2000;" data-in="prst:rndany;o:0;" data-out="a:false;"
-						data-d3="f:fly;d:vertical;z:400;e:power2.out;su:true;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="BANNER WEBSITE 2001 X 625PX22" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/BANNER-WEBSITE-2001-X-625PX22.webp"
 							data-bg="p:right center;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-7-layer-2" class="red_thin" data-type="text" data-color="#fff" data-rsp_ch="on"
-							data-xy="xo:-90px,-78px,-59px,-36px;yo:132px,115px,87px,53px;"
-							data-text="s:92,80,60,37;l:104,91,69,42;ls:-4,-3,-2,-1;fw:800;a:inherit;"
-							data-dim="minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-231px,-202px,-153px,-94px;skX:85px;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;" style="z-index:6;font-family:'Montserrat';">The
-							Ultimate Partner
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-7-layer-4" class="pale_green_cursive" data-type="text" data-color="#ff3a2d"
-							data-rsp_ch="on" data-xy="xo:-75px,-65px,-49px,-30px;yo:231px,202px,153px,94px;"
-							data-text="s:82,71,53,32;l:92,80,60,37;fw:800;a:inherit;" data-dim="minh:0,none,none,none;"
-							data-tst="c:#000000;" data-frame_0="y:bottom;o:1;" data-frame_1="st:1500;sR:1500;"
-							data-frame_999="st:w;sR:7200;auto:true;"
-							style="z-index:5;font-family:'Montserrat';padding-right:20px;">in Forage Harvesting.
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-8" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/TAJIMA-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="d:20;ms:1300;f:slidebased;"
-						data-in="prst:rndany;o:0;x:ran(-20|20);y:ran(-20|20);r:120;sx:10;sy:10;e:expo.inOut;row:5;col:5;"
-						data-out="a:false;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="TAJIMA &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/TAJIMA-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:left bottom;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-8-layer-1" class="white_thick" data-type="text" data-color="#FFF"
-							data-rsp_ch="on" data-xy="xo:325px;yo:353px;" data-text="s:95;l:53;ls:-8;fw:800;a:inherit;"
-							data-dim="w:384;" data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-66px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">One Tool.
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-8-layer-2" class="dark_blue_thin" data-type="text" data-rsp_ch="on"
-							data-xy="xo:739px,646px,490px,302px;yo:325px,284px,215px,132px;"
-							data-text="s:100,87,66,40;l:113,98,74,45;ls:-5,-4,-3,-1;fw:800;a:inherit;"
-							data-dim="w:720,630,478,294;minh:0,none,none,none;" data-tst="w:2px,1px,1px,1px;c:#000000;"
-							data-frame_0="x:right;o:1;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;" style="z-index:6;font-family:'Montserrat';">Four
-							Functions.
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-8-layer-3" class="white_thin_smaller" data-type="text" data-color="#ff3a2d"
-							data-rsp_ch="on" data-xy="xo:329px,287px,218px,134px;yo:430px,376px,285px,175px;"
-							data-text="s:120,105,79,48;l:134,117,88,54;ls:-6,-5,-3,-1;fw:800;a:inherit;"
-							data-dim="w:1119,979,743,458;minh:0,none,none,none;" data-tst="w:2px,1px,1px,1px;c:#ffffff;"
-							data-frame_0="y:-92px,-80px,-60px,-37px;" data-frame_1="st:1300;sR:1300;"
-							data-frame_999="st:w;sR:7400;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">Unlimited Efficiency
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-27" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:slidebased;" data-in="prst:rndany;x:(100%);m:true;row:5;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF2600 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:left center;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-27-layer-1" class="green_thin" data-type="text" data-color="#ff3a2d"
-							data-rsp_ch="on" data-xy="xo:281px,245px,186px,114px;yo:246px,215px,163px,100px;"
-							data-text="s:80,70,53,32;l:90,78,59,36;fw:800;a:inherit;"
-							data-dim="minh:0px,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-71px,-62px,-47px,-28px;" data-frame_1="st:900;sR:900;"
-							data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">ENGINEERED TO DO MORE
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-27-layer-2" class="white_thick" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:286px,250px,189px,116px;y:b;yo:188px,164px,124px,76px;"
-							data-text="s:85,74,56,34;l:95,83,63,38;fw:800;a:inherit;"
-							data-dim="w:1145,1002,761,469;minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:right;o:1;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;" style="z-index:6;font-family:'Montserrat';">MASSEY
-							FERGUSON 2600
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-28" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/FIELDKING-TRAILER-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="d:30;f:center;" data-in="prst:rndany;o:0;sx:1.2;sy:1.2;row:5;col:5;"
-						data-out="o:0;sx:0.5;sy:0.5;m:true;row:5;col:5;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="FIELDKING TRAILER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
 							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/FIELDKING-TRAILER-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-28-layer-2" class="red_thin" data-type="text" data-color="#fff" data-rsp_ch="on"
-							data-xy="xo:167px;yo:146px;" data-text="s:117;l:131;ls:-6;fw:800;a:inherit;"
-							data-dim="w:871;minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-290px;skX:85px;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;" style="z-index:6;font-family:'Montserrat';">Where
-							Strength
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-28-layer-3" class="white_thin" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:946px,827px,628px,387px;yo:263px,230px,174px,107px;"
-							data-text="s:93,81,61,37;l:104,91,69,42;ls:-5,-4,-3,-1;fw:800;a:inherit;"
-							data-dim="w:282,246,186,114;minh:0,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="y:-58px,-50px,-37px,-22px;" data-frame_1="st:1300;sR:1300;"
-							data-frame_999="st:w;sR:7400;auto:true;" style="z-index:7;font-family:'Montserrat';">meets
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-28-layer-4" class="pale_green_cursive" data-type="text" data-color="#221569"
-							data-rsp_ch="on" data-xy="xo:948px;yo:404px;" data-text="s:143;l:28;ls:3px;a:inherit;"
-							data-dim="w:443px;h:113px;" data-tst="w:2px,1px,1px,1px;c:#ffffff;"
-							data-frame_0="y:bottom;o:1;" data-frame_1="st:1500;sR:1500;"
-							data-frame_999="st:w;sR:7200;auto:true;"
-							style="z-index:5;font-family:'Yellowtail';padding-right:20px;">reliability!
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-50" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Tracked-Excavators-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/tracked-excavators/"
-						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:0;y:-100%;"
-						data-out="a:false;">
+						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Tracked Excavators" width="2000" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Tracked-Excavators.webp"
 							data-no-retina>
-						<!----> </rs-slide>
+					</rs-slide>
+
 					<rs-slide style="position: absolute;" data-key="rs-51" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/CMT-DISC-PLOW-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="e:slidingoverlay;ms:2000;" data-in="prst:rndany;y:(100%);">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="CMT DISC PLOW &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/CMT-DISC-PLOW-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:center bottom;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-51-layer-1" class="white_thick" data-type="text" data-color="#cc1d21"
-							data-rsp_ch="on" data-xy="xo:306px;yo:326px;" data-text="s:104;l:58;fw:800;a:inherit;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-72px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">Empowering
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-51-layer-2" class="dark_blue_thin" data-type="text" data-color="#cc1d21"
-							data-rsp_ch="on" data-xy="xo:1039px,909px,690px,425px;yo:307px,268px,203px,125px;"
-							data-text="s:97,84,63,38;l:109,95,72,44;fw:800;a:inherit;"
-							data-dim="w:699,611,464,286;minh:0,none,none,none;" data-tst="w:2px,1px,1px,1px;c:#000000;"
-							data-frame_0="x:right;o:1;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">Farmers,
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-51-layer-3" class="white_thin_smaller" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:309px,270px,205px,126px;yo:431px,377px,286px,176px;"
-							data-text="s:85,74,56,34;l:94,82,62,38;fw:800;a:inherit;"
-							data-dim="w:1182px,1034px,785px,484px;minh:0,none,none,none;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-64px,-56px,-42px,-25px;"
-							data-frame_1="st:1300;sR:1300;" data-frame_999="st:w;sR:7400;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">One Implement at a Time.
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-52" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600A-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="p:dark;f:nodelay;" data-in="prst:rndany;x:(100%);m:true;col:5;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF2600A &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600A-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:left bottom;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-52-layer-1" class="white_thick" data-type="text" data-color="#cc1d21"
-							data-rsp_ch="on" data-xy="xo:249px;yo:267px;" data-text="s:117;l:65;fw:800;a:inherit;"
-							data-dim="w:1234;" data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-80px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">THE NEXT LEVEL OF
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-52-layer-12" class="white_thin_smaller" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:262px,229px,173px,106px;yo:374px,327px,248px,153px;"
-							data-text="s:107,93,70,43;l:118,103,78,48;fw:800;a:inherit;"
-							data-dim="w:1210,1059,804,496;minh:0,none,none,none;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-81px,-70px,-53px,-32px;"
-							data-frame_1="st:1300;sR:1300;" data-frame_999="st:w;sR:7400;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">FARMING EFFICIENCY
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-53" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5700-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-in="prst:rndany;o:0;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF5700 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5700-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-bg="p:center bottom;" data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-53-layer-1" class="white_thick" data-type="text" data-color="#ee0609"
-							data-rsp_ch="on" data-xy="xo:-279px;yo:356px;" data-text="s:107;l:60;fw:800;a:inherit;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-74px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:5;font-family:'Montserrat';">WHERE HARD WORK
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-53-layer-3" class="white_thin_smaller" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:-261px,-228px,-173px,-106px;yo:451px,394px,299px,184px;"
-							data-text="s:84,73,55,33;l:93,81,61,37;fw:800;a:inherit;"
-							data-dim="w:1192,1043,792,488;minh:0,none,none,none;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="y:-64px,-56px,-42px,-25px;"
-							data-frame_1="st:1300;sR:1300;" data-frame_999="st:w;sR:7400;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">MEETS MASSEY STRENGTH
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-56" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Skid-Steer-Loaders-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/skid-steer-loader/"
-						data-tag="l" data-target="_self" data-seoz="front" data-anim="o:outin;"
-						data-in="prst:rndany;o:0;sx:0.85;sy:0.85;" data-out="x:100%;">
+						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;"
+						data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Skid Steer Loaders" width="2000" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Skid-Steer-Loaders.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-56-layer-7" class="white_thick" data-type="text" data-rsp_ch="on"
-							data-xy="xo:440px;yo:488px;" data-text="s:91;l:50;ls:-4;fw:800;a:inherit;" data-dim="w:698;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-63px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">
-						</rs-layer><!--
---> </rs-slide>
+					</rs-slide>
+
 					<rs-slide style="position: absolute;" data-key="rs-57" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/ATISCO-PLANTER-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="d:10;ms:600;f:random;"
-						data-in="prst:rndany;mo:45;moo:none;o:0;y:(100%);r:ran(-45|45);sx:0.8;sy:0.8;col:20;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="ATISCO PLANTER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/ATISCO-PLANTER-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-57-layer-2" class="red_thin" data-type="text" data-color="#fff" data-rsp_ch="on"
-							data-xy="xo:417px,364px,276px,170px;yo:178px,155px,117px,72px;"
-							data-text="s:95,83,63,38;l:107,93,70,43;ls:-5,-4,-3,-1;fw:800;a:inherit;"
-							data-dim="w:960,840,638,393;minh:0,none,none,none;" data-tst="w:2px,1px,1px,1px;c:#000000;"
-							data-frame_0="x:-238px,-208px,-158px,-97px;skX:85px;" data-frame_1="st:1100;sR:1100;"
-							data-frame_999="st:w;sR:7600;auto:true;" style="z-index:6;font-family:'Montserrat';">YOUR
-							PARTNER FOR
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-57-layer-4" class="pale_green_cursive" data-type="text" data-color="#d50a0e"
-							data-rsp_ch="on" data-xy="xo:403px;yo:337px;" data-text="s:143;l:28;ls:1;a:inherit;"
-							data-dim="w:1010;h:76;" data-tst="w:2px,1px,1px,1px;c:#ffffff;" data-frame_0="y:bottom;o:1;"
-							data-frame_1="st:1500;sR:1500;" data-frame_999="st:w;sR:7200;auto:true;"
-							style="z-index:5;font-family:'Yellowtail';padding-right:20px;">Productive Planting
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-58" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/SIP-ROTAVATOR-1-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
 						data-anim="f:nodelay;" data-in="prst:rndany;x:(100%);m:true;col:5;">
@@ -6164,35 +6156,11 @@
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/SIP-ROTAVATOR-1-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-58-layer-1" class="brown_background" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:-239px,-209px,-158px,-97px;yo:172px,150px,113px,69px;"
-							data-text="s:88,77,58,35;l:99,86,65,40;ls:-4,-3,-2,-1;fw:800;"
-							data-dim="minh:0,none,none,none;" data-tst="w:2px,1px,1px,1px;c:#000000;"
-							data-frame_0="y:top;o:1;" data-frame_1="st:900;sR:900;"
-							data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:7;font-family:'Montserrat';">STRONGER TOGETHER
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-58-layer-2" class="white_medium" data-type="text" data-color="#ee0609"
-							data-rsp_ch="on" data-xy="xo:-224px,-196px,-148px,-91px;yo:280px,245px,186px,114px;"
-							data-text="s:98,85,64,39;l:109,95,72,44;ls:-5,-4,-3,-1;fw:800;"
-							data-dim="minh:0,none,none,none;" data-tst="c:#ffffff;" data-frame_0="x:left;o:1;"
-							data-frame_1="st:1100;sR:1100;" data-frame_999="st:w;sR:7600;auto:true;"
-							style="z-index:8;font-family:'Montserrat';">MASSEY FERGUSON
-						</rs-layer><!--
-
-							--><rs-layer id="slider-2-slide-58-layer-16" class="white_medium" data-type="text" data-color="#0c2472"
-							data-rsp_ch="on" data-xy="xo:-242px,-211px,-160px,-98px;yo:380px,332px,252px,155px;"
-							data-text="s:122,106,80,49;l:137,119,90,55;ls:-6,-5,-3,-1;fw:800;"
-							data-dim="minh:0,none,none,none;" data-tst="c:#ffffff;" data-frame_0="x:left;o:1;"
-							data-frame_1="st:1100;sR:1100;" data-frame_999="st:w;sR:7600;auto:true;"
-							style="z-index:8;font-family:'Montserrat';"> SIP ROTAVATOR
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-59" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/revslider/video-media/DJI-AGRAS-T50-Ready-Steady-Go_59-100x50.jpeg"
-						data-anim="p:dark;" data-in="prst:rndany;o:0;sx:0.6;sy:0.6;" data-out="o:0;sx:1.6;sy:1.6;">
+						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="DJI-AGRAS-T50-Ready-Steady-Go_59.jpeg" width="2560" height="1440"
@@ -6201,46 +6169,20 @@
 							data-no-retina>
 						<rs-bgvideo data-video="w:100%;h:100%;nse:false;l:true;ptimer:false;vfc:true;"
 							data-mp4="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones.webm"></rs-bgvideo>
-						<!--
-							--><rs-layer id="slider-2-slide-59-layer-1" class="white_thick" data-type="text" data-color="#fff"
-							data-rsp_ch="on" data-xy="xo:291px,254px,192px,118px;yo:457px,399px,303px,186px;"
-							data-text="s:80,70,53,32;l:90,78,59,36;ls:-4,-3,-2,-1;fw:800;a:inherit;"
-							data-dim="minh:0px,none,none,none;" data-tst="c:#000000;"
-							data-frame_0="x:-133px,-116px,-88px,-54px;" data-frame_1="st:900;sR:900;"
-							data-frame_999="st:w;sR:7800;auto:true;" style="z-index:6;font-family:'Montserrat';">DJI
-							AGRAS T50
-						</rs-layer><!--
+					</rs-slide>
 
-							--><rs-layer id="slider-2-slide-59-layer-6" class="white_thin_smaller" data-type="text" data-color="#fff"
-							data-tsh="c:rgba(0,0,0,0.75);h:7px,6px,4px,2px;v:7px,6px,4px,2px;b:10px,8px,6px,3px;"
-							data-rsp_ch="on" data-xy="xo:396px,346px,262px,161px;yo:556px,486px,369px,227px;"
-							data-text="s:45,39,29,17;l:57,49,37,22;a:inherit;" data-dim="minh:0,none,none,none;"
-							data-tst="c:#000000;" data-frame_0="y:-97px,-84px,-63px,-38px;"
-							data-frame_1="st:1300;sR:1300;" data-frame_999="st:w;sR:7400;auto:true;"
-							style="z-index:8;font-family:'Montserrat';">Ready, Steady, Go.
-						</rs-layer><!--
---> </rs-slide>
 					<rs-slide style="position: absolute;" data-key="rs-60" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Mini-Excavators-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/compact-excavators-mini-midi/"
-						data-tag="l" data-target="_self" data-seoz="front" data-anim="d:40;ms:1200;"
-						data-in="prst:rndany;o:0;x:cyc(-100%|0|100%);r:cyc((-180)|0|(180));sx:cyc(1|0|1);sy:cyc(1|0|1);e:back.out;row:3;col:3;"
-						data-out="x:cyc(100%|0|-100%);r:cyc((-180)|0|(180));sx:cyc(1|0.5|1);sy:cyc(1|0.5|1);e:power3.inOut;row:3;col:3;"
-						data-d3="f:cube;z:450;t:20;su:true;sc:#9e9e9e;">
+						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;"
+						data-in="prst:rndany;o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Mini Excavators" width="2000" height="625"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Mini-Excavators.webp"
 							data-no-retina>
-						<!--
-							--><rs-layer id="slider-2-slide-60-layer-7" class="white_thick" data-type="text" data-rsp_ch="on"
-							data-xy="xo:440px;yo:488px;" data-text="s:91;l:50;ls:-4;fw:800;a:inherit;" data-dim="w:698;"
-							data-tst="w:2px,1px,1px,1px;c:#000000;" data-frame_0="x:-63px;"
-							data-frame_1="st:900;sR:900;" data-frame_999="st:w;sR:7800;auto:true;"
-							style="z-index:6;font-family:'Montserrat';">
-						</rs-layer><!--
---> </rs-slide>
+					</rs-slide>
 				</rs-slides>
 			</rs-module>
 			<script data-jetpack-boost="ignore">
@@ -6285,96 +6227,33 @@
 						<div class="elementor-element elementor-element-897ae8b e-con-full e-flex e-con e-child"
 							data-id="897ae8b" data-element_type="container">
 						</div>
-						<!--Whole Directory-->
-						<!--//////////////////////////////////////////-->
-						<style>
-							.directory-fade {
-								position: relative;
-								width: 100%;
-								aspect-ratio: 2560 / 576;
-								border-radius: 20px;
-								overflow: hidden;
-								background-image: url("https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/JCB-ACETC-Horizontal-1-scaled-1.webp");
-								background-size: cover;
-								background-position: center;
-								transition: transform 0.4s ease;
-							}
-
-							.directory-fade::after {
-								content: "";
-								position: absolute;
-								inset: 0;
-								background-color: rgb(252, 175, 38);
-								background-image: url("https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/JCB-ACETCagri.webp?fit=300%2C167&ssl=1");
-								background-size: contain;
-								background-repeat: no-repeat;
-								background-position: center center;
-								border-radius: 20px;
-								opacity: 0;
-								transition: opacity 0.4s ease;
-								z-index: 1;
-							}
-
-							.directory-fade:hover::after {
-								opacity: 1;
-							}
-
-							.directory-fade:hover {
-								transform: scale(1.10);
-
-							}
-
-							.directory-text {
-								position: absolute;
-								top: 60%;
-								left: 10%;
-								transform: translate(-50%, -50%);
-								display: inline-block;
-								font-size: 22px;
-								margin: 0;
-								color: white;
-								position: relative;
-								transition: opacity 0.3s ease;
-								z-index: 2;
-								opacity: 0;
-							}
-
-							.directory-fade:hover .directory-text {
-								opacity: 1;
-								/* show on hover */
-							}
-
-							.directory-text h3 {
-								margin: center;
-								font-size: 22px;
-								display: inline-block;
-								position: relative;
-							}
-
-							.directory-text h3::after {
-								opacity: 0;
-								margin-left: 5px;
-								transition: opacity 0.3 ease;
-							}
-
-							.directory-text h3:hover::after {
-								opacity: 1;
-
-							}
-						</style>
-						<!--//////////////////////////////////////////-->
 						<div class="elementor-element elementor-element-6449ea4 e-con-full e-flex e-con e-child"
 							data-id="6449ea4" data-element_type="container">
-							<!--//////////////////////////////////////////-->
-							<a href="https://jcb.allcertifiedequipment.com/" class="directory-link">
-								<div class="directory-fade">
-									<div class="directory-text">
+							<div class="elementor-element elementor-element-a4dda5f elementor-flip-box--direction-down elementor-flip-box--3d elementor-widget__width-initial elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box"
+								data-id="a4dda5f" data-element_type="widget" data-widget_type="flip-box.default">
+								<div class="elementor-widget-container">
+									<div class="elementor-flip-box" tabindex="0">
+										<div class="elementor-flip-box__layer elementor-flip-box__front">
+											<div class="elementor-flip-box__layer__overlay">
+												<div class="elementor-flip-box__layer__inner">
 
+
+												</div>
+											</div>
+										</div>
+										<a class="elementor-flip-box__layer elementor-flip-box__back"
+											href="https://jcb.allcertifiedequipment.com/" target="_blank">
+											<div class="elementor-flip-box__layer__overlay">
+												<div class="elementor-flip-box__layer__inner">
+
+
+												</div>
+											</div>
+										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
-						<!--//////////////////////////////////////////-->
 						<div class="elementor-element elementor-element-a6ad6fd e-con-full e-flex e-con e-child"
 							data-id="a6ad6fd" data-element_type="container">
 						</div>
