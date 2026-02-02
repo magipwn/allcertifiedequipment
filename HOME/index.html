@@ -72,6 +72,146 @@
 
 		/*# sourceURL=/wp-includes/css/classic-themes.min.css */
 	</style>
+
+	<style>
+		.container-agrihowdoesitwork {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			width: 100%;
+			height: 800px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			font-family: 'Montserrat';
+		}
+
+		.container-agrihowdoesitwork .header_text {
+			position: relative;
+			top: 0;
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container-agrihowdoesitwork .header_text .header_textmargined {
+			position: absolute;
+			display: flex;
+			width: 95%;
+			height: 70%;
+			border-radius: 50px;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 0px 4px rgba(0, 128, 0, 0.7);
+			font-size: 50px;
+			align-items: center;
+			padding-left: 20px;
+			color: rgba(35, 144, 69);
+			font-weight: bold;
+		}
+
+		.container-agrihowdoesitwork .contentforagri {
+			display: flex;
+			width: 100%;
+			height: 80%;
+			flex-direction: row;
+			background-color: white;
+			border-radius: 20px;
+			box-shadow: 0px 3px 7px green;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .videobox {
+			width: 55%;
+			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.container-agrihowdoesitwork .contentforagri .videobox .videoboxmiddle {
+			width: 95%;
+			height: 90%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext {
+			width: 45%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined {
+			width: 90%;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			overflow: hidden;
+			transition: all 0.5 ease;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined .agribodyheader {
+			position: relative;
+			display: flex;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			background-color: white;
+			color: rgba(35, 144, 69);
+			align-items: center;
+			transition: all 0.7s ease-in-out;
+			font-size: 48px;
+			font-weight: bold;
+			line-height: 1.1;
+			letter-spacing: -1px;
+			margin-bottom: 20px;
+			padding-top: 200px;
+			word-break: break-word;
+		}
+
+
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined .agrimainbody {
+			opacity: 0;
+			transition: opacity 0.4s ease;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined .agribodyfooter {
+			opacity: 0;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext:hover .agribodyheader {
+			height: 15%;
+			font-size: 30px;
+			padding-top: 0px;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext:hover .agrimainbody,
+		.container-agrihowdoesitwork .contentforagri .rightsidetext:hover .agribodyfooter {
+			opacity: 1;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined .agrimainbody {
+			width: 100%;
+			height: 70%;
+			color: rgba(35, 144, 69);
+			transition: opacity .7s ease-out;
+		}
+
+		.container-agrihowdoesitwork .contentforagri .rightsidetext .rightsidetextmargined .agribodyfooter {
+			width: 100%;
+			height: 20%;
+			color: rgba(35, 144, 69);
+			transition: opacity .7s ease-out;
+		}
+	</style>
 	<!--SYLES FOR ACETC JCB DIRECTORY-->
 
 	<style>
@@ -81,8 +221,7 @@
 			height: 400px;
 			border-radius: 10px;
 			overflow: hidden;
-			margin-top: 100px;
-			margin-bottom: 100px;
+			margin-top: 50px;
 
 			display: flex;
 			flex-direction: row;
@@ -90,6 +229,8 @@
 			box-shadow: 50px 100px 50px rgba(0, 0, 0, 1);
 			box-shadow: -100px 0px 100px rgba(57, 235, 3, 0.1);
 			transition: 0.5s ease all;
+
+			font-family: 'Montserrat';
 
 		}
 
@@ -7138,7 +7279,70 @@
 						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-995188f e-flex e-con-boxed e-con e-parent"
+
+				<div class="container-agrihowdoesitwork">
+					<div class="header_text">
+						<div class="header_textmargined">With Agribusiness How It
+							Works</div>
+					</div>
+					<div class="contentforagri">
+						<div class="videobox">
+							<div class="videoboxmiddle">
+								<iframe style="border-radius: 25px;" width="578" height="578"
+									src="https://www.youtube.com/embed/vIj-t-V4ppc"
+									title="DEMO: Soil Rejuvenating at Farm Mechanization! Tamang Panahon na to Upgrade Filipino Farming!"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+
+						</div>
+						<div class="rightsidetext">
+							<div class="rightsidetextmargined">
+								<div class="agribodyheader">DEMO: Soil Rejuvenating
+									at Farm Mechanization!</div>
+								<div class="agrimainbody">
+									<ul data-start="540" data-end="1020">
+										<li data-start="540" data-end="624">
+											<p data-start="542" data-end="624" style="color: #333333;">The use of modern
+												machinery and equipment
+												to aerate, mix, and condition the soil</p>
+										</li>
+										<li data-start="625" data-end="710">
+											<p data-start="627" data-end="710" style="color: #333333;">Methods for
+												integrating organic matter,
+												composts, or bio-amendments into the soil</p>
+										</li>
+										<li data-start="711" data-end="829">
+											<p data-start="713" data-end="829" style="color: #333333;">Before-and-after
+												visuals that illustrate
+												improvements in soil structure, moisture retention, and overall
+												fertility</p>
+										</li>
+										<li data-start="830" data-end="927">
+											<p data-start="832" data-end="927" style="color: #333333;">Interviews or
+												narration that explain the
+												scientific principles and benefits of the techniques</p>
+										</li>
+										<li data-start="928" data-end="1020">
+											<p data-start="930" data-end="1020" style="color: #333333;">Tips for farmers
+												on adoption,
+												maintenance, and scaling these practices in their own fields</p>
+										</li>
+									</ul>
+								</div>
+								<div class="agribodyfooter">
+									<p data-start="1022" data-end="1205" style="color: #333333;">Whether you’re a
+										progressive farmer,
+										agronomist, or stakeholder in sustainable agriculture, this video is a powerful
+										visual guide to how mechanization and soil health go hand-in-hand.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class=" elementor-element elementor-element-995188f e-flex e-con-boxed e-con e-parent"
 					data-id="995188f" data-element_type="container">
 					<div class="e-con-inner">
 						<div class="elementor-element elementor-element-a84bc66 elementor-invisible elementor-widget elementor-widget-heading"
@@ -7181,33 +7385,40 @@
 							<div class="elementor-element elementor-element-961d4f5 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
 								data-id="961d4f5" data-element_type="widget" data-widget_type="text-editor.default">
 								<div class="elementor-widget-container">
-									<p data-start="397" data-end="538">This video showcases a farm mechanization
+									<p data-start="397" data-end="538" style="color: #333333;">This video showcases a
+										farm mechanization
 										approach aimed at revitalizing soil health and boosting agricultural
 										productivity. It demonstrates:</p>
 									<ul data-start="540" data-end="1020">
 										<li data-start="540" data-end="624">
-											<p data-start="542" data-end="624">The use of modern machinery and equipment
+											<p data-start="542" data-end="624" style="color: #333333;">The use of modern
+												machinery and equipment
 												to aerate, mix, and condition the soil</p>
 										</li>
 										<li data-start="625" data-end="710">
-											<p data-start="627" data-end="710">Methods for integrating organic matter,
+											<p data-start="627" data-end="710" style="color: #333333;">Methods for
+												integrating organic matter,
 												composts, or bio-amendments into the soil</p>
 										</li>
 										<li data-start="711" data-end="829">
-											<p data-start="713" data-end="829">Before-and-after visuals that illustrate
+											<p data-start="713" data-end="829" style="color: #333333;">Before-and-after
+												visuals that illustrate
 												improvements in soil structure, moisture retention, and overall
 												fertility</p>
 										</li>
 										<li data-start="830" data-end="927">
-											<p data-start="832" data-end="927">Interviews or narration that explain the
+											<p data-start="832" data-end="927" style="color: #333333;">Interviews or
+												narration that explain the
 												scientific principles and benefits of the techniques</p>
 										</li>
 										<li data-start="928" data-end="1020">
-											<p data-start="930" data-end="1020">Tips for farmers on adoption,
+											<p data-start="930" data-end="1020" style="color: #333333;">Tips for farmers
+												on adoption,
 												maintenance, and scaling these practices in their own fields</p>
 										</li>
 									</ul>
-									<p data-start="1022" data-end="1205">Whether you’re a progressive farmer,
+									<p data-start="1022" data-end="1205" style="color: #333333;">Whether you’re a
+										progressive farmer,
 										agronomist, or stakeholder in sustainable agriculture, this video is a powerful
 										visual guide to how mechanization and soil health go hand-in-hand.</p>
 								</div>
