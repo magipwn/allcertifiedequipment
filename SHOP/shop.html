@@ -4220,6 +4220,46 @@
 
 		/*# sourceURL=nfd-wonder-blocks-utilities-inline-css */
 	</style>
+	<style>
+		/* Force base text color to black */
+		body,
+		.wp-site-blocks {
+			color: #000 !important
+		}
+
+		/* Position navbar-header left and navbar-navigation right */
+		header .bottom-header .navbar-default {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start
+		}
+
+		header .navbar-header {
+			flex: 0 0 auto;
+			display: flex;
+			align-items: center
+		}
+
+		header .navbar-navigation {
+			flex: 1 0 auto;
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end
+		}
+
+		/* Match slider container to image dimensions (2001x625) */
+		.header_rev_slider_container {
+			aspect-ratio: 2001/625;
+			width: 100%;
+			max-width: 100%;
+			overflow: hidden
+		}
+
+		.header_rev_slider_container rs-module-wrap {
+			aspect-ratio: 2001/625 !important
+		}
+	</style>
 	<link rel='stylesheet' id='brands-styles-css'
 		href='https://www.allcertifiedequipment.com/wp-content/plugins/woocommerce/assets/css/brands.css?ver=10.4.3'
 		type='text/css' media='all' />

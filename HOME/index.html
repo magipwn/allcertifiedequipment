@@ -212,6 +212,46 @@
 			transition: opacity .7s ease-out;
 		}
 	</style>
+	<style>
+		/* Force base text color to black */
+		body,
+		.wp-site-blocks {
+			color: #000 !important
+		}
+
+		/* Position navbar-header left and navbar-navigation right */
+		header .bottom-header .navbar-default {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start
+		}
+
+		header .navbar-header {
+			flex: 0 0 auto;
+			display: flex;
+			align-items: center
+		}
+
+		header .navbar-navigation {
+			flex: 1 0 auto;
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end
+		}
+
+		/* Match slider container to image dimensions (2001x625) */
+		.header_rev_slider_container {
+			aspect-ratio: 2001/625;
+			width: 100%;
+			max-width: 100%;
+			overflow: hidden
+		}
+
+		.header_rev_slider_container rs-module-wrap {
+			aspect-ratio: 2001/625 !important
+		}
+	</style>
 	<!--SYLES FOR ACETC JCB DIRECTORY-->
 
 	<style>
@@ -5506,7 +5546,7 @@
 			color: #000;
 			letter-spacing: -2px;
 			margin: 0;
-			text-align: left !important;
+			text-align: center !important;
 			line-height: 30px
 		}
 
@@ -6291,166 +6331,152 @@
 			style="visibility:hidden;background:#E9E9E9;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 			<rs-module id="rev_slider_2_1" data-version="6.7.40">
 				<rs-slides style="overflow: hidden; position: absolute;">
-					<rs-slide style="position: absolute;" data-key="rs-39" data-title="Slide"
-						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF1650E-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+					<rs-slide style="position: absolute;" data-key="rs-39" data-title="Slide 1"
+						data-thumb="/HOME/IMAGES/header-img-1.png" data-anim="f:nodelay;" data-in="o:0;"
+						data-out="o:0;">
 						<img fetchpriority="high"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF1650E &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF1650E-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-1.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-61" data-title="Slide"
-						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Backhoe-Loaders-100x50.webp"
+						data-thumb="/HOME/IMAGES/header-img-2.png" data-anim="f:nodelay;" data-in="o:0;"
 						data-link="//jcb.allcertifiedequipment.com/product/2dx/" data-tag="l" data-target="_self"
-						data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Backhoe Loaders" width="2000" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Backhoe-Loaders.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-2.png"
 							data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-4" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/03/maxcanecover-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="maxcanecover" width="1400" height="400"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/03/maxcanecover.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-3.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-5" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Telescopic-Handlers-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/telehandler/"
-						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-tag="l" data-target="_self" data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Telescopic Handlers" width="2000" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Telescopic-Handlers.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-4.png"
 							data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-6" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5708-X-KUHN-PLANTER-3M-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF5708 X KUHN PLANTER 3M &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
 							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5708-X-KUHN-PLANTER-3M-BANNER-WEBSITE-2001-X-625PX.webp"
-							data-bg="p:center top;" data-no-retina>
+							data-lazyload="/HOME/IMAGES/header-img-5.png" data-bg="p:center top;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-7" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/BANNER-WEBSITE-2001-X-625PX22-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="BANNER WEBSITE 2001 X 625PX22" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/BANNER-WEBSITE-2001-X-625PX22.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-6.png"
 							data-bg="p:right center;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-8" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/TAJIMA-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="TAJIMA &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/TAJIMA-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-7.png"
 							data-bg="p:left bottom;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-27" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF2600 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-8.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-28" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/FIELDKING-TRAILER-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="FIELDKING TRAILER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
 							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/FIELDKING-TRAILER-BANNER-WEBSITE-2001-X-625PX.webp"
-							data-no-retina>
+							data-lazyload="/HOME/IMAGES/header-img-9.png" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-50" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Tracked-Excavators-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/tracked-excavators/"
-						data-tag="l" data-target="_self" data-seoz="front" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-tag="l" data-target="_self" data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Tracked Excavators" width="2000" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Tracked-Excavators.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-10.png"
 							data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-51" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/CMT-DISC-PLOW-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="CMT DISC PLOW &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/CMT-DISC-PLOW-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-11.png"
 							data-bg="p:center bottom;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-52" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600A-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF2600A &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF2600A-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-12.png"
 							data-bg="p:left bottom;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-53" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5700-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF5700 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/MF5700-BANNER-WEBSITE-2001-X-625PX.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-13.png"
 							data-bg="p:center bottom;" data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-56" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Skid-Steer-Loaders-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/skid-steer-loader/"
-						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;"
-						data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;" data-in="o:0;"
+						data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Skid Steer Loaders" width="2000" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload"
-							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Skid-Steer-Loaders.webp"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-14.png"
 							data-no-retina>
 					</rs-slide>
 
 					<rs-slide style="position: absolute;" data-key="rs-57" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/ATISCO-PLANTER-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="ATISCO PLANTER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
@@ -6461,7 +6487,7 @@
 
 					<rs-slide style="position: absolute;" data-key="rs-58" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/SIP-ROTAVATOR-1-BANNER-WEBSITE-2001-X-625PX-100x50.webp"
-						data-anim="f:nodelay;" data-in="prst:rndany;x:(100%);m:true;col:5;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="SIP ROTAVATOR 1 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
@@ -6472,7 +6498,7 @@
 
 					<rs-slide style="position: absolute;" data-key="rs-59" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/revslider/video-media/DJI-AGRAS-T50-Ready-Steady-Go_59-100x50.jpeg"
-						data-anim="f:nodelay;" data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="DJI-AGRAS-T50-Ready-Steady-Go_59.jpeg" width="2560" height="1440"
@@ -6486,8 +6512,8 @@
 					<rs-slide style="position: absolute;" data-key="rs-60" data-title="Slide"
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Mini-Excavators-100x50.webp"
 						data-link="//jcb.allcertifiedequipment.com/product-category/new-machines/compact-excavators-mini-midi/"
-						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;"
-						data-in="prst:rndany;o:0;" data-out="o:0;">
+						data-tag="l" data-target="_self" data-seoz="front" data-anim="f:nodelay;" data-in="o:0;"
+						data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="Mini Excavators" width="2000" height="625"
@@ -6506,8 +6532,8 @@
 	<section class="message-wrap">
 		<div class="container">
 			<div class="row">
-				<h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 xs-padding-left-15">Exclusive Distributor of High
-					Quality Farm Equipment from Land Preparation to <span class="alternate-font">post harvest</span>
+				<h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 xs-padding-left-15"> Exclusive Distributor of High
+					Quality Farm Equipment from Land Preparation to Post Harvest
 				</h2>
 			</div>
 		</div>
