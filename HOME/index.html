@@ -29,6 +29,334 @@
 		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
 		type='text/css' media='all' />
 
+	<style>
+        :root {
+            --samsung-blue: #034EA2;
+            --electric-lime: #A4FF20;
+            --deep-black: #0a0a0a;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border-glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-black); /* Dark mode feels more premium/tech */
+            margin: 0;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* --- Animated Background --- */
+        .hero {
+            position: relative;
+            padding: 150px 20px;
+            text-align: center;
+            background: radial-gradient(circle at 10% 20%, rgba(3, 78, 162, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(164, 255, 32, 0.1) 0%, transparent 40%);
+
+			border-top-right-radius: 80px;
+			border-top-left-radius: 80px;
+			border-bottom-left-radius: 80px; 
+			border-bottom-right-radius: 80px;
+			overflow: hidden;
+        }
+
+        .badge {
+            background: linear-gradient(90deg, var(--electric-lime), #80ff00);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 6.5rem);
+            font-weight: 900;
+            line-height: 0.9;
+            margin: 0 0 30px;
+            letter-spacing: -4px;
+            background: linear-gradient(to bottom, #093318 50%, rgba(29, 218, 161, 0.4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #86868b;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* --- Modern Samsung Glass Grid --- */
+        .grid-container {
+            max-width: 1400px;
+            margin: 0 auto 100px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 40px;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 400px;
+        }
+
+        /* Asymmetric Layouts for "Fun" factor */
+        .card-large { grid-column: span 7; }
+        .card-medium { grid-column: span 5; }
+        .card-full { grid-column: span 12; min-height: 500px; }
+
+        .card:hover {
+            border-color: var(--electric-lime);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 2.2rem;
+            margin: 0 0 10px;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #000000;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        /* --- Premium Pill Buttons --- */
+        .pill-btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.4s ease;
+            width: fit-content;
+        }
+
+        .primary-btn {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--electric-lime);
+            transform: scale(1.05);
+        }
+
+        .secondary-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid rgba(255,255,255,0.3);
+            margin-left: 15px;
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--electric-lime);
+			transform: scale(1.05);
+        }
+
+        /* --- Image Backgrounds for Cards --- */
+        .card-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        .card:hover .card-bg {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        /* --- Footer Video Wrapper --- */
+        .video-reveal {
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            border-radius: 50px;
+            overflow: hidden;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+        }
+
+        video { width: 100%; display: block; }
+
+        @media (max-width: 1000px) {
+            .card-large, .card-medium { grid-column: span 12; }
+            h1 { font-size: 4rem; letter-spacing: -2px; }
+        }
+    </style>
+
+<style>
+.ace-product-showcase {
+    background: #f4f4f4; 
+    padding: 100px 5%;
+    font-family: 'SamsungOne', 'Inter', -apple-system, sans-serif;
+    overflow: hidden;
+}
+
+.ace-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.ace-text-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.ace-pre-title {
+    font-weight: 700;
+    color: #f3af1a; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.ace-main-title {
+    font-size: clamp(40px, 6vw, 80px); 
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.ace-description {
+    font-size: 18px;
+    color: #555;
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+/* Feature Pills (The "Tech" look) */
+.ace-feature-pills {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.ace-pill .pill-label {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ace-pill .pill-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Buttons */
+.ace-btn-black {
+    background: #000;
+    color: #fff;
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.ace-btn-black:hover {
+    background: #333;
+}
+
+.ace-btn-link {
+    margin-left: 25px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.ace-btn-link:hover {
+    border-bottom: 2px solid #000;
+}
+
+.ace-video-box {
+    flex: 1.5;
+    position: relative;
+    border-radius: 30px; 
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.video-responsive-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+    z-index: 2;
+    pointer-events: none; 
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .ace-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ace-description {
+        margin: 0 auto;
+    }
+    .ace-feature-pills {
+        justify-content: center;
+    }
+}
+</style>
+
 	<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
 		img:is([sizes=auto i], [sizes^="auto," i]) {
 			contain-intrinsic-size: 3000px 1500px
@@ -6583,208 +6911,46 @@
 						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-69d16ac e-flex e-con-boxed e-con e-parent"
-					data-id="69d16ac" data-element_type="container">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-dce9636 e-con-full e-flex e-con e-child"
-							data-id="dce9636" data-element_type="container"
-							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-element elementor-element-9f8e9c6 e-flex e-con-boxed e-con e-child"
-								data-id="9f8e9c6" data-element_type="container">
-								<div class="e-con-inner">
-									<div class="elementor-element elementor-element-08908e9 elementor-widget elementor-widget-heading"
-										data-id="08908e9" data-element_type="widget" data-widget_type="heading.default">
-										<div class="elementor-widget-container">
-											<h2 class="elementor-heading-title elementor-size-default">Agriculture
-												Modernization</h2>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-45993ba elementor-widget elementor-widget-heading"
-										data-id="45993ba" data-element_type="widget" data-widget_type="heading.default">
-										<div class="elementor-widget-container">
-											<p class="elementor-heading-title elementor-size-default">Specialized
-												Agriculture </p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-a056afd e-con-full e-flex e-con e-child"
-								data-id="a056afd" data-element_type="container">
-								<div class="elementor-element elementor-element-1bcec1f elementor-widget elementor-widget-text-editor"
-									data-id="1bcec1f" data-element_type="widget" data-widget_type="text-editor.default">
-									<div class="elementor-widget-container">
-										<p><strong>DJI Agriculture</strong> not only empowers agriculture professionals
-											with powerful equipment but also provides intelligent solutions that save
-											time and increase workflow, benefiting a wide range of customers from
-											farmers and growers to agricultural cooperation and service agencies.</p>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-406fcbf e-flex e-con-boxed e-con e-child"
-								data-id="406fcbf" data-element_type="container">
-								<div class="e-con-inner">
-									<div class="elementor-element elementor-element-c62ef33 e-con-full e-flex elementor-invisible e-con e-child"
-										data-id="c62ef33" data-element_type="container"
-										data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-										<div class="elementor-element elementor-element-96333e2 elementor-cta--layout-image-above elementor-cta--valign-top elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
-											data-id="96333e2" data-element_type="widget"
-											data-widget_type="call-to-action.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-cta">
-													<div class="elementor-cta__bg-wrapper">
-														<div class="elementor-cta__bg elementor-bg"
-															style="background-image: url(https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI2523243-scaled.webp?fit=2560%2C1707&#038;ssl=1);"
-															role="img" aria-label="DJI2523243"></div>
-														<div class="elementor-cta__bg-overlay"></div>
-													</div>
-													<div class="elementor-cta__content">
-
-														<h3
-															class="elementor-cta__title elementor-cta__content-item elementor-content-item">
-															DJI Agras T50 &amp; T25 </h3>
-
-														<div
-															class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															Spraying and spreading operations are frequent, intense, and
-															take place in complex environments. DJI AGRAS T25 &amp;T50
-															has passed hundreds of reliability tests and its main body
-															is durable to help ensure safe operation. </div>
-
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-bc53dfd elementor-align-center elementor-widget elementor-widget-button"
-											data-id="bc53dfd" data-element_type="widget"
-											data-widget_type="button.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-button-wrapper">
-													<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
-														href="https://www.allcertifiedequipment.com/product-category/drones/">
-														<span class="elementor-button-content-wrapper">
-															<span class="elementor-button-text">Read More</span>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-cc3089c e-con-full e-flex elementor-invisible e-con e-child"
-										data-id="cc3089c" data-element_type="container"
-										data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;200&quot;}">
-										<div class="elementor-element elementor-element-d6c9bd4 elementor-cta--layout-image-above elementor-cta--valign-middle elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
-											data-id="d6c9bd4" data-element_type="widget"
-											data-widget_type="call-to-action.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-cta">
-													<div class="elementor-cta__bg-wrapper">
-														<div class="elementor-cta__bg elementor-bg"
-															style="background-image: url(https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/4-T50KV-Fields-scaled.jpeg?fit=2560%2C1411&#038;ssl=1);"
-															role="img" aria-label="4-T50KV-Fields"></div>
-														<div class="elementor-cta__bg-overlay"></div>
-													</div>
-													<div class="elementor-cta__content">
-
-														<h3
-															class="elementor-cta__title elementor-cta__content-item elementor-content-item">
-															Grain Crops </h3>
-
-														<div
-															class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															Our solutions provide digital, informative, intelligent, and
-															precise field management for grain crops such as rice,
-															wheat, and corn. This empowers agricultural operators with
-															more convenient and efficient options, reduces operation
-															costs, improves crop quality, and increases yield rate.
-														</div>
-
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-0909122 elementor-align-center elementor-widget elementor-widget-button"
-											data-id="0909122" data-element_type="widget"
-											data-widget_type="button.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-button-wrapper">
-													<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
-														href="https://www.allcertifiedequipment.com/product/t50/">
-														<span class="elementor-button-content-wrapper">
-															<span class="elementor-button-text">Read More</span>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-f17ff85 e-con-full e-flex elementor-invisible e-con e-child"
-										data-id="f17ff85" data-element_type="container"
-										data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;300&quot;}">
-										<div class="elementor-element elementor-element-6f51e52 elementor-cta--layout-image-above elementor-cta--valign-middle elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
-											data-id="6f51e52" data-element_type="widget"
-											data-widget_type="call-to-action.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-cta">
-													<div class="elementor-cta__bg-wrapper">
-														<div class="elementor-cta__bg elementor-bg"
-															style="background-image: url(https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/1-T50KV-scaled.webp?fit=2560%2C1264&#038;ssl=1);"
-															role="img" aria-label="1-T50KV"></div>
-														<div class="elementor-cta__bg-overlay"></div>
-													</div>
-													<div class="elementor-cta__content">
-
-														<h3
-															class="elementor-cta__title elementor-cta__content-item elementor-content-item">
-															Commercial Crops </h3>
-
-														<div
-															class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															We also provide digital, informative, intelligent, and
-															precise management solutions for commercial crops such as
-															cotton, citrus trees, apple trees, and tea plants. As with
-															grain crops, agoperators will find these options more
-															convenient, inexpensive, and beneficial to crop quality and
-															yield rate. </div>
-
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-c980baa elementor-align-center elementor-widget elementor-widget-button"
-											data-id="c980baa" data-element_type="widget"
-											data-widget_type="button.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-button-wrapper">
-													<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
-														href="https://www.allcertifiedequipment.com/product/t25/">
-														<span class="elementor-button-content-wrapper">
-															<span class="elementor-button-text">Read More</span>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-461ffe0 e-con-full e-flex e-con e-child"
-								data-id="461ffe0" data-element_type="container">
-								<div class="elementor-element elementor-element-0f65e7f elementor-widget elementor-widget-video"
-									data-id="0f65e7f" data-element_type="widget"
-									data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;controls&quot;:&quot;yes&quot;}"
-									data-widget_type="video.default">
-									<div class="elementor-widget-container">
-										<div class="e-hosted-video elementor-wrapper elementor-open-inline">
-											<video class="elementor-video"
-												src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones-1.webm"
-												autoplay="" controls="" controlsList="nodownload"></video>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				<section class="hero">
+					<div class="badge">Enterprise Solution</div>
+					<h1>Earth. Optimized.</h1>
+					<p class="description">Redefining agricultural intelligence with the DJI Agras ecosystem. More power. Less waste. Complete precision.</p>
+					<div class="hero-actions">
+						<a href="#" class="pill-btn primary-btn">Pre-order T50</a>
+						<a href="#" class="pill-btn secondary-btn">Watch the Keynote</a>
 					</div>
-				</div>
+				</section>
+
+    <div class="grid-container">
+						<div class="card card-full">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI2523243-scaled.webp?fit=2560%2C1707&#038;ssl=1');"></div>
+							<h3>Intelligent Spraying</h3>
+							<p>Our dual-atomization system ensures every drop hits its target with surgical precision.</p>
+							<a href="#" class="pill-btn primary-btn">Explore Technology</a>
+						</div>
+
+						<div class="card card-large">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/4-T50KV-Fields-scaled.jpeg');"></div>
+							<h3>Grain Yield +20%</h3>
+							<p>Data-driven spreading for rice and corn.</p>
+							<a href="#" class="pill-btn primary-btn">See Results</a>
+						</div>
+
+						<div class="card card-medium">
+							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/1-T50KV-scaled.webp');"></div>
+							<h3>Orchard Expert</h3>
+							<p>Navigating complex terrain with ease.</p>
+							<a href="#" class="pill-btn primary-btn">Learn More</a>
+						</div>
+    </div>
+
+					<div class="video-reveal">
+						<video autoplay muted loop controls>
+							<source src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones-1.webm" type="video/webm">
+						</video>
+					</div>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				<div class="elementor-element elementor-element-7d5f2b9 e-flex e-con-boxed e-con e-parent"
 					data-id="7d5f2b9" data-element_type="container">
 					<div class="e-con-inner">
