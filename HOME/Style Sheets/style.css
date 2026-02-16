@@ -1386,7 +1386,7 @@ table.right_table {
     color: #000;
     letter-spacing: -2px;
     margin: 0;
-    text-align: left !important;
+    text-align: center !important;
     line-height: 30px
 }
 
