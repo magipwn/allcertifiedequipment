@@ -30,332 +30,354 @@
 		type='text/css' media='all' />
 
 	<style>
-        :root {
-            --samsung-blue: #034EA2;
-            --electric-lime: #A4FF20;
-            --deep-black: #0a0a0a;
-            --glass: rgba(255, 255, 255, 0.03);
-            --border-glass: rgba(255, 255, 255, 0.1);
-        }
+		:root {
+			--samsung-blue: #034EA2;
+			--electric-lime: #A4FF20;
+			--deep-black: #0a0a0a;
+			--glass: rgba(255, 255, 255, 0.03);
+			--border-glass: rgba(255, 255, 255, 0.1);
+		}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--deep-black); /* Dark mode feels more premium/tech */
-            margin: 0;
-            color: #ffffff;
-            overflow-x: hidden;
-        }
+		body {
+			font-family: 'Inter', sans-serif;
+			background-color: var(--deep-black);
+			/* Dark mode feels more premium/tech */
+			margin: 0;
+			color: #ffffff;
+			overflow-x: hidden;
+		}
 
-        /* --- Animated Background --- */
-        .hero {
-            position: relative;
-            padding: 150px 20px;
-            text-align: center;
-            background: radial-gradient(circle at 10% 20%, rgba(3, 78, 162, 0.15) 0%, transparent 40%),
-                        radial-gradient(circle at 90% 80%, rgba(164, 255, 32, 0.1) 0%, transparent 40%);
-
-			border-top-right-radius: 80px;
-			border-top-left-radius: 80px;
-			border-bottom-left-radius: 80px; 
-			border-bottom-right-radius: 80px;
+		/* --- Animated Background --- */
+		.hero {
+			position: relative;
+			padding: 150px 20px;
+			text-align: center;
+			background: radial-gradient(circle at 10% 20%, rgba(3, 78, 162, 0.15) 0%, transparent 40%),
+				radial-gradient(circle at 90% 80%, rgba(164, 255, 32, 0.1) 0%, transparent 40%);
 			overflow: hidden;
-        }
+			box-shadow: #00000097 0px 0px 20px, #02473087 0px 0px 20px;
+		}
 
-        .badge {
-            background: linear-gradient(90deg, var(--electric-lime), #80ff00);
-            color: #000;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.7rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            display: inline-block;
-        }
+		.badge {
+			background: linear-gradient(90deg, var(--electric-lime), #80ff00);
+			color: #000;
+			padding: 8px 20px;
+			border-radius: 100px;
+			font-size: 0.7rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 30px;
+			display: inline-block;
+		}
 
-        h1 {
-            font-size: clamp(3rem, 10vw, 6.5rem);
-            font-weight: 900;
-            line-height: 0.9;
-            margin: 0 0 30px;
-            letter-spacing: -4px;
-            background: linear-gradient(to bottom, #093318 50%, rgba(29, 218, 161, 0.4));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+		h1 {
+			font-size: clamp(3rem, 10vw, 6.5rem);
+			font-weight: 900;
+			line-height: 0.9;
+			margin: 0 0 30px;
+			letter-spacing: -4px;
+			background: linear-gradient(to bottom, #093318 50%, rgba(29, 218, 161, 0.4));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 
-        .description {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 50px;
-            color: #86868b;
-            font-weight: 300;
-            line-height: 1.5;
-        }
+		.description {
+			font-size: 1.3rem;
+			max-width: 700px;
+			margin: 0 auto 50px;
+			color: #86868b;
+			font-weight: 300;
+			line-height: 1.5;
+		}
 
-        /* --- Modern Samsung Glass Grid --- */
-        .grid-container {
-            max-width: 1400px;
-            margin: 0 auto 100px;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 25px;
-            padding: 0 20px;
-        }
+		/* --- Modern Samsung Glass Grid --- */
+		.grid-container {
+			max-width: 1400px;
+			margin: 0 auto 100px;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			gap: 25px;
+			padding: 0 20px;
+		}
 
-        .card {
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-glass);
-            border-radius: 40px;
-            padding: 50px;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            min-height: 400px;
-        }
+		.card {
+			background: var(--glass);
+			backdrop-filter: blur(20px);
+			border: 1px solid var(--border-glass);
+			border-radius: 40px;
+			padding: 50px;
+			position: relative;
+			overflow: hidden;
+			transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			min-height: 400px;
+		}
 
-        /* Asymmetric Layouts for "Fun" factor */
-        .card-large { grid-column: span 7; }
-        .card-medium { grid-column: span 5; }
-        .card-full { grid-column: span 12; min-height: 500px; }
+		/* Asymmetric Layouts for "Fun" factor */
+		.card-large {
+			grid-column: span 7;
+		}
 
-        .card:hover {
-            border-color: var(--electric-lime);
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-10px);
-        }
+		.card-medium {
+			grid-column: span 5;
+		}
 
-        .card h3 {
-            font-size: 2.2rem;
-            margin: 0 0 10px;
-            font-weight: 700;
-        }
+		.card-full {
+			grid-column: span 12;
+			min-height: 500px;
+		}
 
-        .card p {
-            color: #000000;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            max-width: 400px;
-        }
+		.card:hover {
+			border-color: var(--electric-lime);
+			background: rgba(255, 255, 255, 0.05);
+			transform: translateY(-10px);
+		}
 
-        /* --- Premium Pill Buttons --- */
-        .pill-btn {
-            display: inline-block;
-            padding: 16px 40px;
-            border-radius: 100px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: all 0.4s ease;
-            width: fit-content;
-        }
+		.card h3 {
+			font-size: 2.2rem;
+			margin: 0 0 10px;
+			font-weight: 700;
+		}
 
-        .primary-btn {
-            background-color: #ffffff;
-            color: #000000;
-        }
+		.card p {
+			color: #000000;
+			font-size: 1.1rem;
+			margin-bottom: 30px;
+			max-width: 400px;
+		}
 
-        .primary-btn:hover {
-            background-color: var(--electric-lime);
-            transform: scale(1.05);
-        }
+		/* --- Premium Pill Buttons --- */
+		.pill-btn {
+			display: inline-block;
+			padding: 16px 40px;
+			border-radius: 100px;
+			font-weight: 600;
+			text-decoration: none;
+			font-size: 1rem;
+			transition: all 0.4s ease;
+			width: fit-content;
+		}
 
-        .secondary-btn {
-            background-color: #ffffff;
-            color: #000000;
-            border: 1px solid rgba(255,255,255,0.3);
-            margin-left: 15px;
-        }
+		.primary-btn {
+			background-color: #ffffff;
+			color: #000000;
+		}
 
-        .secondary-btn:hover {
-            background-color: var(--electric-lime);
+		.primary-btn:hover {
+			background-color: var(--electric-lime);
 			transform: scale(1.05);
-        }
+		}
 
-        /* --- Image Backgrounds for Cards --- */
-        .card-bg {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            opacity: 0.4;
-            transition: opacity 0.6s, transform 0.6s;
-        }
+		.secondary-btn {
+			background-color: #ffffff;
+			color: #000000;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			margin-left: 15px;
+		}
 
-        .card:hover .card-bg {
-            opacity: 0.7;
-            transform: scale(1.1);
-        }
+		.secondary-btn:hover {
+			background-color: var(--electric-lime);
+			transform: scale(1.05);
+		}
 
-        /* --- Footer Video Wrapper --- */
-        .video-reveal {
-            max-width: 1200px;
-            margin: 0 auto 100px;
-            border-radius: 50px;
-            overflow: hidden;
-            border: 1px solid var(--border-glass);
-            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
-        }
+		/* --- Image Backgrounds for Cards --- */
+		.card-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-size: cover;
+			background-position: center;
+			opacity: 0.4;
+			transition: opacity 0.6s, transform 0.6s;
+		}
 
-        video { width: 100%; display: block; }
+		.card:hover .card-bg {
+			opacity: 0.7;
+			transform: scale(1.1);
+		}
 
-        @media (max-width: 1000px) {
-            .card-large, .card-medium { grid-column: span 12; }
-            h1 { font-size: 4rem; letter-spacing: -2px; }
-        }
-    </style>
+		/* --- Footer Video Wrapper --- */
+		.video-reveal {
+			max-width: 1200px;
+			margin: 0 auto 100px;
+			border-radius: 50px;
+			overflow: hidden;
+			border: 1px solid var(--border-glass);
+			box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+		}
 
-<style>
-.ace-product-showcase {
-    background: #f4f4f4; 
-    padding: 100px 5%;
-    font-family: 'SamsungOne', 'Inter', -apple-system, sans-serif;
-    overflow: hidden;
-}
+		video {
+			width: 100%;
+			display: block;
+		}
 
-.ace-content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 60px;
-}
+		@media (max-width: 1000px) {
 
-.ace-text-content {
-    flex: 1;
-    z-index: 2;
-}
+			.card-large,
+			.card-medium {
+				grid-column: span 12;
+			}
 
-.ace-pre-title {
-    font-weight: 700;
-    color: #f3af1a; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
+			h1 {
+				font-size: 4rem;
+				letter-spacing: -2px;
+			}
+		}
+	</style>
 
-.ace-main-title {
-    font-size: clamp(40px, 6vw, 80px); 
-    font-weight: 800;
-    line-height: 1;
-    color: #000;
-    margin: 0 0 20px 0;
-}
+	<style>
+		.ace-product-showcase {
+			background: #f4f4f4;
+			padding: 100px 5%;
+			font-family: 'SamsungOne', 'Inter', -apple-system, sans-serif;
+			overflow: hidden;
+		}
 
-.ace-description {
-    font-size: 18px;
-    color: #555;
-    max-width: 450px;
-    line-height: 1.6;
-}
+		.ace-content-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 1400px;
+			margin: 0 auto;
+			gap: 60px;
+		}
 
-/* Feature Pills (The "Tech" look) */
-.ace-feature-pills {
-    display: flex;
-    gap: 40px;
-    margin: 40px 0;
-}
+		.ace-text-content {
+			flex: 1;
+			z-index: 2;
+		}
 
-.ace-pill .pill-label {
-    display: block;
-    font-size: 12px;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: 600;
-}
+		.ace-pre-title {
+			font-weight: 700;
+			color: #f3af1a;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
 
-.ace-pill .pill-value {
-    font-size: 28px;
-    font-weight: 700;
-    color: #000;
-}
+		.ace-main-title {
+			font-size: clamp(40px, 6vw, 80px);
+			font-weight: 800;
+			line-height: 1;
+			color: #000;
+			margin: 0 0 20px 0;
+		}
 
-/* Buttons */
-.ace-btn-black {
-    background: #000;
-    color: #fff;
-    padding: 14px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-    display: inline-block;
-}
+		.ace-description {
+			font-size: 18px;
+			color: #555;
+			max-width: 450px;
+			line-height: 1.6;
+		}
 
-.ace-btn-black:hover {
-    background: #333;
-}
+		/* Feature Pills (The "Tech" look) */
+		.ace-feature-pills {
+			display: flex;
+			gap: 40px;
+			margin: 40px 0;
+		}
 
-.ace-btn-link {
-    margin-left: 25px;
-    color: #000;
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-}
+		.ace-pill .pill-label {
+			display: block;
+			font-size: 12px;
+			color: #888;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
 
-.ace-btn-link:hover {
-    border-bottom: 2px solid #000;
-}
+		.ace-pill .pill-value {
+			font-size: 28px;
+			font-weight: 700;
+			color: #000;
+		}
 
-.ace-video-box {
-    flex: 1.5;
-    position: relative;
-    border-radius: 30px; 
-    overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
-}
+		/* Buttons */
+		.ace-btn-black {
+			background: #000;
+			color: #fff;
+			padding: 14px 35px;
+			border-radius: 50px;
+			text-decoration: none;
+			font-weight: 600;
+			transition: 0.3s;
+			display: inline-block;
+		}
 
-.video-responsive-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-}
+		.ace-btn-black:hover {
+			background: #333;
+		}
 
-.video-responsive-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+		.ace-btn-link {
+			margin-left: 25px;
+			color: #000;
+			font-weight: 700;
+			text-decoration: none;
+			border-bottom: 2px solid transparent;
+		}
 
-.image-gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
-    z-index: 2;
-    pointer-events: none; 
-}
+		.ace-btn-link:hover {
+			border-bottom: 2px solid #000;
+		}
+
+		.ace-video-box {
+			flex: 1.5;
+			position: relative;
+			border-radius: 30px;
+			overflow: hidden;
+			box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+		}
+
+		.video-responsive-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-responsive-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.image-gradient-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+			z-index: 2;
+			pointer-events: none;
+		}
 
 
-/* Mobile Responsive */
-@media (max-width: 991px) {
-    .ace-content-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-    .ace-description {
-        margin: 0 auto;
-    }
-    .ace-feature-pills {
-        justify-content: center;
-    }
-}
-</style>
+		/* Mobile Responsive */
+		@media (max-width: 991px) {
+			.ace-content-wrapper {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.ace-description {
+				margin: 0 auto;
+			}
+
+			.ace-feature-pills {
+				justify-content: center;
+			}
+		}
+	</style>
 
 	<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
 		img:is([sizes=auto i], [sizes^="auto," i]) {
@@ -585,11 +607,10 @@
 	<style>
 		.directory-container {
 			position: relative;
-			width: 100%;
 			height: 400px;
 			border-radius: 10px;
 			overflow: hidden;
-			margin-top: 50px;
+			margin: 0px 150px;
 
 			display: flex;
 			flex-direction: row;
@@ -6123,7 +6144,7 @@
 		href="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2021/01/cropped-cropped-ACETC-Logo-Badge.png?fit=180%2C180&#038;ssl=1" />
 	<meta name="msapplication-TileImage"
 		content="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2021/01/cropped-cropped-ACETC-Logo-Badge.png?fit=270%2C270&#038;ssl=1" />
-	<script data-jetpack-boost="ignore">function setREVStartSize(e) {
+	<script data-jetpack-boost="ignore"> function setREVStartSize(e) {
 			//window.requestAnimationFrame(function() {
 			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
 			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
@@ -6170,8 +6191,9 @@
 			} catch (e) {
 				console.log("Failure at Presize of Slider:" + e)
 			}
-			//});
-		}</script>
+		}
+	</script>
+
 	<style type="text/css" id="wp-custom-css">
 		.woocommerce .star-rating span {
 			overflow: hidden;
@@ -6203,6 +6225,8 @@
 			--accent-3: #379f8a;
 			--glass: rgba(255, 255, 255, 0.03);
 			--border-glass: rgba(255, 255, 255, 0.1);
+			--deep-black: #020c1b;
+			--electric-lime: #b6ff00;
 		}
 
 		p {
@@ -6280,7 +6304,7 @@
 		/* --- Modern Samsung Glass Grid --- */
 		.grid-container {
 			max-width: 1400px;
-			margin: 0 auto 100px;
+			margin: 0 auto 30px;
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
 			gap: 25px;
@@ -6399,7 +6423,7 @@
 
 		/* --- Footer Video Wrapper --- */
 		.video-reveal {
-			max-width: 1200px;
+			max-width: 1370px;
 			margin: 0 auto 100px;
 			border-radius: 50px;
 			overflow: hidden;
@@ -6688,7 +6712,7 @@
 						<img fetchpriority="high"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
 							alt="" title="MF1650E &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
-							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-1.png"
+							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/JCB.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
 
@@ -6893,6 +6917,7 @@
 
 	<section class="content">
 
+		<br>
 
 		<div class="container">
 			<div data-elementor-type="wp-page" data-elementor-id="22438" class="elementor elementor-22438"
@@ -6934,46 +6959,59 @@
 						</div>
 					</div>
 				</div>
-				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+				<br>
+
 				<section class="hero">
-					<div class="badge">Enterprise Solution</div>
+					<div class="badge">The ACETC Solution</div>
 					<h1>Earth. Optimized.</h1>
-					<p class="description">Redefining agricultural intelligence with the DJI Agras ecosystem. More power. Less waste. Complete precision.</p>
+					<p class="description">Redefining agricultural intelligence with the DJI Agras ecosystem. More
+						power. Less waste. Complete precision.</p>
 					<div class="hero-actions">
 						<a href="#" class="pill-btn primary-btn">Pre-order T50</a>
 						<a href="#" class="pill-btn secondary-btn">Watch the Keynote</a>
 					</div>
 				</section>
 
-    <div class="grid-container">
-						<div class="card card-full">
-							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI2523243-scaled.webp?fit=2560%2C1707&#038;ssl=1');"></div>
-							<h3>Intelligent Spraying</h3>
-							<p>Our dual-atomization system ensures every drop hits its target with surgical precision.</p>
-							<a href="#" class="pill-btn primary-btn">Explore Technology</a>
-						</div>
+				<br>
+				<br>
 
-						<div class="card card-large">
-							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/4-T50KV-Fields-scaled.jpeg');"></div>
-							<h3>Grain Yield +20%</h3>
-							<p>Data-driven spreading for rice and corn.</p>
-							<a href="#" class="pill-btn primary-btn">See Results</a>
+				<div class="grid-container">
+					<div class="card card-full">
+						<div class="card-bg"
+							style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI2523243-scaled.webp?fit=2560%2C1707&#038;ssl=1');">
 						</div>
-
-						<div class="card card-medium">
-							<div class="card-bg" style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/1-T50KV-scaled.webp');"></div>
-							<h3>Orchard Expert</h3>
-							<p>Navigating complex terrain with ease.</p>
-							<a href="#" class="pill-btn primary-btn">Learn More</a>
-						</div>
-    </div>
-
-					<div class="video-reveal">
-						<video autoplay muted loop controls>
-							<source src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones-1.webm" type="video/webm">
-						</video>
+						<h3>Intelligent Spraying</h3>
+						<p>Our dual-atomization system ensures every drop hits its target with surgical precision.</p>
+						<a href="#" class="pill-btn primary-btn">Explore Technology</a>
 					</div>
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					<div class="card card-large">
+						<div class="card-bg"
+							style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/4-T50KV-Fields-scaled.jpeg');">
+						</div>
+						<h3>Grain Yield +20%</h3>
+						<p>Data-driven spreading for rice and corn.</p>
+						<a href="#" class="pill-btn primary-btn">See Results</a>
+					</div>
+
+					<div class="card card-medium">
+						<div class="card-bg"
+							style="background-image: url('https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/10/1-T50KV-scaled.webp');">
+						</div>
+						<h3>Orchard Expert</h3>
+						<p>Navigating complex terrain with ease.</p>
+						<a href="#" class="pill-btn primary-btn">Learn More</a>
+					</div>
+				</div>
+
+				<div class="video-reveal">
+					<video autoplay muted loop controls>
+						<source
+							src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/10/DJI-AGRAS-T50-Ready-Steady-Go.-DJI-Agricultural-Drones-1.webm"
+							type="video/webm">
+					</video>
+				</div>
 				<div class="elementor-element elementor-element-7d5f2b9 e-flex e-con-boxed e-con e-parent"
 					data-id="7d5f2b9" data-element_type="container">
 					<div class="e-con-inner">
