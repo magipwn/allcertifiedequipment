@@ -6468,18 +6468,34 @@
 			background-color: #111111 !important;    
 			color: #ffffff !important;               
 			border-color: #111111 !important;                 
-			box-shadow: 0 4px 10px rgba(0,0,0,0.2);  
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 		}
+
+		.elementor-element-a4a555b .swiper-pagination {
+			top: -20px !important;
+			bottom: unset !important;
+			}
 	</style>
 
 	<style>
 		.products.elementor-grid .product {
-		display: flex !important;
-		flex-direction: column !important;
+		position: relative !important;
+		padding-bottom: 80px !important;
 		}
 
-		.products.elementor-grid .product .woocommerce-title-price-area {
-		flex: 1 !important;
+		.products.elementor-grid .product > div[style*="margin-bottom"] {
+		position: absolute !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		margin-bottom: 0 !important;
+		}
+
+		/* Force slide 1's unique nested containers to full height */
+		.elementor-element-9adc988 .woocommerce,
+		.elementor-element-9adc988 .products,
+		.elementor-element-9adc988 .product {
+		height: 100% !important;
 		}
 	</style>
 
@@ -7185,7 +7201,7 @@
 								data-widget_type="nested-carousel.default">
 								<div class="elementor-widget-container">
 									<div class="e-n-carousel swiper" role="region" aria-roledescription="carousel"
-										aria-label="Tractor Carousel" dir="rtl">
+										aria-label="Tractor Carousel">
 										<div class="swiper-wrapper" aria-live="off">
 											<div class="swiper-slide" data-slide="1" role="group"
 												aria-roledescription="slide" aria-label="1 of 5">
