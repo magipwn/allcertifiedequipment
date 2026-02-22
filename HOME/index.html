@@ -426,7 +426,7 @@
 	<style>
 		.rpspmf {
 			position: relative;
-			width: 100%;
+			width: 80%;
 			height: 500px;
 			display: flex;
 			flex-direction: row;
@@ -435,7 +435,8 @@
 			border-radius: 50px;
 			gap: 30px;
 			font-family: 'Montserrat';
-			}
+		}
+
 		.rpspmf .left {
 			width: 45%;
 			height: 100%;
@@ -446,18 +447,19 @@
 			flex-direction: column;
 
 		}
-		.rpspmf .left .center{
+
+		.rpspmf .left .center {
 			width: 100%;
 			height: 90%;
 			display: flex;
 			flex-direction: column;
 			border-radius: 20px;
 			padding: 20px;
-			gap: 10px; 
+			gap: 10px;
 			transition: all 0.5s ease;
 		}
 
-		.rpspmf .left .center .head{
+		.rpspmf .left .center .head {
 
 			line-height: 35px;
 			height: 40%;
@@ -471,7 +473,8 @@
 			padding: 15px;
 			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
 		}
-		.rpspmf .left .center .desc{
+
+		.rpspmf .left .center .desc {
 			font-size: 14px;
 			color: #000000;
 			text-align: justify;
@@ -479,13 +482,13 @@
 			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
 			padding: 15px;
 			border-radius: 15px;
-			
+
 		}
 
-		.rpspmf .left .center:hover{
+		.rpspmf .left .center:hover {
 			transform: scale(1.05);
 		}
-		
+
 		.rpspmf .right {
 			width: 45%;
 			height: 100%;
@@ -494,6 +497,7 @@
 			justify-content: center;
 			align-items: center;
 		}
+
 		.rpspmf .right .center {
 			width: 100%;
 			height: 80%;
@@ -505,54 +509,97 @@
 			border-radius: 20px;
 			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.233);
 		}
-		.rpspmf .right .center .slides{
-			width: 700%; /* 7 images */
+
+		.rpspmf .right .center .slides {
+			width: 700%;
+			/* 7 images */
 			height: 100%;
 			display: flex;
 			animation: slideShow 21s infinite;
 			animation-timing-function: ease-in-out;
-			
+
 		}
 
-		.rpspmf .right .center .slides img{
+		.rpspmf .right .center .slides img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			display: block;
-			flex-shrink: 0; 
+			flex-shrink: 0;
 		}
 
-		@keyframes slideShow{
-		0%   { transform: translateX(0%); }
-		14%  { transform: translateX(0%); }
+		@keyframes slideShow {
+			0% {
+				transform: translateX(0%);
+			}
 
-		18%  { transform: translateX(-100%); }
-		28%  { transform: translateX(-100%); }
+			14% {
+				transform: translateX(0%);
+			}
 
-		32%  { transform: translateX(-200%); }
-		42%  { transform: translateX(-200%); }
+			18% {
+				transform: translateX(-100%);
+			}
 
-		46%  { transform: translateX(-300%); }
-		56%  { transform: translateX(-300%); }
+			28% {
+				transform: translateX(-100%);
+			}
 
-		60%  { transform: translateX(-400%); }
-		70%  { transform: translateX(-400%); }
+			32% {
+				transform: translateX(-200%);
+			}
 
-		74%  { transform: translateX(-500%); }
-		84%  { transform: translateX(-500%); }
+			42% {
+				transform: translateX(-200%);
+			}
 
-		88%  { transform: translateX(-600%); }
-		100% { transform: translateX(-600%); }
+			46% {
+				transform: translateX(-300%);
+			}
+
+			56% {
+				transform: translateX(-300%);
+			}
+
+			60% {
+				transform: translateX(-400%);
+			}
+
+			70% {
+				transform: translateX(-400%);
+			}
+
+			74% {
+				transform: translateX(-500%);
+			}
+
+			84% {
+				transform: translateX(-500%);
+			}
+
+			88% {
+				transform: translateX(-600%);
+			}
+
+			100% {
+				transform: translateX(-600%);
+			}
 		}
-		
-
 	</style>
 
 	<style>
+		.cahdiw {
+			justify-content: center;
+			align-items: center;
+			font-family: 'Montserrat';
+			display: flex;
+			width: 100%;
+		}
+
 		.container-agrihowdoesitwork {
 			margin-top: 50px;
 			margin-bottom: 50px;
-			width: 100%;
+			width: 80%;
 			height: 800px;
 			position: relative;
 			display: flex;
@@ -7655,99 +7702,121 @@
 					</div>
 				</div>
 
-				<div class="container-agrihowdoesitwork">
-					<div class="header_text">
-						<div class="header_textmargined">With Agribusiness How It
-							Works</div>
-					</div>
-					<div class="contentforagri">
-						<div class="videobox">
-							<div class="videoboxmiddle">
-								<iframe style="border-radius: 25px;" width="578" height="578"
-									src="https://www.youtube.com/embed/vIj-t-V4ppc"
-									title="DEMO: Soil Rejuvenating at Farm Mechanization! Tamang Panahon na to Upgrade Filipino Farming!"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							</div>
-
+				<div class="cahdiw">
+					<div class="container-agrihowdoesitwork">
+						<div class="header_text">
+							<div class="header_textmargined">With Agribusiness How It
+								Works</div>
 						</div>
-						<div class="rightsidetext">
-							<div class="rightsidetextmargined">
-								<div class="agribodyheader">DEMO: Soil Rejuvenating
-									at Farm Mechanization!</div>
-								<div class="agrimainbody">
-									<ul data-start="540" data-end="1020">
-										<li data-start="540" data-end="624">
-											<p data-start="542" data-end="624" style="color: #333333;">The use of modern
-												machinery and equipment
-												to aerate, mix, and condition the soil</p>
-										</li>
-										<li data-start="625" data-end="710">
-											<p data-start="627" data-end="710" style="color: #333333;">Methods for
-												integrating organic matter,
-												composts, or bio-amendments into the soil</p>
-										</li>
-										<li data-start="711" data-end="829">
-											<p data-start="713" data-end="829" style="color: #333333;">Before-and-after
-												visuals that illustrate
-												improvements in soil structure, moisture retention, and overall
-												fertility</p>
-										</li>
-										<li data-start="830" data-end="927">
-											<p data-start="832" data-end="927" style="color: #333333;">Interviews or
-												narration that explain the
-												scientific principles and benefits of the techniques</p>
-										</li>
-										<li data-start="928" data-end="1020">
-											<p data-start="930" data-end="1020" style="color: #333333;">Tips for farmers
-												on adoption,
-												maintenance, and scaling these practices in their own fields</p>
-										</li>
-									</ul>
+						<div class="contentforagri">
+							<div class="videobox">
+								<div class="videoboxmiddle">
+									<iframe style="border-radius: 25px;" width="578" height="578"
+										src="https://www.youtube.com/embed/vIj-t-V4ppc"
+										title="DEMO: Soil Rejuvenating at Farm Mechanization! Tamang Panahon na to Upgrade Filipino Farming!"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								</div>
-								<div class="agribodyfooter">
-									<p data-start="1022" data-end="1205" style="color: #333333;">Whether you’re a
-										progressive farmer,
-										agronomist, or stakeholder in sustainable agriculture, this video is a powerful
-										visual guide to how mechanization and soil health go hand-in-hand.</p>
-								</div>
-							</div>
 
+							</div>
+							<div class="rightsidetext">
+								<div class="rightsidetextmargined">
+									<div class="agribodyheader">DEMO: Soil Rejuvenating
+										at Farm Mechanization!</div>
+									<div class="agrimainbody">
+										<ul data-start="540" data-end="1020">
+											<li data-start="540" data-end="624">
+												<p data-start="542" data-end="624" style="color: #333333;">The use of
+													modern
+													machinery and equipment
+													to aerate, mix, and condition the soil</p>
+											</li>
+											<li data-start="625" data-end="710">
+												<p data-start="627" data-end="710" style="color: #333333;">Methods for
+													integrating organic matter,
+													composts, or bio-amendments into the soil</p>
+											</li>
+											<li data-start="711" data-end="829">
+												<p data-start="713" data-end="829" style="color: #333333;">
+													Before-and-after
+													visuals that illustrate
+													improvements in soil structure, moisture retention, and overall
+													fertility</p>
+											</li>
+											<li data-start="830" data-end="927">
+												<p data-start="832" data-end="927" style="color: #333333;">Interviews or
+													narration that explain the
+													scientific principles and benefits of the techniques</p>
+											</li>
+											<li data-start="928" data-end="1020">
+												<p data-start="930" data-end="1020" style="color: #333333;">Tips for
+													farmers
+													on adoption,
+													maintenance, and scaling these practices in their own fields</p>
+											</li>
+										</ul>
+									</div>
+									<div class="agribodyfooter">
+										<p data-start="1022" data-end="1205" style="color: #333333;">Whether you’re a
+											progressive farmer,
+											agronomist, or stakeholder in sustainable agriculture, this video is a
+											powerful
+											visual guide to how mechanization and soil health go hand-in-hand.</p>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- new area -->
+				<div class="cahdiw">
+					<div class="rpspmf">
 
-				<div class="rpspmf">
+						<div class="left">
+							<div class="center">
+								<div class="head">Reliable power, superior performance Massey Ferguson, your trusted
+									farming
+									partner!</div>
+								<div class="desc">Massey Ferguson has long been recognized as the leading name in
+									agricultural machinery, providing farmers with high-performance, durable, and
+									efficient
+									tractors designed to tackle the toughest farming conditions. In the Philippines,
+									where
+									agriculture plays a crucial role in the economy, Massey Ferguson farm tractors stand
+									out
+									as the preferred choice for farmers who need reliable equipment to boost
+									productivity
+									and maximize yields.</div>
+							</div>
 
-					<div class="left">
-						<div class="center">
-							<div class="head">Reliable power, superior performance Massey Ferguson, your trusted farming partner!</div>
-							<div class="desc">Massey Ferguson has long been recognized as the leading name in agricultural machinery, providing farmers with high-performance, durable, and efficient tractors designed to tackle the toughest farming conditions. In the Philippines, where agriculture plays a crucial role in the economy, Massey Ferguson farm tractors stand out as the preferred choice for farmers who need reliable equipment to boost productivity and maximize yields.</div>
 						</div>
-						
-					</div>
-					<div class="right">
-						<div class="center">
-							<div class="slides">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/jj.jpg">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/baler2.png">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/479861734_614142874810527_5668930967058642105_n-1.jpg">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/480449362_615806231310858_4055997306309734435_n.jpg">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/ACETC-ROTARY-TILLER-1-scaled-1.jpg">
-								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
+						<div class="right">
+							<div class="center">
+								<div class="slides">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
+									<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/jj.jpg">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/baler2.png">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/479861734_614142874810527_5668930967058642105_n-1.jpg">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/480449362_615806231310858_4055997306309734435_n.jpg">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/ACETC-ROTARY-TILLER-1-scaled-1.jpg">
+									<img
+										src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
+								</div>
 							</div>
 						</div>
-						
 					</div>
-					
 				</div>
 
 				<!-- end of new area -->
-				
+
 				<div class="elementor-element elementor-element-9a6189a e-flex e-con-boxed e-con e-parent"
 					data-id="9a6189a" data-element_type="container">
 					<div class="e-con-inner">

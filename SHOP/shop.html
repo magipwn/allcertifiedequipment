@@ -22,9 +22,84 @@
 	<link rel="alternate" type="application/rss+xml"
 		title="All Certified Equipment Trading Corporation &raquo; Products Feed"
 		href="https://www.allcertifiedequipment.com/shop/feed/" />
+	<!--HEADLINE EDIT-->
+	<style>
+		.hl {
+			width: 100%;
+			background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 228, 133, 0.329));
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.hl .hcenter {
+			width: 80%;
+			height: 100%;
+			display: flex;
+		}
+
+		.hl .hcenter .hleft {
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.hl .hcenter .hleft .mainh {
+			font-size: 40px;
+			font-weight: 700;
+			color: white;
+		}
+
+		.hl .hcenter .hleft .subh {
+			font-size: 15px;
+			font-weight: 500;
+			color: white;
+		}
+
+		.hl .hcenter .hright {
+			width: 40%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+
+		.hl .hcenter .hright .directory {
+			color: white;
+			width: 20%;
+			height: 20%;
+			position: static;
+		}
+
+		.directory a {
+			position: relative;
+			color: white !important;
+			text-decoration: none;
+		}
+
+		.directory a:hover {
+			color: #00ff40f6 !important;
+		}
+
+		.directory a::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+			width: 0;
+			height: 2px;
+			background: #00bfff;
+			transition: width 0.3s ease;
+		}
+
+		.directory a:hover::after {
+			width: 100%;
+		}
+	</style>
+
 	<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
 		img:is([sizes=auto i], [sizes^="auto," i]) {
-			contain-intrinsic-size: 3000px 1500px
+			contain-intrinsic-size: 3000px 1500px;
 		}
 
 		/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -5642,14 +5717,19 @@
 	<section id="secondary-banner" class=""
 		style='background-image: url(https://www.allcertifiedequipment.com/wp-content/uploads/2021/05/Sliders-Slide03-01.png);'>
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 title-column">
-					<h1 class="main-heading">Your Partner in Farm Modernization</h1>
-					<h4 class="secondary-heading">Start your shop at ACETC today!</h4>
-				</div>
-				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 breadcrumb-column">
-					<nav class='breadcrumb woocommerce_breadcrumb'><a
-							href="https://www.allcertifiedequipment.com">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;Shop</nav>
+			<div class="hl">
+				<div class="hcenter">
+					<div class="hleft">
+						<h1 class="mainh">Your Partner in Farm Modernization</h1>
+						<h4 class="subh">Start your shop at ACETC today!</h4>
+					</div>
+
+					<div class="hright">
+						<nav class='directory'>
+							<a href="/HOME/index.html">Home</a>
+							<a href="/SHOP/shop.html">Shop</a>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
