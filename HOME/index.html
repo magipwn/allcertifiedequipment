@@ -424,6 +424,131 @@
 	</style>
 
 	<style>
+		.rpspmf {
+			position: relative;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			background-color: rgba(255, 255, 255, 0.555);
+			border-radius: 50px;
+			gap: 30px;
+			font-family: 'Montserrat';
+			}
+		.rpspmf .left {
+			width: 45%;
+			height: 100%;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+
+		}
+		.rpspmf .left .center{
+			width: 100%;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			border-radius: 20px;
+			padding: 20px;
+			gap: 10px; 
+			transition: all 0.5s ease;
+		}
+
+		.rpspmf .left .center .head{
+
+			line-height: 35px;
+			height: 40%;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgba(35, 144, 69);
+			margin-bottom: 10px;
+			text-align: left;
+			display: block;
+			border-radius: 15px;
+			padding: 15px;
+			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
+		}
+		.rpspmf .left .center .desc{
+			font-size: 14px;
+			color: #000000;
+			text-align: justify;
+			display: block;
+			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
+			padding: 15px;
+			border-radius: 15px;
+			
+		}
+
+		.rpspmf .left .center:hover{
+			transform: scale(1.05);
+		}
+		
+		.rpspmf .right {
+			width: 45%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.rpspmf .right .center {
+			width: 100%;
+			height: 80%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			overflow: hidden;
+			border-radius: 20px;
+			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.233);
+		}
+		.rpspmf .right .center .slides{
+			width: 700%; /* 7 images */
+			height: 100%;
+			display: flex;
+			animation: slideShow 21s infinite;
+			animation-timing-function: ease-in-out;
+			
+		}
+
+		.rpspmf .right .center .slides img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			flex-shrink: 0; 
+		}
+
+		@keyframes slideShow{
+		0%   { transform: translateX(0%); }
+		14%  { transform: translateX(0%); }
+
+		18%  { transform: translateX(-100%); }
+		28%  { transform: translateX(-100%); }
+
+		32%  { transform: translateX(-200%); }
+		42%  { transform: translateX(-200%); }
+
+		46%  { transform: translateX(-300%); }
+		56%  { transform: translateX(-300%); }
+
+		60%  { transform: translateX(-400%); }
+		70%  { transform: translateX(-400%); }
+
+		74%  { transform: translateX(-500%); }
+		84%  { transform: translateX(-500%); }
+
+		88%  { transform: translateX(-600%); }
+		100% { transform: translateX(-600%); }
+		}
+		
+
+	</style>
+
+	<style>
 		.container-agrihowdoesitwork {
 			margin-top: 50px;
 			margin-bottom: 50px;
@@ -452,9 +577,9 @@
 			display: flex;
 			width: 95%;
 			height: 70%;
-			border-radius: 50px;
+			border-radius: 25px;
 			background-color: rgb(255, 255, 255);
-			box-shadow: 0px 0px 4px rgba(0, 128, 0, 0.7);
+			box-shadow: 0px 0px 25px rgba(0, 128, 0, 0.7);
 			font-size: 50px;
 			align-items: center;
 			padding-left: 20px;
@@ -469,7 +594,6 @@
 			flex-direction: row;
 			background-color: white;
 			border-radius: 20px;
-			box-shadow: 0px 3px 7px green;
 		}
 
 		.container-agrihowdoesitwork .contentforagri .videobox {
@@ -6472,6 +6596,94 @@
 			border-color: #111111 !important;
 			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 		}
+
+		.elementor-element-a4a555b .swiper-pagination {
+			top: -20px !important;
+			bottom: unset !important;
+		}
+
+		.products.elementor-grid .woocommerce-image-wrapper,
+		.products.elementor-grid .woocommerce-image-wrapper img {
+			border: none !important;
+		}
+
+		.elementor-swiper-button-prev,
+        .elementor-swiper-button-next {
+            position: absolute !important;
+            top: unset !important;
+            bottom: -45px !important;
+            transform: translateY(0) !important;
+        }
+
+        .elementor-swiper-button-prev {
+            left: calc(50% - 50px) !important;
+            right: unset !important;
+        }
+
+        .elementor-swiper-button-next {
+            right: calc(50% - 50px) !important;
+            left: unset !important;
+        }
+
+        /* Style the buttons */
+        .elementor-swiper-button-prev,
+        .elementor-swiper-button-next {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50% !important;
+            border: 1.5px solid #d0d0d0 !important;
+            background: #fff !important;
+            color: #c8f3bc !important;
+        }
+
+        .elementor-swiper-button-prev:hover,
+        .elementor-swiper-button-next:hover {
+            color: #798179 !important;
+        }
+
+        .elementor-swiper-button-prev:hover svg,
+        .elementor-swiper-button-next:hover svg {
+            color: #d0d3cd !important;
+            fill: #07941e !important
+        }
+
+		.button.pi-custom-button.add-to-enquiry:hover {
+			background: #0e8010 !important;
+		}
+
+		
+	</style>
+
+	<style>
+		.products.elementor-grid .product {
+			position: relative !important;
+			padding: 16px !important;
+			padding-bottom: 100px !important;
+			background: #fff !important;
+			border: 1px solid #e0e0e0 !important;
+			border-radius: 12px !important;
+			transition: box-shadow 0.3s ease !important;
+		}
+
+		.products.elementor-grid .product:hover {
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+		}
+
+		.products.elementor-grid .product > div[style*="margin-bottom"] {
+			position: absolute !important;
+			bottom: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			margin-bottom: 0 !important;
+			padding: 16px !important;
+		}
+
+		/* Force slide 1's unique nested containers to full height */
+		.elementor-element-9adc988 .woocommerce,
+		.elementor-element-9adc988 .products,
+		.elementor-element-9adc988 .product {
+			height: 100% !important;
+		}
 	</style>
 
 
@@ -7163,7 +7375,7 @@
 								data-widget_type="nested-carousel.default">
 								<div class="elementor-widget-container">
 									<div class="e-n-carousel swiper" role="region" aria-roledescription="carousel"
-										aria-label="Tractor Carousel" dir="rtl">
+										aria-label="Tractor Carousel">
 										<div class="swiper-wrapper" aria-live="off">
 											<div class="swiper-slide" data-slide="1" role="group"
 												aria-roledescription="slide" aria-label="1 of 5">
@@ -7187,19 +7399,11 @@
 																						loading="lazy" decoding="async"
 																						loading="lazy" width="800"
 																						height="800"
-																						src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=800%2C800&#038;ssl=1"
-																						class="attachment-shop_catalog size-shop_catalog"
+																						src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?w=800&ssl=1"
+																						   class="attachment-shop_catalog size-shop_catalog" style="width:800px;height:auto;margin-bottom:10px;"
 																						alt="MF 1600 Series"
-																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=100%2C100&amp;ssl=1 100w"
-																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a><a
-																					rel="nofollow"
-																					href="https://www.allcertifiedequipment.com/product/mf-1640e/"
-																					data-quantity="1"
-																					data-product_id="24191"
-																					data-product_sku=""
-																					class="button product_type_simple add_to_cart_"><i
-																						class='fa fa-shopping-cart'></i>
-																					<span>Read more</span></a>
+																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?w=800&ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=300%2C300&ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=150%2C150&ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=768%2C768&ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=700%2C700&ssl=1 700w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF1650E-w-CANOPY.webp?resize=100%2C100&ssl=1 100w"
+																						sizes="(max-width: 800px) 100vw, 800px" /></a>
 																				<span
 																					id="woocommerce_loop_add_to_cart_link_describedby_24191"
 																					class="screen-reader-text">
@@ -7214,16 +7418,12 @@
 																				<div class='clearfix'></div>
 																			</div>
 																			<div
-																				class='woocommerce-loop-product__secondary_title'>
-																				Model: MF1640E, MF1650E - (HP: 40 - 50)
-																			</div>
-																			<div
 																				style="margin-bottom:10px; text-align:center; width:100%;">
 																				<a class="button pi-custom-button add-to-enquiry add-to-enquiry-loop pi-enq-product-24191  pi-in-stock  "
 																					href=""
 																					data-action="pi_add_to_enquiry"
 																					data-id="24191" data-quantity="1"
-																					style=" font-size:16px; ">Add to
+																					   style=" font-size:16px; ">Add to
 																					Inquiry</a>
 																			</div>
 																		</li>
@@ -7258,15 +7458,7 @@
 																						class="attachment-shop_catalog size-shop_catalog"
 																						alt="MF 2600 Series"
 																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/03/MF2635-w-CANOPY.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/03/MF2635-w-CANOPY.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/03/MF2635-w-CANOPY.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/03/MF2635-w-CANOPY.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/03/MF2635-w-CANOPY.webp?resize=100%2C100&amp;ssl=1 100w"
-																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a><a
-																					rel="nofollow"
-																					href="https://www.allcertifiedequipment.com/product/mf-2600-series/"
-																					data-quantity="1"
-																					data-product_id="25949"
-																					data-product_sku=""
-																					class="button product_type_simple add_to_cart_"><i
-																						class='fa fa-shopping-cart'></i>
-																					<span>Read more</span></a>
+																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a>
 																				<span
 																					id="woocommerce_loop_add_to_cart_link_describedby_25949"
 																					class="screen-reader-text">
@@ -7280,11 +7472,6 @@
 																				</a>
 																				<div class='clearfix'></div>
 																			</div>
-																			<div
-																				class='woocommerce-loop-product__secondary_title'>
-																				Model: MF 2605-4R, MF 2615-2R, MF
-																				2615-4R, MF 2625-4R, MF 2635-4R
-																				------(HP: 38 - 74)</div>
 																			<div
 																				style="margin-bottom:10px; text-align:center; width:100%;">
 																				<a class="button pi-custom-button add-to-enquiry add-to-enquiry-loop pi-enq-product-25949  pi-in-stock  "
@@ -7327,15 +7514,7 @@
 																						class="attachment-shop_catalog size-shop_catalog"
 																						alt="MF 290T Series"
 																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF290T-w-CANOPY-1.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF290T-w-CANOPY-1.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF290T-w-CANOPY-1.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF290T-w-CANOPY-1.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF290T-w-CANOPY-1.webp?resize=100%2C100&amp;ssl=1 100w"
-																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a><a
-																					rel="nofollow"
-																					href="https://www.allcertifiedequipment.com/product/mf-290t/"
-																					data-quantity="1"
-																					data-product_id="23688"
-																					data-product_sku=""
-																					class="button product_type_simple add_to_cart_"><i
-																						class='fa fa-shopping-cart'></i>
-																					<span>Read more</span></a>
+																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a>
 																				<span
 																					id="woocommerce_loop_add_to_cart_link_describedby_23688"
 																					class="screen-reader-text">
@@ -7348,10 +7527,6 @@
 																						MF 290T Series</h2>
 																				</a>
 																				<div class='clearfix'></div>
-																			</div>
-																			<div
-																				class='woocommerce-loop-product__secondary_title'>
-																				Model: MF290T-4, MF390- (HP: 82 - 90)
 																			</div>
 																			<div
 																				style="margin-bottom:10px; text-align:center; width:100%;">
@@ -7394,15 +7569,7 @@
 																						class="attachment-shop_catalog size-shop_catalog"
 																						alt="MF 6700 Series"
 																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?resize=700%2C700&amp;ssl=1 700w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/mf6700s.png?resize=100%2C100&amp;ssl=1 100w"
-																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a><a
-																					rel="nofollow"
-																					href="https://www.allcertifiedequipment.com/product/mf-6700-series/"
-																					data-quantity="1"
-																					data-product_id="23696"
-																					data-product_sku=""
-																					class="button product_type_simple add_to_cart_"><i
-																						class='fa fa-shopping-cart'></i>
-																					<span>Read more</span></a>
+																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a>
 																				<span
 																					id="woocommerce_loop_add_to_cart_link_describedby_23696"
 																					class="screen-reader-text">
@@ -7416,10 +7583,6 @@
 																				</a>
 																				<div class='clearfix'></div>
 																			</div>
-																			<div
-																				class='woocommerce-loop-product__secondary_title'>
-																				Model: MF6712, MF6713, MF6711 - (HP: 112
-																				- 132)</div>
 																			<div
 																				style="margin-bottom:10px; text-align:center; width:100%;">
 																				<a class="button pi-custom-button add-to-enquiry add-to-enquiry-loop pi-enq-product-23696  pi-in-stock  "
@@ -7461,15 +7624,7 @@
 																						class="attachment-shop_catalog size-shop_catalog"
 																						alt="MF Global Series"
 																						srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?resize=700%2C700&amp;ssl=1 700w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/02/MF4708-1.png?resize=100%2C100&amp;ssl=1 100w"
-																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a><a
-																					rel="nofollow"
-																					href="https://www.allcertifiedequipment.com/product/mf-global-series/"
-																					data-quantity="1"
-																					data-product_id="23702"
-																					data-product_sku=""
-																					class="button product_type_simple add_to_cart_"><i
-																						class='fa fa-shopping-cart'></i>
-																					<span>Read more</span></a>
+																						sizes="auto, (max-width: 800px) 100vw, 800px" /></a>
 																				<span
 																					id="woocommerce_loop_add_to_cart_link_describedby_23702"
 																					class="screen-reader-text">
@@ -7483,10 +7638,6 @@
 																				</a>
 																				<div class='clearfix'></div>
 																			</div>
-																			<div
-																				class='woocommerce-loop-product__secondary_title'>
-																				Model: MF4708, MF5709, MF5710 (HP: 82 -
-																				102)</div>
 																			<div
 																				style="margin-bottom:10px; text-align:center; width:100%;">
 																				<a class="button pi-custom-button add-to-enquiry add-to-enquiry-loop pi-enq-product-23702  pi-in-stock  "
@@ -7623,10 +7774,36 @@
 											need reliable equipment to boost productivity and maximize yields.</p>
 									</div>
 								</div>
+				<!-- new area -->
+
+				<div class="rpspmf">
+
+					<div class="left">
+						<div class="center">
+							<div class="head">Reliable power, superior performance Massey Ferguson, your trusted farming partner!</div>
+							<div class="desc">Massey Ferguson has long been recognized as the leading name in agricultural machinery, providing farmers with high-performance, durable, and efficient tractors designed to tackle the toughest farming conditions. In the Philippines, where agriculture plays a crucial role in the economy, Massey Ferguson farm tractors stand out as the preferred choice for farmers who need reliable equipment to boost productivity and maximize yields.</div>
+						</div>
+						
+					</div>
+					<div class="right">
+						<div class="center">
+							<div class="slides">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/jj.jpg">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/baler2.png">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/479861734_614142874810527_5668930967058642105_n-1.jpg">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/480449362_615806231310858_4055997306309734435_n.jpg">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/02/ACETC-ROTARY-TILLER-1-scaled-1.jpg">
+								<img src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/03/kuhn-power-harrow.jpg">
 							</div>
 						</div>
+						
 					</div>
+					
 				</div>
+
+				<!-- end of new area -->
+				
 				<div class="elementor-element elementor-element-9a6189a e-flex e-con-boxed e-con e-parent"
 					data-id="9a6189a" data-element_type="container">
 					<div class="e-con-inner">
