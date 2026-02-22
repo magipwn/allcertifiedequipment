@@ -228,7 +228,7 @@ pre code{font-size:inherit;color:inherit;word-break:normal}
 }
 
 .row{
-    display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:50px;margin-left:50px}
+    display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0px 30px}
 
 .no-gutters{margin-right:0;margin-left:0}
 
