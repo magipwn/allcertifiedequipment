@@ -4173,7 +4173,10 @@ video {
 
 .woocommerce .woocommerce-result-count {
     color: #808080;
-    font-size: 14px
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 .woocommerce .sidebar-widget .side-widget-title {
