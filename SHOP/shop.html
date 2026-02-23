@@ -5294,6 +5294,28 @@
 
 		/*# sourceURL=style-inline-css */
 	</style>
+
+	<style>
+		.shop-flex-container {
+			display: flex;
+			width: min(1920px, 95%);
+			height: 100px;
+			margin: 20px 5px;
+			flex-wrap: wrap;
+			gap: 5px;
+			align-items: flex-start;
+		}
+
+		.shop-flex-container .shop-flex-item {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			padding: 10px;
+			flex: 1 1 calc(33.333% - 10px);
+			box-sizing: border-box;
+			text-align: center;
+		}
+	</style>
 	<link rel='stylesheet' id='mobile-css' href='/HOME/Style Sheets/mobile.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='wp-css' href='/HOME/Style Sheets/wp.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='social-likes-css' href='/HOME/Style Sheets/social-likes.css' type='text/css'
@@ -5546,9 +5568,8 @@
 									<div class="menu-main-menu-container">
 										<ul id="menu-desktop-main-menu" class="nav navbar-nav pull-right fullsize_menu">
 											<li id="menu-item-22475"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-22438 current_page_item menu-item-22475 nav-item active">
-												<a href="https://www.allcertifiedequipment.com/"
-													class="nav-link active">Home</a>
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-22438 menu-item-22475 nav-item">
+												<a href="/HOME/index.html" class="nav-link">Home</a>
 											</li>
 											<li id="menu-item-22850"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22850 nav-item dropdown">
@@ -5627,9 +5648,8 @@
 												</ul>
 											</li>
 											<li id="menu-item-22782"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22782 nav-item">
-												<a href="https://www.allcertifiedequipment.com/shop/"
-													class="nav-link">Shop</a>
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22782 nav-item current-menu-item current_page_item active">
+												<a href="/SHOP/shop.html" class="nav-link active">Shop</a>
 											</li>
 											<li id="menu-item-22473"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22473 nav-item">
@@ -5739,19 +5759,14 @@
 	<section id="secondary-banner" class=""
 		style='background-image: url(https://www.allcertifiedequipment.com/wp-content/uploads/2021/05/Sliders-Slide03-01.png);'>
 		<div class="container">
-			<div class="hl">
-				<div class="hcenter">
-					<div class="hleft">
-						<div class="mainh">Your Partner in Farm Modernization</div>
-						<div class="subh">Start your shop at ACETC today!</div>
-					</div>
-
-					<div class="hright">
-						<nav class='directory'>
-							<a href="/HOME/index.html">Home</a> | 
-							<a href="/SHOP/shop.html">Shop</a>
-						</nav>
-					</div>
+			<div class="row">
+				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 title-column">
+					<h1 class="main-heading">Your Partner in Farm Modernization</h1>
+					<h4 class="secondary-heading">Start your shop at ACETC today!</h4>
+				</div>
+				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 breadcrumb-column">
+					<nav class='breadcrumb woocommerce_breadcrumb'><a
+							href="/HOME/index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;Shop</nav>
 				</div>
 			</div>
 		</div>
@@ -5764,52 +5779,50 @@
 
 		<div class="container-fluid">
 
-			<div class="inner-page row wp_page is_sidebar" style="margin: 70px 0px;">
+			<div class="inner-page row wp_page is_sidebar" style="margin: 20px 0px;">
 
-				<div class=" col-xl-12 col-lg-12 row" style="padding-right:0px; padding-left:0px; margin:0px;">
+				<div class=" col-xl-12 col-lg-12 row" style="padding-right:0px; padding-left:0px; margin-top:0px;">
 
-					<div id="primary" class="content-area">
-						<main id="main" class="site-main" role="main">
-							<div class="row">
-								<div class="col-md-4">
-									<p class="woocommerce-result-count">
-										1&ndash;20 of 533 results </p>
-								</div>
-								<div class="col-md-4">
-									<div id="woocommerce_product_search-4"
-										class="side-widget widget padding-bottom-60 list col-xs-12 woocommerce widget_product_search">
-										<form role="search" method="get" class="woocommerce-product-search"
-											action="https://www.allcertifiedequipment.com/">
-											<label class="screen-reader-text"
-												for="woocommerce-product-search-field-0">Search
-												for:</label>
-											<input type="search" id="woocommerce-product-search-field-0"
-												class="search-field" placeholder="Search products&hellip;" value=""
-												name="s"
-												style="font-size: 16px; border: 1px solid #ccc; padding: 8px; box-sizing: border-box; width: 250px;" />
-											<button type="submit" value="Search" class=""
-												style="font-size: 16px; border: 1px solid #ccc; padding: 8px 12px; box-sizing: border-box;">Search</button>
-											<input type="hidden" name="post_type" value="product" />
-										</form>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="sort-by-widget">
-										<form class="woocommerce-ordering" method="get">
-											<select name="orderby" class="orderby"
-												style="font-size: 16px; border: 1px solid #ccc; padding: 8px; box-sizing: border-box; width: 100%; margin-top: 25px;"
-												aria-label="Shop order">
-												<option value="popularity">Sort by Relevance</option>
-												<option value="rating">Sort by Average Rating</option>
-												<option value="date" selected='selected'>Sort by Latest</option>
-												<option value="price">Sort by Price: Low to High</option>
-												<option value="price-desc">Sort by Price: High to Low</option>
-											</select>
-											<input type="hidden" name="paged" value="1" />
-										</form>
-									</div>
+					<div id="primary" class="content-area" <main id="main" class="site-main" role="main">
+						<div class="shop-flex-container">
+							<div class="shop-flex-item" style="width: 200px; margin-top:10px;">
+								<p class="woocommerce-result-count" style="padding-left:50px; text-align: left;">
+									1&ndash;20 of 533 results </p>
+							</div>
+							<div class="shop-flex-item">
+								<div id="woocommerce_product_search-4"
+									class="side-widget widget list col-xs-12 woocommerce widget_product_search">
+									<form role="search" method="get" class="woocommerce-product-search"
+										action="https://www.allcertifiedequipment.com/">
+										<label class="screen-reader-text"
+											for="woocommerce-product-search-field-0">Search
+											for:</label>
+										<input type="search" id="woocommerce-product-search-field-0"
+											class="search-field" placeholder="Search products&hellip;" value="" name="s"
+											style="font-size: 16px; border: 1px solid #ccc; padding: 8px; box-sizing: border-box; width: 490px;" />
+										<button type="submit" value="Search" class=""
+											style="font-size: 16px; border: 1px solid #ccc; padding: 8px 12px; box-sizing: border-box;">Search</button>
+										<input type="hidden" name="post_type" value="product" />
+									</form>
 								</div>
 							</div>
+							<div class="shop-flex-item">
+								<div class="sort-by-widget">
+									<form class="woocommerce-ordering" method="get">
+										<select name="orderby" class="orderby"
+											style="font-size: 16px; border: 1px solid #ccc; color: rgb(133, 133, 133); padding: 8px; box-sizing: border-box; width: 250px; margin-top: 10px;"
+											aria-label="Shop order">
+											<option value="popularity">Sort by Relevance</option>
+											<option value="rating">Sort by Average Rating</option>
+											<option value="date" selected='selected'>Sort by Latest</option>
+											<option value="price">Sort by Price: Low to High</option>
+											<option value="price-desc">Sort by Price: High to Low</option>
+										</select>
+										<input type="hidden" name="paged" value="1" />
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="col-xl-12 col-lg-12 row">
@@ -6599,45 +6612,10 @@
 
 
 	<!--Footer Start-->
+	<!--Footer Start-->
 	<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
 		<div class="container">
 			<div class="row">
-				<div id="mail-chimp-widget-6" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 mail_chimp">
-					<div class='newsletter'>
-						<h4>Newsletter</h4>
-						<p class='description margin-bottom-20'>Subscribe to our newsletter for exclusive updates on
-							promotions, special deals, and the latest arrivals from your trusted direct importer and
-							distributor of agricultural machinery!</p>
-						<div class='form_contact'><input type='text' class='email margin-bottom-15'
-								placeholder='Email Address'><button class='add_mailchimp button pull-left md-button'
-								data-list='' data-nonce='d24e2fc71c'>Subscribe</button><br><span
-								class='response'></span></div>
-					</div>
-				</div>
-				<div id="recent-posts-widget-6"
-					class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 recent_posts">
-					<h4>Recent News</h4>
-					<div class='recent_posts_container'>
-						<div class="side-blog"><a href='https://www.allcertifiedequipment.com/philmarine-2025/'><img
-									src='https://www.allcertifiedequipment.com/wp-content/uploads/2025/04/492498371_666145829610231_3301785937041792465_n-1024x1024.jpg'
-									class='alignleft wp-post-image'></a><strong><a
-									href='https://www.allcertifiedequipment.com/philmarine-2025/'>PhilMarine
-									2025</a></strong>
-							<p>We’re setting sail for innovation at the SMX Convention ...</p>
-						</div>
-						<div class="side-blog"><a
-								href='https://www.allcertifiedequipment.com/big-time-top-agri-machineries-company/'><img
-									src='https://www.allcertifiedequipment.com/wp-content/uploads/2017/09/Logo_of_YouTube_2015-2017.svg_-300x126.png'
-									class='alignleft wp-post-image'></a><strong><a
-									href='https://www.allcertifiedequipment.com/big-time-top-agri-machineries-company/'>BIG
-									TIME Top Agri Machineries Company sa Pinas! From Land Prep to Post Harvest to Cold
-									Storage!</a></strong>
-							<p>
-
-								Click to visit and watch </p>
-						</div>
-					</div>
-				</div>
 				<div id="contact-us-widget-8" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 contact_us">
 					<h4>Contact Us</h4>
 					<div class="footer-contact xs-margin-bottom-60">
@@ -6652,9 +6630,15 @@
 									href="http://www.allcertifiedequipment.com"
 									target="_blank">http://www.allcertifiedequipment.com</a></li>
 						</ul>
-
-						<i class="fa fa-location-arrow back_icon"></i>
 					</div>
+				</div>
+				<div id="text-widget-7" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 about_us">
+					<h4 style="text-align: justify;">About Us</h4>
+					<p>All Certified Equipment Trading Corporation (ACETC) is a leading provider of high-quality
+						agricultural, construction, industrial, marine, and irrigation machinery in the
+						Philippines. With a commitment to excellence and customer satisfaction, ACETC offers a
+						comprehensive range of equipment and services designed to meet the diverse needs of our
+						clients across various industries.</p>
 				</div>
 			</div>
 		</div>
