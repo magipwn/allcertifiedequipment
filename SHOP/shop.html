@@ -32,21 +32,28 @@
 			align-items: center;
 			height: 120px;
 			position: relative;
-  			overflow: hidden;
+			overflow: hidden;
 		}
+
 		.hl::before {
 			content: '';
 			position: absolute;
-			top: 0; left: -100%;
+			top: 0;
+			left: -100%;
 			width: 60%;
 			height: 2px;
-			background: linear-gradient(90deg, transparent, rgba(0,228,133,0.7), transparent);
+			background: linear-gradient(90deg, transparent, rgba(0, 228, 133, 0.7), transparent);
 			animation: shimmer 3s ease-in-out infinite;
 		}
 
 		@keyframes shimmer {
-			0%   { left: -60%; }
-			100% { left: 160%; }
+			0% {
+				left: -60%;
+			}
+
+			100% {
+				left: 160%;
+			}
 		}
 
 		.hl .hcenter {
@@ -66,7 +73,7 @@
 		.hl .hcenter .hleft .mainh {
 			align-items: flex-end;
 			font-size: 25px;
- 			font-weight: 800;
+			font-weight: 800;
 			color: white;
 			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 		}
@@ -1327,8 +1334,7 @@
 	<link rel='stylesheet' id='bootstrap-css' href='/HOME/Style Sheets/bootstrap.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='css-animate-css' href='/HOME/Style Sheets/animate.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='flexslider-css' href='/HOME/Style Sheets/flexslider.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='tomselect-css' href='/HOME/Style Sheets/tom-select.default.css' type='text/css'
-		media='all' />
+	<link rel='stylesheet' id='tomselect-css' href='/HOME/Style Sheets/tom-select.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='listing_style-css' href='/HOME/Style Sheets/listing_style.css' type='text/css'
 		media='all' />
 	<style id='listing_style-inline-css' type='text/css'>
@@ -1360,7 +1366,7 @@
 	<link rel='stylesheet' id='listing_style_default-css' href='/HOME/Style Sheets/default.css' type='text/css'
 		media='all' />
 	<link rel='stylesheet' id='listing_mobile-css' href='/HOME/Style Sheets/mobile.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='jqueryfancybox-css' href='h/HOME/Style Sheets/jquery.fancybox.css' type='text/css'
+	<link rel='stylesheet' id='jqueryfancybox-css' href='/HOME/Style Sheets/jquery.fancybox.css' type='text/css'
 		media='all' />
 	<link rel='stylesheet' id='listing_shortcodes-css' href='/HOME/Style Sheets/shortcodes.css' type='text/css'
 		media='all' />
@@ -5539,7 +5545,7 @@
 <body
 	class="archive post-type-archive post-type-archive-product wp-custom-logo wp-theme-automotive theme-automotive automotive-msb-active woocommerce-shop woocommerce woocommerce-page woocommerce-no-js safari woo-auto-dropdowns wpb-js-composer js-comp-ver-8.7.2 vc_responsive elementor-default elementor-kit-22278"
 	itemscope itemtype="http://schema.org/WebPage">
-	<!--Header Start-->
+	<!-- Header Start -->
 	<header data-spy="affix" data-offset-top="1"
 		class="clearfix affix-top original no_resize no_top_neg no_header_resize_mobile" itemscope="itemscope"
 		itemtype="https://schema.org/WPHeader">
@@ -5569,8 +5575,8 @@
 									<div class="menu-main-menu-container">
 										<ul id="menu-desktop-main-menu" class="nav navbar-nav pull-right fullsize_menu">
 											<li id="menu-item-22475"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-22438 menu-item-22475 nav-item">
-												<a href="/HOME/index.html" class="nav-link">Home</a>
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-22438 current_page_item menu-item-22475 nav-item active">
+												<a href="/HOME/index.html" class="nav-link active">Home</a>
 											</li>
 											<li id="menu-item-22850"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22850 nav-item dropdown">
@@ -5649,8 +5655,8 @@
 												</ul>
 											</li>
 											<li id="menu-item-22782"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22782 nav-item current-menu-item current_page_item active">
-												<a href="/SHOP/shop.html" class="nav-link active">Shop</a>
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22782 nav-item">
+												<a href="/SHOP/shop.html" class="nav-link">Shop</a>
 											</li>
 											<li id="menu-item-22473"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22473 nav-item">
@@ -5769,7 +5775,7 @@
 
 					<div class="hright">
 						<nav class='directory'>
-							<a href="/HOME/index.html">Home</a> | 
+							<a href="/HOME/index.html">Home</a> |
 							<a href="/SHOP/shop.html">Shop</a>
 						</nav>
 					</div>
@@ -5848,7 +5854,7 @@
 							<li
 								class="product_style_1 product type-product post-31005 status-publish first instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
 								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/piston-ring-assembly-12hp/"
+										href="/SHOP/PRODUCTS//piston-ring-assembly-12hp.html"
 										class="woocommerce-LoopProduct-link"><img fetchpriority="high" width="800"
 											height="800"
 											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp"
@@ -5856,8 +5862,8 @@
 											alt="Piston Ring Assembly (12hp)" decoding="async"
 											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA188F-04000.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/piston-ring-assembly-12hp/"
-										data-quantity="1" data-product_id="31005" data-product_sku="KA188F-04000"
+										href="/SHOP/PRODUCTS/piston-ring-assembly-12hp.html" data-quantity="1"
+										data-product_id="31005" data-product_sku="KA188F-04000"
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_31005"
@@ -5865,7 +5871,7 @@
 									</span>
 								</div>
 								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/piston-ring-assembly-12hp/">
+										href="/SHOP/PRODUCTS/piston-ring-assembly-12hp.html">
 										<h2 class="woocommerce-loop-product__title">Piston Ring Assembly (12hp)</h2>
 									</a>
 									<div class='clearfix'></div>
@@ -5879,24 +5885,22 @@
 							</li>
 							<li
 								class="product_style_1 product type-product post-30998 status-publish instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
-								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/fuel-filter-9/"
+								<div class='woocommerce-image-wrapper'><a href="/SHOP/PRODUCTS/fuel-filter-9.html"
 										class="woocommerce-LoopProduct-link"><img width="800" height="800"
 											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp"
 											class="attachment-shop_catalog size-shop_catalog" alt="Fuel Filter"
 											decoding="async"
 											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/fuel-filter-9/"
-										data-quantity="1" data-product_id="30998" data-product_sku=""
+										href="/SHOP/PRODUCTS/fuel-filter-9.html" data-quantity="1"
+										data-product_id="30998" data-product_sku=""
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_30998"
 										class="screen-reader-text">
 									</span>
 								</div>
-								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/fuel-filter-9/">
+								<div class='woocommerce-title-price-area'><a href="/SHOP/PRODUCTS/fuel-filter-9.html">
 										<h2 class="woocommerce-loop-product__title">Fuel Filter</h2>
 									</a>
 									<div class='clearfix'></div>
@@ -5911,15 +5915,15 @@
 							<li
 								class="product_style_1 product type-product post-30990 status-publish instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
 								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/valve-conduit-oil-seal-valve/"
+										href="/SHOP/PRODUCTS/valve-conduit-oil-seal-valve.html"
 										class="woocommerce-LoopProduct-link"><img width="800" height="800"
 											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp"
 											class="attachment-shop_catalog size-shop_catalog"
 											alt="Valve Conduit Oil Seal Valve" decoding="async"
 											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-02015_.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/valve-conduit-oil-seal-valve/"
-										data-quantity="1" data-product_id="30990" data-product_sku="KA186FA-02015"
+										href="/SHOP/PRODUCTS/valve-conduit-oil-seal-valve.html" data-quantity="1"
+										data-product_id="30990" data-product_sku="KA186FA-02015"
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_30990"
@@ -5927,7 +5931,7 @@
 									</span>
 								</div>
 								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/valve-conduit-oil-seal-valve/">
+										href="/SHOP/PRODUCTS/valve-conduit-oil-seal-valve.html">
 										<h2 class="woocommerce-loop-product__title">Valve Conduit Oil Seal Valve
 										</h2>
 									</a>
@@ -5942,8 +5946,7 @@
 							</li>
 							<li
 								class="product_style_1 product type-product post-30988 status-publish instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
-								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/crank-case-gasket/"
+								<div class='woocommerce-image-wrapper'><a href="/SHOP/PRODUCTS/crank-case-gasket.html"
 										class="woocommerce-LoopProduct-link"><img loading="lazy" width="800"
 											height="800"
 											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp"
@@ -5951,8 +5954,8 @@
 											decoding="async"
 											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01015.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/crank-case-gasket/"
-										data-quantity="1" data-product_id="30988" data-product_sku="KA186FA-01015"
+										href="/SHOP/PRODUCTS/crank-case-gasket.html" data-quantity="1"
+										data-product_id="30988" data-product_sku="KA186FA-01015"
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_30988"
@@ -5960,7 +5963,7 @@
 									</span>
 								</div>
 								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/crank-case-gasket/">
+										href="/SHOP/PRODUCTS/crank-case-gasket.html">
 										<h2 class="woocommerce-loop-product__title">Crank Case Gasket</h2>
 									</a>
 									<div class='clearfix'></div>
@@ -5974,25 +5977,23 @@
 							</li>
 							<li
 								class="product_style_1 product type-product post-30984 status-publish last instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
-								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/main-bearing/"
+								<div class='woocommerce-image-wrapper'><a href="/SHOP/PRODUCTS/main-bearing.html"
 										class="woocommerce-LoopProduct-link"><img loading="lazy" width="800"
 											height="800"
-											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp"
+											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp"
 											class="attachment-shop_catalog size-shop_catalog" alt="Main Bearing"
 											decoding="async"
-											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/MAIN-BEARING.webp?resize=100%2C100&amp;ssl=1 100w"
+											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FA-01014.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/main-bearing/"
-										data-quantity="1" data-product_id="30984" data-product_sku="KA186FA-01014"
+										href="/SHOP/PRODUCTS/main-bearing.html" data-quantity="1"
+										data-product_id="30984" data-product_sku="KA186FA-01014"
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_30984"
 										class="screen-reader-text">
 									</span>
 								</div>
-								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/main-bearing/">
+								<div class='woocommerce-title-price-area'><a href="/SHOP/PRODUCTS/main-bearing.html">
 										<h2 class="woocommerce-loop-product__title">Main Bearing</h2>
 									</a>
 									<div class='clearfix'></div>
@@ -6006,17 +6007,16 @@
 							</li>
 							<li
 								class="product_style_1 product type-product post-30983 status-publish first instock product_cat-kaiao-spare-parts product_cat-spare-parts has-post-thumbnail taxable shipping-taxable product-type-simple">
-								<div class='woocommerce-image-wrapper'><a
-										href="https://www.allcertifiedequipment.com/product/cylinder-head-shim/"
+								<div class='woocommerce-image-wrapper'><a href="/SHOP/PRODUCTS/cylinder-head-shim.html"
 										class="woocommerce-LoopProduct-link"><img loading="lazy" width="800"
 											height="800"
-											src="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp"
+											src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp"
 											class="attachment-shop_catalog size-shop_catalog" alt="Cylinder Head Shim"
 											decoding="async"
 											srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/CYL.-HEAD-SHIM.webp?resize=100%2C100&amp;ssl=1 100w"
 											sizes="(max-width: 800px) 100vw, 800px" /></a><a rel="nofollow"
-										href="https://www.allcertifiedequipment.com/product/cylinder-head-shim/"
-										data-quantity="1" data-product_id="30983" data-product_sku="KA186FA-01013"
+										href="/SHOP/PRODUCTS/cylinder-head-shim.html" data-quantity="1"
+										data-product_id="30983" data-product_sku="KA186FA-01013"
 										class="button product_type_simple add_to_cart_"><i
 											class='fa fa-shopping-cart'></i> <span>Read more</span></a>
 									<span id="woocommerce_loop_add_to_cart_link_describedby_30983"
@@ -6024,7 +6024,7 @@
 									</span>
 								</div>
 								<div class='woocommerce-title-price-area'><a
-										href="https://www.allcertifiedequipment.com/product/cylinder-head-shim/">
+										href="/SHOP/PRODUCTS/cylinder-head-shim.html">
 										<h2 class="woocommerce-loop-product__title">Cylinder Head Shim</h2>
 									</a>
 									<div class='clearfix'></div>
@@ -6616,7 +6616,6 @@
 
 
 	<!--Footer Start-->
-	<!--Footer Start-->
 	<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
 		<div class="container">
 			<div class="row">
@@ -6638,11 +6637,16 @@
 				</div>
 				<div id="text-widget-7" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 about_us">
 					<h4 style="text-align: justify;">About Us</h4>
-					<p>All Certified Equipment Trading Corporation (ACETC) is a leading provider of high-quality
+					<p style="text-align: justify;">All Certified Equipment Trading Corporation (ACETC) is a leading
+						provider of high-quality
 						agricultural, construction, industrial, marine, and irrigation machinery in the
 						Philippines. With a commitment to excellence and customer satisfaction, ACETC offers a
 						comprehensive range of equipment and services designed to meet the diverse needs of our
 						clients across various industries.</p>
+				</div>
+				<div id="text-widget-7" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 about_us">
+					<img src="/HOME/IMAGES/ACETC-LOGO.png" alt="logo"
+						style="width: 100%; max-width: 200px; height: 200px; display: block; margin: -15px 150px">
 				</div>
 			</div>
 		</div>

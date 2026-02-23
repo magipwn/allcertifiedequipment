@@ -1723,7 +1723,7 @@ input[type=text]:focus,
 
 footer {
     background-color: #3d3d3d;
-    padding: 47px 0 64px 0;
+    padding: 47px 0 0px 0;
     color: #fff;
     font-size: 14px
 }
