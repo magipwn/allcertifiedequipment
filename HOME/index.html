@@ -52,10 +52,10 @@
 			position: relative;
 			padding: 150px 20px;
 			text-align: center;
-			background: radial-gradient(circle at 10% 20%, rgba(3, 78, 162, 0.15) 0%, transparent 40%),
+			background: radial-gradient(circle at 10% 20%, rgba(3, 162, 35, 0.15) 0%, transparent 40%),
 				radial-gradient(circle at 90% 80%, rgba(164, 255, 32, 0.1) 0%, transparent 40%);
 			overflow: hidden;
-			box-shadow: #00000097 0px 0px 20px, #02473087 0px 0px 20px;
+			box-shadow: #00000097 0px 0px 20px, #02471a87 0px 0px 20px;
 		}
 
 		.badge {
@@ -132,7 +132,7 @@
 
 		.card:hover {
 			border-color: var(--electric-lime);
-			background: rgba(255, 255, 255, 0.05);
+			background: rgba(0, 0, 0, 0.05);
 			transform: translateY(-10px);
 		}
 
@@ -425,14 +425,15 @@
 
 	<style>
 		.rpspmf {
-			position: relative;
-			width: 80%;
+			margin: 0px 160px;
+			width: 1200px;
 			height: 500px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-			background-color: rgba(255, 255, 255, 0.555);
-			border-radius: 50px;
+			align-items: center;
+			background-color: white;
+			border-radius: 25px;
 			gap: 30px;
 			font-family: 'Montserrat';
 		}
@@ -471,7 +472,7 @@
 			display: block;
 			border-radius: 15px;
 			padding: 15px;
-			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
+			box-shadow: 0px 0px 30px rgba(7, 169, 2, 0.219);
 		}
 
 		.rpspmf .left .center .desc {
@@ -479,7 +480,7 @@
 			color: #000000;
 			text-align: justify;
 			display: block;
-			box-shadow: 0px 0px 75px rgba(255, 128, 0, 0.219);
+			box-shadow: 0px 0px 30px rgba(7, 169, 2, 0.219);
 			padding: 15px;
 			border-radius: 15px;
 
@@ -507,7 +508,7 @@
 			background-color: white;
 			overflow: hidden;
 			border-radius: 20px;
-			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.233);
+			box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.233);
 		}
 
 		.rpspmf .right .center .slides {
@@ -622,11 +623,11 @@
 		.container-agrihowdoesitwork .header_text .header_textmargined {
 			position: absolute;
 			display: flex;
-			width: 95%;
+			width: 90%;
 			height: 70%;
 			border-radius: 25px;
 			background-color: rgb(255, 255, 255);
-			box-shadow: 0px 0px 25px rgba(0, 128, 0, 0.7);
+			box-shadow: 0px 0px 15px rgba(0, 184, 0, 0.61);
 			font-size: 50px;
 			align-items: center;
 			padding-left: 20px;
@@ -765,14 +766,14 @@
 
 		/* Match slider container to image dimensions (2001x625) */
 		.header_rev_slider_container {
-			aspect-ratio: 2001/625;
+			aspect-ratio: 1512/475;
 			width: 100%;
 			max-width: 100%;
 			overflow: hidden
 		}
 
 		.header_rev_slider_container rs-module-wrap {
-			aspect-ratio: 2001/625 !important
+			aspect-ratio: 1512/475 !important
 		}
 	</style>
 	<!--SYLES FOR ACETC JCB DIRECTORY-->
@@ -6391,11 +6392,123 @@
 		type='text/css' media='all' />
 
 	<style>
+		.full-width-modern-section {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.content-card {
+			background-color: #242b2e !important;
+			border-radius: 0 !important;
+			padding: 60px;
+			color: #ffffff;
+			position: relative;
+			left: 50% !important;
+			right: 50% !important;
+			margin-left: -50vw !important;
+			margin-right: -50vw !important;
+			width: 100vw !important;
+			box-sizing: border-box;
+			box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6);
+		}
+
+		.top-flex-row {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 50px;
+			margin-bottom: 60px;
+		}
+
+		.text-container {
+			flex: 1;
+			min-width: 320px;
+		}
+
+		.text-container h2 {
+			color: #58cc02 !important;
+			font-size: 5rem;
+			font-weight: 900;
+			margin-bottom: 15px;
+			line-height: 1;
+		}
+
+		.text-container p {
+			color: #a0aec0;
+			font-size: 1.5rem;
+		}
+
+		.stat-icon-circle {
+			width: 130px;
+			height: 130px;
+			margin-bottom: 20px;
+			transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		}
+
+		.stat-value {
+			font-size: 4.5rem;
+			font-weight: 800;
+			color: #ffffff;
+			line-height: 1;
+		}
+
+		.stat-description {
+			color: #58cc02;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin-top: 10px;
+		}
+
+		.video-side {
+			flex: 1.5;
+			min-width: 300px;
+		}
+
+		.wide-stats-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			padding-top: 50px;
+			width: 100%;
+		}
+
+		.stat-entry {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		.stat-entry:hover .stat-icon-circle {
+			transform: scale(1.15) rotate(5deg);
+		}
+
+		@media (max-width: 992px) {
+			.wide-stats-row {
+				flex-direction: column;
+				gap: 40px;
+			}
+
+			.text-container h2 {
+				font-size: 2.5rem;
+			}
+
+			.video-side {
+				min-width: 100%;
+			}
+		}
+	</style>
+	<style>
 		:root {
 			--samsung-blue: #034EA2;
 			--accent-1: rgba(35, 144, 69, 1);
-			--accent-2: #6ad09d;
-			--accent-3: #379f8a;
+			--accent-2: #6ad07f;
+			--accent-3: #379f55;
 			--glass: rgba(255, 255, 255, 0.03);
 			--border-glass: rgba(255, 255, 255, 0.1);
 			--deep-black: #020c1b;
@@ -6421,8 +6534,8 @@
 			text-align: center;
 			background:
 				radial-gradient(circle at 10% 20%, rgba(0, 255, 127, 0.4) 0%, transparent 40%),
-				radial-gradient(circle at 90% 80%, rgba(0, 200, 255, 0.4) 0%, transparent 40%),
-				linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+				radial-gradient(circle at 90% 80%, rgba(0, 255, 119, 0.4) 0%, transparent 40%),
+				linear-gradient(135deg, #053a0b 0%, #023911 100%);
 		}
 
 		@keyframes shine {
@@ -6432,7 +6545,7 @@
 		}
 
 		.badge {
-			background: linear-gradient(90deg, #17693ddd, #2b9075);
+			background: linear-gradient(90deg, #186917dd, #2b9030);
 			color: #fff;
 			padding: 8px 20px;
 			border-radius: 100px;
@@ -6442,7 +6555,7 @@
 			letter-spacing: 2px;
 			margin-bottom: 30px;
 			display: inline-block;
-			box-shadow: 0 0 20px rgba(30, 227, 181, 0.4);
+			box-shadow: 0 0 20px rgba(30, 227, 132, 0.4);
 		}
 
 		h1 {
@@ -6586,7 +6699,7 @@
 
 		.card:hover {
 			border-color: var(--accent-2);
-			box-shadow: 0 0 30px rgba(79, 172, 254, 0.2);
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 		}
 
 		.card:hover .card-bg {
@@ -6960,15 +7073,15 @@
 		<!-- START homepage REVOLUTION SLIDER 6.7.40 -->
 		<p class="rs-p-wp-fix"></p>
 		<rs-module-wrap id="rev_slider_2_1_wrapper" data-source="gallery"
-			style="visibility:hidden;background:#E9E9E9;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+			style="visibility:hidden;background:#E9E9E9;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;width:1512px;height:475px;">
 			<rs-module id="rev_slider_2_1" data-version="6.7.40">
-				<rs-slides style="overflow: hidden; position: absolute;">
+				<rs-slides style="overflow: hidden; position: absolute; width: 1512px; height: 475px;">
 					<rs-slide style="position: absolute;" data-key="rs-39" data-title="Slide 1"
 						data-thumb="/HOME/IMAGES/header-img-1.png" data-anim="f:nodelay;" data-in="o:0;"
 						data-out="o:0;">
 						<img fetchpriority="high"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="MF1650E &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="MF1650E &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/JCB.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
@@ -6978,7 +7091,7 @@
 						data-link="//jcb.allcertifiedequipment.com/product/2dx/" data-tag="l" data-target="_self"
 						data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="Backhoe Loaders" width="2000" height="625"
+							alt="" title="Backhoe Loaders" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-2.png"
 							data-no-retina>
 					</rs-slide>
@@ -6987,7 +7100,7 @@
 						data-thumb="//www.allcertifiedequipment.com/wp-content/uploads/2025/03/maxcanecover-100x50.webp"
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="maxcanecover" width="1400" height="400"
+							alt="" title="maxcanecover" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-3.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
@@ -6998,7 +7111,7 @@
 						data-tag="l" data-target="_self" data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="Telescopic Handlers" width="2000" height="625"
+							alt="" title="Telescopic Handlers" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-4.png"
 							data-no-retina>
 					</rs-slide>
@@ -7008,8 +7121,8 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="MF5708 X KUHN PLANTER 3M &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
-							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
+							alt="" title="MF5708 X KUHN PLANTER 3M &#8211; BANNER WEBSITE 2001 X 625PX" width="1512"
+							height="475" class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="/HOME/IMAGES/header-img-5.png" data-bg="p:center top;" data-no-retina>
 					</rs-slide>
 
@@ -7018,7 +7131,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="BANNER WEBSITE 2001 X 625PX22" width="2001" height="625"
+							alt="" title="BANNER WEBSITE 2001 X 625PX22" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-6.png"
 							data-bg="p:right center;" data-no-retina>
 					</rs-slide>
@@ -7028,7 +7141,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="TAJIMA &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="TAJIMA &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-7.png"
 							data-bg="p:left bottom;" data-no-retina>
 					</rs-slide>
@@ -7038,7 +7151,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="MF2600 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="MF2600 &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-8.png"
 							data-bg="p:left center;" data-no-retina>
 					</rs-slide>
@@ -7048,8 +7161,8 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="FIELDKING TRAILER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001"
-							height="625" class="rev-slidebg tp-rs-img rs-lazyload"
+							alt="" title="FIELDKING TRAILER &#8211; BANNER WEBSITE 2001 X 625PX" width="1512"
+							height="475" class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="/HOME/IMAGES/header-img-9.png" data-no-retina>
 					</rs-slide>
 
@@ -7059,7 +7172,7 @@
 						data-tag="l" data-target="_self" data-seoz="front" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="Tracked Excavators" width="2000" height="625"
+							alt="" title="Tracked Excavators" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-10.png"
 							data-no-retina>
 					</rs-slide>
@@ -7069,7 +7182,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="CMT DISC PLOW &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="CMT DISC PLOW &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-11.png"
 							data-bg="p:center bottom;" data-no-retina>
 					</rs-slide>
@@ -7079,7 +7192,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="MF2600A &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="MF2600A &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-12.png"
 							data-bg="p:left bottom;" data-no-retina>
 					</rs-slide>
@@ -7089,7 +7202,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="MF5700 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="MF5700 &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-13.png"
 							data-bg="p:center bottom;" data-no-retina>
 					</rs-slide>
@@ -7101,7 +7214,7 @@
 						data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="Skid Steer Loaders" width="2000" height="625"
+							alt="" title="Skid Steer Loaders" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/HOME/IMAGES/header-img-14.png"
 							data-no-retina>
 					</rs-slide>
@@ -7111,7 +7224,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="ATISCO PLANTER &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="ATISCO PLANTER &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/ATISCO-PLANTER-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-no-retina>
@@ -7122,7 +7235,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="SIP ROTAVATOR 1 &#8211; BANNER WEBSITE 2001 X 625PX" width="2001" height="625"
+							alt="" title="SIP ROTAVATOR 1 &#8211; BANNER WEBSITE 2001 X 625PX" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/05/SIP-ROTAVATOR-1-BANNER-WEBSITE-2001-X-625PX.webp"
 							data-no-retina>
@@ -7133,7 +7246,7 @@
 						data-anim="f:nodelay;" data-in="o:0;" data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="DJI-AGRAS-T50-Ready-Steady-Go_59.jpeg" width="2560" height="1440"
+							alt="" title="DJI-AGRAS-T50-Ready-Steady-Go_59.jpeg" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/revslider/video-media/DJI-AGRAS-T50-Ready-Steady-Go_59.jpeg"
 							data-no-retina>
@@ -7148,7 +7261,7 @@
 						data-out="o:0;">
 						<img loading="lazy"
 							src="//www.allcertifiedequipment.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-							alt="" title="Mini Excavators" width="2000" height="625"
+							alt="" title="Mini Excavators" width="1512" height="475"
 							class="rev-slidebg tp-rs-img rs-lazyload"
 							data-lazyload="//www.allcertifiedequipment.com/wp-content/uploads/2025/10/Mini-Excavators.webp"
 							data-no-retina>
@@ -7156,7 +7269,7 @@
 				</rs-slides>
 			</rs-module>
 			<script data-jetpack-boost="ignore">
-				setREVStartSize({ c: 'rev_slider_2_1', rl: [1240, 1024, 778, 480], el: [625, 768, 960, 592], gw: [1170, 1024, 778, 480], gh: [625, 768, 960, 420], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" }); if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider21"] !== undefined) { window.RS_MODULES.modules["revslider21"].once = false; window.revapi2 = undefined; if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal() }
+				setREVStartSize({ c: 'rev_slider_2_1', rl: [1240, 1024, 778, 480], el: [475, 475, 475, 475], gw: [1170, 1024, 778, 480], gh: [475, 475, 475, 475], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" }); if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider21"] !== undefined) { window.RS_MODULES.modules["revslider21"].once = false; window.revapi2 = undefined; if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal() }
 			</script>
 		</rs-module-wrap>
 		<!-- END REVOLUTION SLIDER -->
@@ -7796,6 +7909,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="rpspmf">
+
+					<div class="left">
+						<div class="center">
+							<div class="head">Reliable power, superior performance Massey Ferguson, your trusted farming
+								partner!</div>
+							<div class="desc">Massey Ferguson has long been recognized as the leading name in
+								agricultural machinery, providing farmers with high-performance, durable, and efficient
+								tractors designed to tackle the toughest farming conditions. In the Philippines, where
+								agriculture plays a crucial role in the economy, Massey Ferguson farm tractors stand out
+								as the preferred choice for farmers who need reliable equipment to boost productivity
+								and maximize yields.</div>
+						</div>
 
 				<!-- new area -->
 				<div class="cahdiw">
@@ -7841,141 +7967,48 @@
 					</div>
 				</div>
 
-				<!-- end of new area -->
-
-				<div class="elementor-element elementor-element-9a6189a e-flex e-con-boxed e-con e-parent"
-					data-id="9a6189a" data-element_type="container">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-01c32f9 e-con-full e-flex e-con e-child"
-							data-id="01c32f9" data-element_type="container"
-							data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_range&quot;:&quot;page&quot;,&quot;background_motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
-							<div class="elementor-element elementor-element-f6bd510 elementor-invisible elementor-widget elementor-widget-heading"
-								data-id="f6bd510" data-element_type="widget"
-								data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-								data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">Your Partner in Farm
-										Modernization</h2>
-								</div>
-							</div>
+				<br><br>
+				<div class="content-card">
+					<div class="top-flex-row">
+						<div class="text-container">
+							<h2>Our Population</h2>
+							<p>Driving Agricultural Innovation Nationwide</p>
 						</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-d339cdd e-flex e-con-boxed e-con e-parent"
-					data-id="d339cdd" data-element_type="container">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-bc655dd e-con-full e-flex e-con e-child"
-							data-id="bc655dd" data-element_type="container">
+
+						<div class="video-side">
 							<div class="elementor-element elementor-element-7aa5528 elementor-widget elementor-widget-facebook-embed"
 								data-id="7aa5528" data-element_type="widget" data-widget_type="facebook-embed.default">
 								<div class="elementor-widget-container">
-									<div style="min-height: 1px" class="elementor-facebook-widget fb-video"
+									<div style="min-height: 600px" class="elementor-facebook-widget fb-video"
 										data-href="https://www.facebook.com/acetcph/videos/1279092138887727"
-										data-show-text="false" data-allowfullscreen="false" data-autoplay="true"
-										data-show-captions="false"></div>
+										data-show-text="false" data-allowfullscreen="true" data-autoplay="true"
+										data-show-captions="false">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="elementor-element elementor-element-b47ddd8 e-con-full e-flex e-con e-parent"
-					data-id="b47ddd8" data-element_type="container"
-					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_range&quot;:&quot;page&quot;,&quot;background_motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
-					<div class="elementor-element elementor-element-57a5783 elementor-invisible elementor-widget elementor-widget-heading"
-						data-id="57a5783" data-element_type="widget"
-						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-						data-widget_type="heading.default">
-						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Our Population</h2>
+
+					<div class="wide-stats-row">
+						<div class="stat-entry">
+							<img src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/employeesicon.webp"
+								class="stat-icon-circle">
+							<span class="stat-value">180</span>
+							<span class="stat-description">Employees</span>
 						</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-f6cc550 e-flex e-con-boxed e-con e-parent"
-					data-id="f6cc550" data-element_type="container">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-33c489a e-con-full e-flex e-con e-child"
-							data-id="33c489a" data-element_type="container">
-							<div class="elementor-element elementor-element-6030938 elementor-widget elementor-widget-image"
-								data-id="6030938" data-element_type="widget" data-widget_type="image.default">
-								<div class="elementor-widget-container">
-									<img loading="lazy" decoding="async" loading="lazy" width="150" height="150"
-										src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/employeesicon.webp?resize=150%2C150&amp;ssl=1"
-										class="elementor-animation-wobble-horizontal attachment-thumbnail size-thumbnail wp-image-27526"
-										alt=""
-										srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/employeesicon.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/employeesicon.webp?resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/employeesicon.webp?zoom=2&amp;resize=150%2C150&amp;ssl=1 300w"
-										sizes="auto, (max-width: 150px) 100vw, 150px" />
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-bb8b24a elementor-widget elementor-widget-counter"
-								data-id="bb8b24a" data-element_type="widget" data-widget_type="counter.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">EMPLOYEES</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-duration="2000"
-												data-to-value="180" data-from-value="0" data-delimiter=",">0</span>
-											<span class="elementor-counter-number-suffix"></span>
-										</div>
-									</div>
-								</div>
-							</div>
+
+						<div class="stat-entry">
+							<img src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/branchesicon.webp"
+								class="stat-icon-circle">
+							<span class="stat-value">14</span>
+							<span class="stat-description">Branches</span>
 						</div>
-						<div class="elementor-element elementor-element-3b53662 e-con-full e-flex e-con e-child"
-							data-id="3b53662" data-element_type="container">
-							<div class="elementor-element elementor-element-15852df elementor-widget elementor-widget-image"
-								data-id="15852df" data-element_type="widget" data-widget_type="image.default">
-								<div class="elementor-widget-container">
-									<img loading="lazy" decoding="async" loading="lazy" width="150" height="150"
-										src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/branchesicon.webp?resize=150%2C150&amp;ssl=1"
-										class="elementor-animation-wobble-to-bottom-right attachment-thumbnail size-thumbnail wp-image-27522"
-										alt=""
-										srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/branchesicon.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/branchesicon.webp?resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/branchesicon.webp?zoom=2&amp;resize=150%2C150&amp;ssl=1 300w"
-										sizes="auto, (max-width: 150px) 100vw, 150px" />
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-771e946 elementor-widget elementor-widget-counter"
-								data-id="771e946" data-element_type="widget" data-widget_type="counter.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">BRANCHES</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-duration="2000"
-												data-to-value="14" data-from-value="0" data-delimiter=",">0</span>
-											<span class="elementor-counter-number-suffix"></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-da53623 e-con-full e-flex e-con e-child"
-							data-id="da53623" data-element_type="container">
-							<div class="elementor-element elementor-element-113d90b elementor-widget elementor-widget-image"
-								data-id="113d90b" data-element_type="widget" data-widget_type="image.default">
-								<div class="elementor-widget-container">
-									<img loading="lazy" decoding="async" loading="lazy" width="150" height="150"
-										src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/dealersicon.webp?resize=150%2C150&amp;ssl=1"
-										class="elementor-animation-wobble-top attachment-thumbnail size-thumbnail wp-image-27517"
-										alt=""
-										srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/dealersicon.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/dealersicon.webp?resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/dealersicon.webp?zoom=2&amp;resize=150%2C150&amp;ssl=1 300w"
-										sizes="auto, (max-width: 150px) 100vw, 150px" />
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-4ba12cf elementor-widget elementor-widget-counter"
-								data-id="4ba12cf" data-element_type="widget" data-widget_type="counter.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">DEALERS</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-duration="2000"
-												data-to-value="155" data-from-value="0" data-delimiter=",">0</span>
-											<span class="elementor-counter-number-suffix"></span>
-										</div>
-									</div>
-								</div>
-							</div>
+
+						<div class="stat-entry">
+							<img src="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/05/dealersicon.webp"
+								class="stat-icon-circle">
+							<span class="stat-value">155</span>
+							<span class="stat-description">Dealers</span>
 						</div>
 					</div>
 				</div>
@@ -8050,7 +8083,8 @@
 				</div>
 				<div id="text-widget-7" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 list col-xs-12 about_us">
 					<h4 style="text-align: justify;">About Us</h4>
-					<p>All Certified Equipment Trading Corporation (ACETC) is a leading provider of high-quality
+					<p style="text-align: justify;">All Certified Equipment Trading Corporation (ACETC) is a leading
+						provider of high-quality
 						agricultural, construction, industrial, marine, and irrigation machinery in the
 						Philippines. With a commitment to excellence and customer satisfaction, ACETC offers a
 						comprehensive range of equipment and services designed to meet the diverse needs of our
