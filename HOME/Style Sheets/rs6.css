@@ -428,8 +428,8 @@ rs-sbg-wrap {position:absolute;
  top:0px;
  left:0px;
  z-index:0;
-width:100%;
-height:100%;
+width:1512px;
+height:475px;
 display: block;
 }
 
@@ -710,8 +710,8 @@ transform-style: preserve-3d;
 
 rs-mask-wrap { overflow: hidden }
 rs-fullwidth-wrap { position:relative;
-width:100%;
-height:auto;
+width:1512px;
+height:475px;
 display: block;
  overflow:visible;
 max-width:none !important;
@@ -735,7 +735,7 @@ rs-row.rs-layer 	{
 
 	position:relative;
 
-	width:100% !important;
+	width:1512px !important;
 
 	table-layout: fixed;
 
@@ -743,7 +743,7 @@ rs-row.rs-layer 	{
 
 	vertical-align: top;
 
-	height:auto;
+	height:475px;
 
 	font-size:0px;
 
