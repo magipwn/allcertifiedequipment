@@ -53,6 +53,113 @@
 
 		/*# sourceURL=wp-emoji-styles-inline-css */
 	</style>
+
+	<!--HEADLINE EDIT-->
+	<style>
+		.hl {
+			width: 100%;
+			background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 53, 31));
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 120px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.hl::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 60%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, rgba(0, 228, 133, 0.7), transparent);
+			animation: shimmer 3s ease-in-out infinite;
+		}
+
+		@keyframes shimmer {
+			0% {
+				left: -60%;
+			}
+
+			100% {
+				left: 160%;
+			}
+		}
+
+		.hl .hcenter {
+			width: 80%;
+			height: 100%;
+			display: flex;
+		}
+
+		.hl .hcenter .hleft {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 0px;
+		}
+
+		.hl .hcenter .hleft .mainh {
+			align-items: flex-end;
+			font-size: 25px;
+			font-weight: 800;
+			color: white;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.hl .hcenter .hleft .subh {
+			align-items: flex-start;
+			font-size: 15px;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.712);
+		}
+
+		.hl .hcenter .hright {
+			width: 50%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.hl .hcenter .hright .directory {
+			color: white;
+			width: 40%;
+			height: 20%;
+			position: static;
+			font-size: 20px;
+		}
+
+		.directory a {
+			position: relative;
+			color: white !important;
+			text-decoration: none;
+		}
+
+		.directory a:hover {
+			color: #00ff40f6 !important;
+		}
+
+		.directory a::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+			width: 0;
+			height: 2px;
+			background: #00bfff;
+			transition: width 0.3s ease;
+		}
+
+		.directory a:hover::after {
+			width: 100%;
+		}
+	</style>
+
+
+
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://www.allcertifiedequipment.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9'
 		type='text/css' media='all' />
@@ -5485,7 +5592,8 @@
 									<li>0 items, Total of <span class="woocommerce-Price-amount amount"><bdi><span
 													class="woocommerce-Price-currencySymbol">&#8369;</span>0.00</bdi></span>
 										<span class='padding-horizontal-5'>|</span> <a
-											href='https://www.allcertifiedequipment.com/cart/'>Checkout</a></li>
+											href='https://www.allcertifiedequipment.com/cart/'>Checkout</a>
+									</li>
 								</ul>
 							</li>
 
@@ -5546,7 +5654,8 @@
 											<li id="menu-item-22475"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22475 nav-item">
 												<a href="https://www.allcertifiedequipment.com/"
-													class="nav-link">Home</a></li>
+													class="nav-link">Home</a>
+											</li>
 											<li id="menu-item-22850"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22850 nav-item dropdown">
 												<a href="https://www.allcertifiedequipment.com/products/"
@@ -5595,7 +5704,8 @@
 											<li id="menu-item-22483"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22483 nav-item">
 												<a href="https://www.allcertifiedequipment.com/about-us/"
-													class="nav-link">About Us</a></li>
+													class="nav-link">About Us</a>
+											</li>
 											<li id="menu-item-24484"
 												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24484 nav-item dropdown">
 												<a href="#" class="nav-link dropdown-toggle"
@@ -5625,11 +5735,13 @@
 											<li id="menu-item-22782"
 												class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-22782 active nav-item">
 												<a href="https://www.allcertifiedequipment.com/units-spare-parts/"
-													class="nav-link">Units &amp; Spare Parts</a></li>
+													class="nav-link">Units &amp; Spare Parts</a>
+											</li>
 											<li id="menu-item-22473"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22473 nav-item">
 												<a href="https://www.allcertifiedequipment.com/contact-us/"
-													class="nav-link">Contact</a></li>
+													class="nav-link">Contact</a>
+											</li>
 										</ul>
 									</div>
 									<div class="mobile-menu-main-menu-container">
@@ -5638,47 +5750,58 @@
 											<li id="menu-item-30649"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30649 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/"
-													class="nav-link">Products</a></li>
+													class="nav-link">Products</a>
+											</li>
 											<li id="menu-item-30634"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30634 nav-item">
 												<a href="https://www.allcertifiedequipment.com/about-us/"
-													class="nav-link">About Us</a></li>
+													class="nav-link">About Us</a>
+											</li>
 											<li id="menu-item-30644"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30644 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/agriculture/"
-													class="nav-link">Agriculture</a></li>
+													class="nav-link">Agriculture</a>
+											</li>
 											<li id="menu-item-30637"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30637 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/construction/"
-													class="nav-link">Construction</a></li>
+													class="nav-link">Construction</a>
+											</li>
 											<li id="menu-item-30638"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30638 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/golf/"
-													class="nav-link">Golf</a></li>
+													class="nav-link">Golf</a>
+											</li>
 											<li id="menu-item-30643"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30643 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/industrial/"
-													class="nav-link">Industrial</a></li>
+													class="nav-link">Industrial</a>
+											</li>
 											<li id="menu-item-30640"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30640 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/irrigation/"
-													class="nav-link">Irrigation</a></li>
+													class="nav-link">Irrigation</a>
+											</li>
 											<li id="menu-item-30641"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30641 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/irrigation/agriculture-irrigation/"
-													class="nav-link">Agriculture</a></li>
+													class="nav-link">Agriculture</a>
+											</li>
 											<li id="menu-item-30639"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30639 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/marine/"
-													class="nav-link">Marine</a></li>
+													class="nav-link">Marine</a>
+											</li>
 											<li id="menu-item-30636"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30636 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/spare-parts/"
-													class="nav-link">Spare Parts</a></li>
+													class="nav-link">Spare Parts</a>
+											</li>
 											<li id="menu-item-30642"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30642 nav-item">
 												<a href="https://www.allcertifiedequipment.com/products/service/"
-													class="nav-link">Service</a></li>
+													class="nav-link">Service</a>
+											</li>
 											<li id="menu-item-30645"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-30645 nav-item dropdown">
 												<a href="https://www.allcertifiedequipment.com/careers/"
@@ -5692,11 +5815,13 @@
 											<li id="menu-item-30622"
 												class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-30622 active nav-item">
 												<a href="https://www.allcertifiedequipment.com/units-spare-parts/"
-													class="nav-link">Units &#038; Spare Parts</a></li>
+													class="nav-link">Units &#038; Spare Parts</a>
+											</li>
 											<li id="menu-item-30647"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30647 nav-item">
 												<a href="https://www.allcertifiedequipment.com/contact-us/"
-													class="nav-link">Contact Us</a></li>
+													class="nav-link">Contact Us</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -5719,19 +5844,18 @@
 
 	<section id="secondary-banner" class=""
 		style='background-image: url(https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/banner-acetcspareparts4darker.webp?fit=1400%2C310&ssl=1);'>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 title-column">
-					<h1 class="main-heading">Fuel Filter</h1>
-					<h4 class="secondary-heading">KA186FF </h4>
+		<div class="hl">
+			<div class="hcenter">
+				<div class="hleft">
+					<div class="mainh">Fuel Filter</div>
+					<div class="subh">KA186FF</div>
 				</div>
-				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 breadcrumb-column">
-					<nav class='breadcrumb woocommerce_breadcrumb'><a
-							href="https://www.allcertifiedequipment.com">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
-							href="https://www.allcertifiedequipment.com/product-category/spare-parts/">Spare
-							Parts</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
-							href="https://www.allcertifiedequipment.com/product-category/spare-parts/kaiao-spare-parts/">Kaiao</a>&nbsp;&nbsp;/&nbsp;&nbsp;Fuel
-						Filter</nav>
+
+				<div class="hright">
+					<nav class='directory'>
+						<a href="/HOME/index.html">Home</a> |
+						<a href="/SHOP/shop.html">Shop</a>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -5784,7 +5908,8 @@
 													data-large_image_width="800" data-large_image_height="800"
 													decoding="async"
 													srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF.webp?resize=100%2C100&amp;ssl=1 100w"
-													sizes="(max-width: 800px) 100vw, 800px" /></a></div>
+													sizes="(max-width: 800px) 100vw, 800px" /></a>
+										</div>
 										<div data-thumb="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp"
 											class="woocommerce-product-gallery__image woocommerce-product-gallery__thumbnail-image">
 											<a
@@ -5797,7 +5922,8 @@
 													data-large_image_width="800" data-large_image_height="800"
 													decoding="async"
 													srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF__.webp?resize=100%2C100&amp;ssl=1 100w"
-													sizes="(max-width: 800px) 100vw, 800px" /></a></div>
+													sizes="(max-width: 800px) 100vw, 800px" /></a>
+										</div>
 										<div data-thumb="https://www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp"
 											class="woocommerce-product-gallery__image woocommerce-product-gallery__thumbnail-image">
 											<a
@@ -5810,7 +5936,8 @@
 													data-large_image_width="800" data-large_image_height="800"
 													decoding="async"
 													srcset="https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp?w=800&amp;ssl=1 800w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/KA186FF_.webp?resize=100%2C100&amp;ssl=1 100w"
-													sizes="(max-width: 800px) 100vw, 800px" /></a></div>
+													sizes="(max-width: 800px) 100vw, 800px" /></a>
+										</div>
 										<div class="clearfix"></div>
 									</figure>
 								</div>
@@ -5906,7 +6033,8 @@
 																			email address will not be published.</span>
 																		<span class="required-field-message">Required
 																			fields are marked <span
-																				class="required">*</span></span></p>
+																				class="required">*</span></span>
+																	</p>
 																	<div class="comment-form-rating"><label for="rating"
 																			id="comment-form-rating-label">Your
 																			rating&nbsp;<span

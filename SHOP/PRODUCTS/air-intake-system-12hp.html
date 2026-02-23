@@ -53,6 +53,112 @@
 
 		/*# sourceURL=wp-emoji-styles-inline-css */
 	</style>
+
+	<!--HEADLINE EDIT-->
+	<style>
+		.hl {
+			width: 100%;
+			background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 53, 31));
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 120px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.hl::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 60%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, rgba(0, 228, 133, 0.7), transparent);
+			animation: shimmer 3s ease-in-out infinite;
+		}
+
+		@keyframes shimmer {
+			0% {
+				left: -60%;
+			}
+
+			100% {
+				left: 160%;
+			}
+		}
+
+		.hl .hcenter {
+			width: 80%;
+			height: 100%;
+			display: flex;
+		}
+
+		.hl .hcenter .hleft {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 0px;
+		}
+
+		.hl .hcenter .hleft .mainh {
+			align-items: flex-end;
+			font-size: 25px;
+			font-weight: 800;
+			color: white;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.hl .hcenter .hleft .subh {
+			align-items: flex-start;
+			font-size: 15px;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.712);
+		}
+
+		.hl .hcenter .hright {
+			width: 50%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.hl .hcenter .hright .directory {
+			color: white;
+			width: 40%;
+			height: 20%;
+			position: static;
+			font-size: 20px;
+		}
+
+		.directory a {
+			position: relative;
+			color: white !important;
+			text-decoration: none;
+		}
+
+		.directory a:hover {
+			color: #00ff40f6 !important;
+		}
+
+		.directory a::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+			width: 0;
+			height: 2px;
+			background: #00bfff;
+			transition: width 0.3s ease;
+		}
+
+		.directory a:hover::after {
+			width: 100%;
+		}
+	</style>
+
+
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://www.allcertifiedequipment.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9'
 		type='text/css' media='all' />
@@ -5735,19 +5841,18 @@
 
 	<section id="secondary-banner" class=""
 		style='background-image: url(https://i0.wp.com/www.allcertifiedequipment.com/wp-content/uploads/2025/12/banner-acetcspareparts4darker.webp?fit=1400%2C310&ssl=1);'>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 title-column">
-					<h1 class="main-heading">Air Intake System 12hp</h1>
-					<h4 class="secondary-heading">KA186F-07000</h4>
+		<div class="hl">
+			<div class="hcenter">
+				<div class="hleft">
+					<div class="mainh">Air Intake System 12hp</div>
+					<div class="subh">KA186F-07000</div>
 				</div>
-				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 breadcrumb-column">
-					<nav class='breadcrumb woocommerce_breadcrumb'><a
-							href="https://www.allcertifiedequipment.com">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
-							href="https://www.allcertifiedequipment.com/product-category/spare-parts/">Spare
-							Parts</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
-							href="https://www.allcertifiedequipment.com/product-category/spare-parts/kaiao-spare-parts/">Kaiao</a>&nbsp;&nbsp;/&nbsp;&nbsp;Air
-						Intake System 12hp</nav>
+
+				<div class="hright">
+					<nav class='directory'>
+						<a href="/HOME/index.html">Home</a> |
+						<a href="/SHOP/shop.html">Shop</a>
+					</nav>
 				</div>
 			</div>
 		</div>
