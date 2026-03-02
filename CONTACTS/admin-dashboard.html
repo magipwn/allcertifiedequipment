@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Dashboard - All Certified Equipment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #0f6c18 0%, #0c4803 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0 0 0;
+        }
+
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #438828;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #08931a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f8f9fa;
+            border-bottom: 2px solid #ddd;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            color: #555;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .empty-state {
+            padding: 40px;
+            text-align: center;
+            color: #999;
+        }
+
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .modal-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .field-label {
+            font-weight: 600;
+            color: #6aea66;
+            margin-top: 8px;
+        }
+
+        .field-value {
+            color: #333;
+            margin: 4px 0 0 0;
+            word-break: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="contact-us.html" class="back-link">← Back to Contact Form</a>
+
+        <div class="header">
+            <h1>All Certified Equipment Trading Corporation <br> Inquiry Management Dashboard</h1>
+            <p style="color: #666; margin-top: 5px;">Manage and view all customer inquiries</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-label">Total Inquiries</div>
+                    <div class="stat-value" id="total-count">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Last Submission</div>
+                    <div class="stat-value" id="last-submission" style="font-size: 14px;">Never</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn-primary" onclick="exportData('json')">Export JSON</button>
+                <button class="btn-primary" onclick="exportData('csv')">Export CSV</button>
+                <button class="btn-secondary" onclick="refreshData()">Refresh</button>
+                <button class="btn-danger" onclick="showClearModal()">Clear All</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="inquiries-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Location</th>
+                        <th>Dealer</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="inquiries-body">
+                    <tr>
+                        <td colspan="8" class="empty-state">
+                            <p>No inquiries yet. Contact form submissions will appear here.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- View Details Modal -->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <h2>Inquiry Details</h2>
+            <div id="modal-details"></div>
+            <div class="modal-buttons">
+                <button class="btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clear Confirmation Modal -->
+    <div class="modal" id="clearModal">
+        <div class="modal-content">
+            <h2>Clear All Inquiries?</h2>
+            <p>This action cannot be undone. All stored inquiries will be permanently deleted.</p>
+            <div class="modal-buttons">
+                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn-danger" onclick="confirmClear()">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load and display inquiries
+        function loadInquiries() {
+            const storageKey = "inquiries_db_v1";
+            const data = localStorage.getItem(storageKey);
+
+            if (!data) {
+                updateEmptyState();
+                return;
+            }
+
+            try {
+                const parsed = JSON.parse(data);
+                const inquiries = parsed.inquiries || [];
+
+                if (inquiries.length === 0) {
+                    updateEmptyState();
+                    return;
+                }
+
+                // Update stats
+                document.getElementById('total-count').textContent = inquiries.length;
+
+                if (inquiries.length > 0) {
+                    const lastSubmission = new Date(inquiries[0].submitted_at);
+                    const formattedDate = lastSubmission.toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    document.getElementById('last-submission').textContent = formattedDate;
+                }
+
+                // Populate table (sorted by newest first)
+                const tbody = document.getElementById('inquiries-body');
+                tbody.innerHTML = inquiries
+                    .sort((a, b) => new Date(b.submitted_at) - new Date(a.submitted_at))
+                    .map((inquiry, index) => `
+						<tr>
+							<td>${inquiry.id}</td>
+							<td>${new Date(inquiry.submitted_at).toLocaleDateString()} ${new Date(inquiry.submitted_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</td>
+							<td>${inquiry.full_name}</td>
+							<td>${inquiry.email_address}</td>
+							<td>${inquiry.contact_number}</td>
+							<td>${inquiry.location}</td>
+							<td>${inquiry.preferred_dealer}</td>
+							<td><button class="btn-secondary" onclick="viewDetails(${index})">View</button></td>
+						</tr>
+					`)
+                    .join('');
+            } catch (error) {
+                console.error('Error loading inquiries:', error);
+            }
+        }
+
+        // Update empty state
+        function updateEmptyState() {
+            document.getElementById('total-count').textContent = '0';
+            document.getElementById('last-submission').textContent = 'Never';
+            const tbody = document.getElementById('inquiries-body');
+            tbody.innerHTML = `
+				<tr>
+					<td colspan="8" class="empty-state">
+						<p>No inquiries yet. Contact form submissions will appear here.</p>
+					</td>
+				</tr>
+			`;
+        }
+
+        // View inquiry details
+        function viewDetails(index) {
+            const storageKey = "inquiries_db_v1";
+            const data = localStorage.getItem(storageKey);
+            const parsed = JSON.parse(data);
+            const inquiries = parsed.inquiries || [];
+            const sorted = inquiries.sort((a, b) => new Date(b.submitted_at) - new Date(a.submitted_at));
+            const inquiry = sorted[index];
+
+            const detailsHtml = `
+				<div style="background: #f8f9fa; padding: 15px; border-radius: 6px;">
+					<div>
+						<div class="field-label">Full Name</div>
+						<div class="field-value">${inquiry.full_name}</div>
+					</div>
+					<div>
+						<div class="field-label">Email</div>
+						<div class="field-value">${inquiry.email_address}</div>
+					</div>
+					<div>
+						<div class="field-label">Phone</div>
+						<div class="field-value">${inquiry.contact_number}</div>
+					</div>
+					<div>
+						<div class="field-label">Location</div>
+						<div class="field-value">${inquiry.location}</div>
+					</div>
+					<div>
+						<div class="field-label">Preferred Dealer</div>
+						<div class="field-value">${inquiry.preferred_dealer}</div>
+					</div>
+					${inquiry.attachment_name ? `
+						<div>
+							<div class="field-label">File</div>
+							<div class="field-value">${inquiry.attachment_name}</div>
+						</div>
+					` : ''}
+					${inquiry.message ? `
+						<div>
+							<div class="field-label">Message</div>
+							<div class="field-value">${inquiry.message}</div>
+						</div>
+					` : ''}
+					<div>
+						<div class="field-label">Submitted</div>
+						<div class="field-value">${new Date(inquiry.submitted_at).toLocaleString()}</div>
+					</div>
+				</div>
+			`;
+
+            document.getElementById('modal-details').innerHTML = detailsHtml;
+            document.getElementById('detailsModal').classList.add('active');
+        }
+
+        // Export data
+        function exportData(format) {
+            const storageKey = "inquiries_db_v1";
+            const data = localStorage.getItem(storageKey);
+
+            if (!data) {
+                showToast('No data to export');
+                return;
+            }
+
+            const parsed = JSON.parse(data);
+            const inquiries = parsed.inquiries || [];
+
+            if (inquiries.length === 0) {
+                showToast('No inquiries to export');
+                return;
+            }
+
+            let content, filename, type;
+
+            if (format === 'json') {
+                content = JSON.stringify(inquiries, null, 2);
+                filename = `inquiries-${new Date().getTime()}.json`;
+                type = 'application/json';
+            } else if (format === 'csv') {
+                const headers = ['ID', 'Date', 'Name', 'Email', 'Phone', 'Location', 'Dealer', 'File', 'Message'];
+                const rows = inquiries.map(inq => [
+                    inq.id,
+                    inq.submitted_at,
+                    `"${inq.full_name}"`,
+                    inq.email_address,
+                    inq.contact_number,
+                    `"${inq.location}"`,
+                    `"${inq.preferred_dealer}"`,
+                    inq.attachment_name || '',
+                    `"${(inq.message || '').replace(/"/g, '""')}"`
+                ]);
+
+                content = [headers, ...rows].map(row => row.join(',')).join('\n');
+                filename = `inquiries-${new Date().getTime()}.csv`;
+                type = 'text/csv';
+            }
+
+            const blob = new Blob([content], { type });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+
+            showToast(`Exported ${inquiries.length} inquiries as ${format.toUpperCase()}`);
+        }
+
+        // Clear all inquiries
+        function showClearModal() {
+            document.getElementById('clearModal').classList.add('active');
+        }
+
+        function confirmClear() {
+            const storageKey = "inquiries_db_v1";
+            localStorage.removeItem(storageKey);
+            closeModal();
+            loadInquiries();
+            showToast('All inquiries cleared');
+        }
+
+        // Modal controls
+        function closeModal() {
+            document.getElementById('detailsModal').classList.remove('active');
+            document.getElementById('clearModal').classList.remove('active');
+        }
+
+        // Refresh data
+        function refreshData() {
+            loadInquiries();
+            showToast('Data refreshed');
+        }
+
+        // Toast notification
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+
+        // Click outside modal to close
+        document.addEventListener('click', (e) => {
+            const detailsModal = document.getElementById('detailsModal');
+            const clearModal = document.getElementById('clearModal');
+
+            if (e.target === detailsModal) detailsModal.classList.remove('active');
+            if (e.target === clearModal) clearModal.classList.remove('active');
+        });
+
+        // Load on page load
+        window.addEventListener('load', loadInquiries);
+    </script>
+</body>
+
+</html>

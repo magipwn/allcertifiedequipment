@@ -30,10 +30,6 @@
 		href='https://www.allcertifiedequipment.com/wp-content/plugins/load-more-products-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.9'
 		type='text/css' media='all' />
 
-
-	<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-	<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-
 	<style>
 		:root {
 			--samsung-blue: #034EA2;
@@ -5643,15 +5639,19 @@
 	<script type="text/javascript"
 		src="https://www.allcertifiedequipment.com/wp-content/plugins/enquiry-quotation-for-woocommerce-pro/public/js/jquery.magnific-popup.min.js?ver=1.11.11"
 		id="pisol-enquiry-quotation-woocommerce-magnific-popup-js"></script>
-	<!-- Enquiry System replaced with PyScript SQLite Database -->
-	<script type="text/javascript" id="pyscript-enquiry-config">
-		/* Using local SQLite database (PyScript) instead of admin-ajax */
-		var pi_ajax = null; // Disabled - using PyScript backend
+	<script type="text/javascript" id="pisol-enquiry-quotation-woocommerce-js-extra">
+		/* <![CDATA[ */
+		var pi_ajax = { "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "ajax_url": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "loading": "https://www.allcertifiedequipment.com/wp-content/plugins/enquiry-quotation-for-woocommerce-pro/public/img/loading.svg", "cart_page": "https://www.allcertifiedequipment.com/enquiry-cart/", "view_enquiry_cart": "View Inquiry Cart", "redirect_on_add_to_enquiry": "popup", "cart_icon_click": "open-enquiry-popup", "select_variation": "Variation not selected", "allow_enquiry_without_variation_selection": "", "add_to_cart_button": "1", "count_selector": "", "cart_url_selector": "", "auto_open_mini_cart": "", "submit_cart_enquiry": { "redirect_url": "https://www.allcertifiedequipment.com/enquiry-cart/", "button_texts": { "default": "Submit as enquiry", "loading": "Submitting\u2026" }, "messages": { "empty_cart": "Your cart is empty.", "missing_page": "Enquiry cart page is not configured.", "generic_error": "Something went wrong. Please try again.", "partial": "Some products could not be moved to the enquiry cart." }, "wc_endpoint": "pi_submit_cart_as_enquiry" } };
 		var pisol_products = [];
+		//# sourceURL=pisol-enquiry-quotation-woocommerce-js-extra
+		/* ]]> */
 	</script>
+	<script type="text/javascript"
+		src="https://www.allcertifiedequipment.com/wp-content/plugins/enquiry-quotation-for-woocommerce-pro/public/js/pisol-enquiry-quotation-woocommerce-public.js?ver=1.11.11"
+		id="pisol-enquiry-quotation-woocommerce-js"></script>
 	<script type="text/javascript" id="wc-add-to-cart-js-extra">
 		/* <![CDATA[ */
-		var wc_add_to_cart_params = { "ajax_url": null, "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https://www.allcertifiedequipment.com/cart/", "is_cart": "", "cart_redirect_after_add": "yes" };
+		var wc_add_to_cart_params = { "ajax_url": "/wp-admin/admin-ajax.php", "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https://www.allcertifiedequipment.com/cart/", "is_cart": "", "cart_redirect_after_add": "yes" };
 		//# sourceURL=wc-add-to-cart-js-extra
 		/* ]]> */
 	</script>
@@ -5663,7 +5663,7 @@
 		id="wc-js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
 	<script type="text/javascript" id="woocommerce-js-extra">
 		/* <![CDATA[ */
-		var woocommerce_params = { "ajax_url": null, "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "i18n_password_show": "Show password", "i18n_password_hide": "Hide password" };
+		var woocommerce_params = { "ajax_url": "/wp-admin/admin-ajax.php", "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "i18n_password_show": "Show password", "i18n_password_hide": "Hide password" };
 		//# sourceURL=woocommerce-js-extra
 		/* ]]> */
 	</script>
@@ -6969,7 +6969,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -7150,7 +7150,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -7329,7 +7329,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -7510,7 +7510,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -7698,7 +7698,7 @@
 																					class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																					<button
 																						class="elementor-button elementor-size-sm"
-																						type="button">
+																						type="submit">
 																						<span
 																							class="elementor-button-content-wrapper">
 																							<span
@@ -7979,7 +7979,7 @@
 																					class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																					<button
 																						class="elementor-button elementor-size-sm"
-																						type="button">
+																						type="submit">
 																						<span
 																							class="elementor-button-content-wrapper">
 																							<span
@@ -8168,7 +8168,7 @@
 																					class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																					<button
 																						class="elementor-button elementor-size-sm"
-																						type="button">
+																						type="submit">
 																						<span
 																							class="elementor-button-content-wrapper">
 																							<span
@@ -8337,7 +8337,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -8493,7 +8493,7 @@
 																				class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																				<button
 																					class="elementor-button elementor-size-sm"
-																					type="button">
+																					type="submit">
 																					<span
 																						class="elementor-button-content-wrapper">
 																						<span
@@ -8644,7 +8644,7 @@
 																			class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																			<button
 																				class="elementor-button elementor-size-sm"
-																				type="button">
+																				type="submit">
 																				<span
 																					class="elementor-button-content-wrapper">
 																					<span
@@ -8794,7 +8794,7 @@
 																			class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																			<button
 																				class="elementor-button elementor-size-sm"
-																				type="button">
+																				type="submit">
 																				<span
 																					class="elementor-button-content-wrapper">
 																					<span
@@ -8944,7 +8944,7 @@
 																			class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																			<button
 																				class="elementor-button elementor-size-sm"
-																				type="button">
+																				type="submit">
 																				<span
 																					class="elementor-button-content-wrapper">
 																					<span
@@ -9094,7 +9094,7 @@
 																			class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 																			<button
 																				class="elementor-button elementor-size-sm"
-																				type="button">
+																				type="submit">
 																				<span
 																					class="elementor-button-content-wrapper">
 																					<span
@@ -9925,7 +9925,7 @@
 		id="tomselect-js"></script>
 	<script type="text/javascript" id="listing_js-js-extra">
 		/* <![CDATA[ */
-		var listing_ajax = { "ajaxurl": null, "current_url": "https://www.allcertifiedequipment.com/contact-us/", "permalink_set": "true", "compare": "https://www.allcertifiedequipment.com/vehicle-comparison/", "post_id": "22432", "recaptcha_public": "", "template_url": "https://www.allcertifiedequipment.com/wp-content/themes/automotive", "singular_vehicles": "Unit", "plural_vehicles": "Units", "compare_vehicles": "Compare", "currency_symbol": "\u20b1", "currency_placement": "1", "currency_separator": ",", "google_maps_api": "", "email_success": "The email was sent.", "show_all_photos": "", "filter_showall": "1", "is_ssl": "1", "filter_multiselect": "1" };
+		var listing_ajax = { "ajaxurl": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "current_url": "https://www.allcertifiedequipment.com/contact-us/", "permalink_set": "true", "compare": "https://www.allcertifiedequipment.com/vehicle-comparison/", "post_id": "22432", "recaptcha_public": "", "template_url": "https://www.allcertifiedequipment.com/wp-content/themes/automotive", "singular_vehicles": "Unit", "plural_vehicles": "Units", "compare_vehicles": "Compare", "currency_symbol": "\u20b1", "currency_placement": "1", "currency_separator": ",", "google_maps_api": "", "email_success": "The email was sent.", "show_all_photos": "", "filter_showall": "1", "is_ssl": "1", "filter_multiselect": "1" };
 		//# sourceURL=listing_js-js-extra
 		/* ]]> */
 	</script>
@@ -9990,7 +9990,7 @@
 		async id="revmin-js"></script>
 	<script type="text/javascript" id="awsm-job-scripts-js-extra">
 		/* <![CDATA[ */
-		var awsmJobsPublic = { "ajaxurl": null, "is_tax_archive": "", "is_search": "", "job_id": "0", "wp_max_upload_size": "536870912", "deep_linking": { "search": true, "spec": true, "pagination": true }, "i18n": { "loading_text": "Loading...", "form_error_msg": { "general": "Error in submitting your application. Please try again later!", "file_validation": "The file you have selected is too large.", "captcha_failed": "reCAPTCHA failed to load. Please check your configuration." } }, "vendors": { "selectric": true, "jquery_validation": true }, "is_homepage": "" };
+		var awsmJobsPublic = { "ajaxurl": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "is_tax_archive": "", "is_search": "", "job_id": "0", "wp_max_upload_size": "536870912", "deep_linking": { "search": true, "spec": true, "pagination": true }, "i18n": { "loading_text": "Loading...", "form_error_msg": { "general": "Error in submitting your application. Please try again later!", "file_validation": "The file you have selected is too large.", "captcha_failed": "reCAPTCHA failed to load. Please check your configuration." } }, "vendors": { "selectric": true, "jquery_validation": true }, "is_homepage": "" };
 		//# sourceURL=awsm-job-scripts-js-extra
 		/* ]]> */
 	</script>
@@ -10034,7 +10034,7 @@
 		id="wow-js"></script>
 	<script type="text/javascript" id="main-js-extra">
 		/* <![CDATA[ */
-		var ajax_variables = { "ajaxurl": null, "template_url": "https://www.allcertifiedequipment.com/wp-content/themes/automotive", "disable_header_resize": "", "disable_mobile_header_resize": "" };
+		var ajax_variables = { "ajaxurl": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "template_url": "https://www.allcertifiedequipment.com/wp-content/themes/automotive", "disable_header_resize": "", "disable_mobile_header_resize": "" };
 		//# sourceURL=main-js-extra
 		/* ]]> */
 	</script>
@@ -10049,7 +10049,7 @@
 		id="content-scroller-js"></script>
 	<script type="text/javascript" id="chaty-front-end-js-extra">
 		/* <![CDATA[ */
-		var chaty_settings = { "ajax_url": null, "analytics": "0", "capture_analytics": "0", "token": "2d3bcb8eb4", "chaty_widgets": [{ "id": 0, "identifier": 0, "settings": { "cta_type": "simple-view", "cta_body": "", "cta_head": "", "cta_head_bg_color": "", "cta_head_text_color": "", "show_close_button": 1, "position": "left", "custom_position": 1, "bottom_spacing": "25", "side_spacing": "25", "icon_view": "vertical", "default_state": "click", "cta_text": "\u003Cp\u003EContact us\u003C/p\u003E", "cta_text_color": "#333333", "cta_bg_color": "#ffffff", "show_cta": "first_click", "is_pending_mesg_enabled": "off", "pending_mesg_count": "1", "pending_mesg_count_color": "#ffffff", "pending_mesg_count_bgcolor": "#dd0000", "widget_icon": "chat-smile", "widget_icon_url": "", "font_family": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif", "widget_size": "54", "custom_widget_size": "54", "is_google_analytics_enabled": 0, "close_text": "Hide", "widget_color": "#86CD91", "widget_icon_color": "#ffffff", "widget_rgb_color": "134,205,145", "has_custom_css": 0, "custom_css": "", "widget_token": "177a6387f2", "widget_index": "", "attention_effect": "" }, "triggers": { "has_time_delay": 1, "time_delay": "0", "exit_intent": 0, "has_display_after_page_scroll": 0, "display_after_page_scroll": "0", "auto_hide_widget": 0, "hide_after": 0, "show_on_pages_rules": [], "time_diff": 0, "has_date_scheduling_rules": 0, "date_scheduling_rules": { "start_date_time": "", "end_date_time": "" }, "date_scheduling_rules_timezone": 0, "day_hours_scheduling_rules_timezone": 0, "has_day_hours_scheduling_rules": [], "day_hours_scheduling_rules": [], "day_time_diff": 0, "show_on_direct_visit": 0, "show_on_referrer_social_network": 0, "show_on_referrer_search_engines": 0, "show_on_referrer_google_ads": 0, "show_on_referrer_urls": [], "has_show_on_specific_referrer_urls": 0, "has_traffic_source": 0, "has_countries": 0, "countries": [], "has_target_rules": 0 }, "channels": [{ "channel": "Phone", "value": "+63276223448", "hover_text": "Phone", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#03E78B\"/\u003E\u003Cpath d=\"M19.3929 14.9176C17.752 14.7684 16.2602 14.3209 14.7684 13.7242C14.0226 13.4259 13.1275 13.7242 12.8292 14.4701L11.7849 16.2602C8.65222 14.6193 6.11623 11.9341 4.47529 8.95057L6.41458 7.90634C7.16046 7.60799 7.45881 6.71293 7.16046 5.96705C6.56375 4.47529 6.11623 2.83435 5.96705 1.34259C5.96705 0.596704 5.22117 0 4.47529 0H0.745882C0.298353 0 5.69062e-07 0.298352 5.69062e-07 0.745881C5.69062e-07 3.72941 0.596704 6.71293 1.93929 9.3981C3.87858 13.575 7.30964 16.8569 11.3374 18.7962C14.0226 20.1388 17.0061 20.7355 19.9896 20.7355C20.4371 20.7355 20.7355 20.4371 20.7355 19.9896V16.4094C20.7355 15.5143 20.1388 14.9176 19.3929 14.9176Z\" transform=\"translate(9.07179 9.07178)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#03E78B", "icon_rgb_color": "3,231,139", "channel_type": "Phone", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "tel:+63276223448", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Whatsapp", "value": "639176274801", "hover_text": "WhatsApp", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#49E670\"/\u003E\u003Cpath d=\"M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z\" transform=\"translate(12.9597 12.9597)\" fill=\"#FAFAFA\"/\u003E\u003Cpath d=\"M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z\" transform=\"translate(7.7758 7.77582)\" fill=\"white\" stroke=\"white\" stroke-width=\"0.2\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#49E670", "icon_rgb_color": "73,230,112", "channel_type": "Whatsapp", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "\u003Cp\u003EHow can I help you? :)\u003C/p\u003E", "wp_popup_headline": "Let&#039;s chat on WhatsApp", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "https://web.whatsapp.com/send?phone=639176274801", "mobile_target": "", "desktop_target": "_blank", "target": "_blank", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Viber", "value": "+639176274801", "hover_text": "Viber", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#665CAC\"/\u003E\u003Cpath d=\"M17.6837 2.14833C17.16 1.64578 15.0497 0.0389578 10.3496 0.0158143C10.3496 0.0158143 4.80418 -0.334645 2.10085 2.26405C0.596193 3.84111 0.0662511 6.14886 0.0126261 9.01205C-0.0441534 11.8752 -0.116705 17.2346 4.8168 18.6894H4.81995L4.8168 20.9078C4.8168 20.9078 4.78525 21.8071 5.3499 21.989C6.03125 22.2105 6.43186 21.5294 7.08482 20.7921C7.44127 20.3888 7.93651 19.7936 8.30874 19.3407C11.6808 19.6382 14.2769 18.9572 14.5702 18.858C15.2516 18.6265 19.1063 18.1075 19.7309 12.7481C20.3775 7.22338 19.4154 3.7254 17.6837 2.14833ZM18.2546 12.3513C17.7247 16.828 14.5986 17.1123 14.0245 17.3041C13.7785 17.3867 11.501 17.9818 8.63679 17.7835C8.63679 17.7835 6.50126 20.4813 5.83567 21.1856C5.73158 21.2947 5.60856 21.341 5.52654 21.3178C5.41298 21.2881 5.38144 21.1459 5.38144 20.9376C5.38459 20.64 5.40037 17.2512 5.40037 17.2512C5.39721 17.2512 5.39721 17.2512 5.40037 17.2512C1.23023 16.0378 1.47312 11.4719 1.52044 9.08148C1.56775 6.69108 1.99675 4.73379 3.26798 3.41792C5.55493 1.24904 10.2645 1.57305 10.2645 1.57305C14.2422 1.59288 16.1475 2.84594 16.5891 3.26583C18.0527 4.58501 18.8003 7.73585 18.2546 12.3513Z\" transform=\"translate(9.47299 8.4238)\" fill=\"white\"/\u003E\u003Cpath d=\"M1.58982 1.72254C1.53935 0.628182 1.00941 0.0562059 0 1.00898e-07\" transform=\"translate(20.166 15.5914)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M3.35945 3.69636C3.38153 2.67804 3.09448 1.82834 2.49514 1.14395C1.8958 0.459565 1.06619 0.0793496 1.9253e-07 2.01796e-07\" transform=\"translate(19.7592 14.0966)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M5.22371 5.71646C5.21109 3.94763 4.70639 2.55902 3.71275 1.5407C2.71911 0.525689 1.47942 0.00991877 -3.8506e-07 1.00898e-07\" transform=\"translate(19.2931 12.6479)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M6.35738 8.04532C6.35738 8.04532 6.73276 8.07838 6.93149 7.81719L7.32263 7.30142C7.5119 7.04353 7.96929 6.88153 8.41722 7.14272C8.66641 7.2915 9.11434 7.57914 9.39193 7.79405C9.68844 8.02218 10.2972 8.55448 10.2972 8.55448C10.5875 8.80906 10.6537 9.18597 10.4581 9.58271C10.4581 9.58602 10.455 9.58933 10.455 9.58933C10.2531 9.96293 9.9818 10.3167 9.63797 10.644C9.63482 10.6473 9.63482 10.6473 9.63167 10.6506C9.35092 10.8953 9.07333 11.0375 8.80205 11.0705C8.77051 11.0771 8.7295 11.0804 8.68219 11.0771C8.56232 11.0771 8.44561 11.0606 8.32889 11.0209L8.31943 11.0077C7.89989 10.8854 7.20277 10.5746 6.03879 9.90342C5.28173 9.467 4.654 9.02066 4.12406 8.57762C3.84331 8.34619 3.55626 8.08169 3.2629 7.77752C3.25344 7.7676 3.24398 7.75768 3.23451 7.74776C3.22505 7.73784 3.21559 7.72792 3.20612 7.718C3.19666 7.70808 3.1872 7.69817 3.17773 7.68825C3.16827 7.67833 3.15881 7.66841 3.14934 7.65849C2.85914 7.35101 2.60678 7.05015 2.38597 6.75589C1.96328 6.20045 1.53744 5.5392 1.12105 4.74902C0.480708 3.52902 0.184194 2.79834 0.0674803 2.35862L0.0548623 2.3487C0.0170094 2.22637 -0.00191702 2.10404 0.0012374 1.9784C-0.00191702 1.92881 0.0012373 1.88583 0.00754613 1.85276C0.0390903 1.56843 0.17473 1.27748 0.408157 0.983227C0.411312 0.979921 0.411311 0.979921 0.414466 0.976615C0.726753 0.616237 1.06112 0.331902 1.42072 0.120304C1.42388 0.120304 1.42703 0.116997 1.42703 0.116997C1.80556 -0.0879887 2.16517 -0.0185578 2.40806 0.285615C2.41121 0.288921 2.91592 0.923716 3.13357 1.2345C3.33861 1.52875 3.6162 1.99493 3.75499 2.25612C4.00419 2.72561 3.84962 3.20501 3.60358 3.40338L3.11149 3.81335C2.86229 4.02495 2.89384 4.41509 2.89384 4.41509C2.89384 4.41509 3.62566 7.31464 6.35738 8.04532Z\" transform=\"translate(13.863 13.0014)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#665CAC", "icon_rgb_color": "102,92,172", "channel_type": "Viber", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "+639176274801", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Email", "value": "acetc.marketing@gmail.com", "hover_text": "Email", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#FF485F\"/\u003E\u003Cpath d=\"M20.5379 14.2557H1.36919C0.547677 14.2557 0 13.7373 0 12.9597V1.29597C0 0.518387 0.547677 0 1.36919 0H20.5379C21.3594 0 21.9071 0.518387 21.9071 1.29597V12.9597C21.9071 13.7373 21.3594 14.2557 20.5379 14.2557ZM20.5379 12.9597V13.6077V12.9597ZM1.36919 1.29597V12.9597H20.5379V1.29597H1.36919Z\" transform=\"translate(8.48619 12.3117)\" fill=\"white\"/\u003E\u003Cpath d=\"M10.9659 8.43548C10.829 8.43548 10.692 8.43548 10.5551 8.30588L0.286184 1.17806C0.012346 0.918864 -0.124573 0.530073 0.149265 0.270879C0.423104 0.0116857 0.833862 -0.117911 1.1077 0.141283L10.9659 7.00991L20.8241 0.141283C21.0979 -0.117911 21.5087 0.0116857 21.7825 0.270879C22.0563 0.530073 21.9194 0.918864 21.6456 1.17806L11.3766 8.30588C11.2397 8.43548 11.1028 8.43548 10.9659 8.43548Z\" transform=\"translate(8.47443 12.9478)\" fill=\"white\"/\u003E\u003Cpath d=\"M9.0906 7.13951C8.95368 7.13951 8.81676 7.13951 8.67984 7.00991L0.327768 1.17806C-0.0829894 0.918864 -0.0829899 0.530073 0.190849 0.270879C0.327768 0.0116855 0.738525 -0.117911 1.14928 0.141282L9.50136 5.97314C9.7752 6.23233 9.91212 6.62112 9.63828 6.88032C9.50136 7.00991 9.36444 7.13951 9.0906 7.13951Z\" transform=\"translate(20.6183 18.7799)\" fill=\"white\"/\u003E\u003Cpath d=\"M0.696942 7.13951C0.423104 7.13951 0.286185 7.00991 0.149265 6.88032C-0.124573 6.62112 0.012346 6.23233 0.286185 5.97314L8.63826 0.141282C9.04902 -0.117911 9.45977 0.0116855 9.59669 0.270879C9.87053 0.530073 9.73361 0.918864 9.45977 1.17806L1.1077 7.00991C0.970781 7.13951 0.833862 7.13951 0.696942 7.13951Z\" transform=\"translate(8.47443 18.7799)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#FF485F", "icon_rgb_color": "255,72,95", "channel_type": "Email", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "mailto:acetc.marketing@gmail.com", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "SMS", "value": "+639176274801", "hover_text": "SMS", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#FF549C\"/\u003E\u003Cpath fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.60298 0H16.9194C18.351 0 19.5224 1.19321 19.5224 2.65158V14.5838C19.5224 16.0421 18.351 17.2354 16.9194 17.2354H7.4185L3.64418 20.4173C3.51402 20.5499 3.38388 20.5499 3.25372 20.5499H2.99344C2.73314 20.4173 2.60298 20.1521 2.60298 19.887V17.2354C1.17134 17.2354 0 16.0421 0 14.5838V2.65158C0 1.19321 1.17134 0 2.60298 0ZM2.60316 11.2696C2.60316 11.6673 2.86346 11.9325 3.25391 11.9325H4.5554C5.5966 11.9325 6.50764 11.0044 6.50764 9.94376C6.50764 8.88312 5.5966 7.95505 4.5554 7.95505C4.16496 7.95505 3.90465 7.68991 3.90465 7.29218C3.90465 6.89441 4.16496 6.62927 4.5554 6.62927H5.85689C6.24733 6.62927 6.50764 6.36411 6.50764 5.96637C6.50764 5.56863 6.24733 5.30347 5.85689 5.30347H4.5554C3.51421 5.30347 2.60316 6.23154 2.60316 7.29218C2.60316 8.35281 3.51421 9.28085 4.5554 9.28085C4.94585 9.28085 5.20613 9.54602 5.20613 9.94376C5.20613 10.3415 4.94585 10.6067 4.5554 10.6067H3.25391C2.86346 10.6067 2.60316 10.8718 2.60316 11.2696ZM14.9678 11.9325H13.6664C13.2759 11.9325 13.0156 11.6673 13.0156 11.2696C13.0156 10.8718 13.2759 10.6067 13.6664 10.6067H14.9678C15.3583 10.6067 15.6186 10.3415 15.6186 9.94376C15.6186 9.54602 15.3583 9.28085 14.9678 9.28085C13.9267 9.28085 13.0156 8.35281 13.0156 7.29218C13.0156 6.23154 13.9267 5.30347 14.9678 5.30347H16.2693C16.6598 5.30347 16.9201 5.56863 16.9201 5.96637C16.9201 6.36411 16.6598 6.62927 16.2693 6.62927H14.9678C14.5774 6.62927 14.3171 6.89441 14.3171 7.29218C14.3171 7.68991 14.5774 7.95505 14.9678 7.95505C16.009 7.95505 16.9201 8.88312 16.9201 9.94376C16.9201 11.0044 16.009 11.9325 14.9678 11.9325ZM10.4126 11.2697C10.4126 11.6674 10.6729 11.9326 11.0633 11.9326C11.4538 11.9326 11.7141 11.6674 11.8442 11.2697V5.96649C11.8442 5.70135 11.5839 5.43619 11.3236 5.30362C10.9332 5.30362 10.6729 5.43619 10.5427 5.70135L9.76186 7.15973L8.98094 5.70135C8.85081 5.43619 8.46034 5.17102 8.20006 5.30362C7.93977 5.43619 7.67946 5.70135 7.67946 5.96649V11.2697C7.67946 11.6674 7.93977 11.9326 8.33022 11.9326C8.72066 11.9326 8.98094 11.6674 8.98094 11.2697V8.75067L9.1111 8.88327C9.37138 9.28101 10.0221 9.28101 10.2825 8.88327L10.4126 8.75067V11.2697Z\" transform=\"translate(9.67801 10.4601)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#FF549C", "icon_rgb_color": "255,84,156", "channel_type": "SMS", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "sms:+639176274801", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }] }], "data_analytics_settings": "off", "lang": { "whatsapp_label": "WhatsApp Message", "hide_whatsapp_form": "Hide WhatsApp Form", "emoji_picker": "Show Emojis" }, "has_chatway": "" };
+		var chaty_settings = { "ajax_url": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "analytics": "0", "capture_analytics": "0", "token": "2d3bcb8eb4", "chaty_widgets": [{ "id": 0, "identifier": 0, "settings": { "cta_type": "simple-view", "cta_body": "", "cta_head": "", "cta_head_bg_color": "", "cta_head_text_color": "", "show_close_button": 1, "position": "left", "custom_position": 1, "bottom_spacing": "25", "side_spacing": "25", "icon_view": "vertical", "default_state": "click", "cta_text": "\u003Cp\u003EContact us\u003C/p\u003E", "cta_text_color": "#333333", "cta_bg_color": "#ffffff", "show_cta": "first_click", "is_pending_mesg_enabled": "off", "pending_mesg_count": "1", "pending_mesg_count_color": "#ffffff", "pending_mesg_count_bgcolor": "#dd0000", "widget_icon": "chat-smile", "widget_icon_url": "", "font_family": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif", "widget_size": "54", "custom_widget_size": "54", "is_google_analytics_enabled": 0, "close_text": "Hide", "widget_color": "#86CD91", "widget_icon_color": "#ffffff", "widget_rgb_color": "134,205,145", "has_custom_css": 0, "custom_css": "", "widget_token": "177a6387f2", "widget_index": "", "attention_effect": "" }, "triggers": { "has_time_delay": 1, "time_delay": "0", "exit_intent": 0, "has_display_after_page_scroll": 0, "display_after_page_scroll": "0", "auto_hide_widget": 0, "hide_after": 0, "show_on_pages_rules": [], "time_diff": 0, "has_date_scheduling_rules": 0, "date_scheduling_rules": { "start_date_time": "", "end_date_time": "" }, "date_scheduling_rules_timezone": 0, "day_hours_scheduling_rules_timezone": 0, "has_day_hours_scheduling_rules": [], "day_hours_scheduling_rules": [], "day_time_diff": 0, "show_on_direct_visit": 0, "show_on_referrer_social_network": 0, "show_on_referrer_search_engines": 0, "show_on_referrer_google_ads": 0, "show_on_referrer_urls": [], "has_show_on_specific_referrer_urls": 0, "has_traffic_source": 0, "has_countries": 0, "countries": [], "has_target_rules": 0 }, "channels": [{ "channel": "Phone", "value": "+63276223448", "hover_text": "Phone", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#03E78B\"/\u003E\u003Cpath d=\"M19.3929 14.9176C17.752 14.7684 16.2602 14.3209 14.7684 13.7242C14.0226 13.4259 13.1275 13.7242 12.8292 14.4701L11.7849 16.2602C8.65222 14.6193 6.11623 11.9341 4.47529 8.95057L6.41458 7.90634C7.16046 7.60799 7.45881 6.71293 7.16046 5.96705C6.56375 4.47529 6.11623 2.83435 5.96705 1.34259C5.96705 0.596704 5.22117 0 4.47529 0H0.745882C0.298353 0 5.69062e-07 0.298352 5.69062e-07 0.745881C5.69062e-07 3.72941 0.596704 6.71293 1.93929 9.3981C3.87858 13.575 7.30964 16.8569 11.3374 18.7962C14.0226 20.1388 17.0061 20.7355 19.9896 20.7355C20.4371 20.7355 20.7355 20.4371 20.7355 19.9896V16.4094C20.7355 15.5143 20.1388 14.9176 19.3929 14.9176Z\" transform=\"translate(9.07179 9.07178)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#03E78B", "icon_rgb_color": "3,231,139", "channel_type": "Phone", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "tel:+63276223448", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Whatsapp", "value": "639176274801", "hover_text": "WhatsApp", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#49E670\"/\u003E\u003Cpath d=\"M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z\" transform=\"translate(12.9597 12.9597)\" fill=\"#FAFAFA\"/\u003E\u003Cpath d=\"M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z\" transform=\"translate(7.7758 7.77582)\" fill=\"white\" stroke=\"white\" stroke-width=\"0.2\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#49E670", "icon_rgb_color": "73,230,112", "channel_type": "Whatsapp", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "\u003Cp\u003EHow can I help you? :)\u003C/p\u003E", "wp_popup_headline": "Let&#039;s chat on WhatsApp", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "https://web.whatsapp.com/send?phone=639176274801", "mobile_target": "", "desktop_target": "_blank", "target": "_blank", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Viber", "value": "+639176274801", "hover_text": "Viber", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#665CAC\"/\u003E\u003Cpath d=\"M17.6837 2.14833C17.16 1.64578 15.0497 0.0389578 10.3496 0.0158143C10.3496 0.0158143 4.80418 -0.334645 2.10085 2.26405C0.596193 3.84111 0.0662511 6.14886 0.0126261 9.01205C-0.0441534 11.8752 -0.116705 17.2346 4.8168 18.6894H4.81995L4.8168 20.9078C4.8168 20.9078 4.78525 21.8071 5.3499 21.989C6.03125 22.2105 6.43186 21.5294 7.08482 20.7921C7.44127 20.3888 7.93651 19.7936 8.30874 19.3407C11.6808 19.6382 14.2769 18.9572 14.5702 18.858C15.2516 18.6265 19.1063 18.1075 19.7309 12.7481C20.3775 7.22338 19.4154 3.7254 17.6837 2.14833ZM18.2546 12.3513C17.7247 16.828 14.5986 17.1123 14.0245 17.3041C13.7785 17.3867 11.501 17.9818 8.63679 17.7835C8.63679 17.7835 6.50126 20.4813 5.83567 21.1856C5.73158 21.2947 5.60856 21.341 5.52654 21.3178C5.41298 21.2881 5.38144 21.1459 5.38144 20.9376C5.38459 20.64 5.40037 17.2512 5.40037 17.2512C5.39721 17.2512 5.39721 17.2512 5.40037 17.2512C1.23023 16.0378 1.47312 11.4719 1.52044 9.08148C1.56775 6.69108 1.99675 4.73379 3.26798 3.41792C5.55493 1.24904 10.2645 1.57305 10.2645 1.57305C14.2422 1.59288 16.1475 2.84594 16.5891 3.26583C18.0527 4.58501 18.8003 7.73585 18.2546 12.3513Z\" transform=\"translate(9.47299 8.4238)\" fill=\"white\"/\u003E\u003Cpath d=\"M1.58982 1.72254C1.53935 0.628182 1.00941 0.0562059 0 1.00898e-07\" transform=\"translate(20.166 15.5914)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M3.35945 3.69636C3.38153 2.67804 3.09448 1.82834 2.49514 1.14395C1.8958 0.459565 1.06619 0.0793496 1.9253e-07 2.01796e-07\" transform=\"translate(19.7592 14.0966)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M5.22371 5.71646C5.21109 3.94763 4.70639 2.55902 3.71275 1.5407C2.71911 0.525689 1.47942 0.00991877 -3.8506e-07 1.00898e-07\" transform=\"translate(19.2931 12.6479)\" stroke=\"white\" stroke-width=\"0.518873\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/\u003E\u003Cpath d=\"M6.35738 8.04532C6.35738 8.04532 6.73276 8.07838 6.93149 7.81719L7.32263 7.30142C7.5119 7.04353 7.96929 6.88153 8.41722 7.14272C8.66641 7.2915 9.11434 7.57914 9.39193 7.79405C9.68844 8.02218 10.2972 8.55448 10.2972 8.55448C10.5875 8.80906 10.6537 9.18597 10.4581 9.58271C10.4581 9.58602 10.455 9.58933 10.455 9.58933C10.2531 9.96293 9.9818 10.3167 9.63797 10.644C9.63482 10.6473 9.63482 10.6473 9.63167 10.6506C9.35092 10.8953 9.07333 11.0375 8.80205 11.0705C8.77051 11.0771 8.7295 11.0804 8.68219 11.0771C8.56232 11.0771 8.44561 11.0606 8.32889 11.0209L8.31943 11.0077C7.89989 10.8854 7.20277 10.5746 6.03879 9.90342C5.28173 9.467 4.654 9.02066 4.12406 8.57762C3.84331 8.34619 3.55626 8.08169 3.2629 7.77752C3.25344 7.7676 3.24398 7.75768 3.23451 7.74776C3.22505 7.73784 3.21559 7.72792 3.20612 7.718C3.19666 7.70808 3.1872 7.69817 3.17773 7.68825C3.16827 7.67833 3.15881 7.66841 3.14934 7.65849C2.85914 7.35101 2.60678 7.05015 2.38597 6.75589C1.96328 6.20045 1.53744 5.5392 1.12105 4.74902C0.480708 3.52902 0.184194 2.79834 0.0674803 2.35862L0.0548623 2.3487C0.0170094 2.22637 -0.00191702 2.10404 0.0012374 1.9784C-0.00191702 1.92881 0.0012373 1.88583 0.00754613 1.85276C0.0390903 1.56843 0.17473 1.27748 0.408157 0.983227C0.411312 0.979921 0.411311 0.979921 0.414466 0.976615C0.726753 0.616237 1.06112 0.331902 1.42072 0.120304C1.42388 0.120304 1.42703 0.116997 1.42703 0.116997C1.80556 -0.0879887 2.16517 -0.0185578 2.40806 0.285615C2.41121 0.288921 2.91592 0.923716 3.13357 1.2345C3.33861 1.52875 3.6162 1.99493 3.75499 2.25612C4.00419 2.72561 3.84962 3.20501 3.60358 3.40338L3.11149 3.81335C2.86229 4.02495 2.89384 4.41509 2.89384 4.41509C2.89384 4.41509 3.62566 7.31464 6.35738 8.04532Z\" transform=\"translate(13.863 13.0014)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#665CAC", "icon_rgb_color": "102,92,172", "channel_type": "Viber", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "+639176274801", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "Email", "value": "acetc.marketing@gmail.com", "hover_text": "Email", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#FF485F\"/\u003E\u003Cpath d=\"M20.5379 14.2557H1.36919C0.547677 14.2557 0 13.7373 0 12.9597V1.29597C0 0.518387 0.547677 0 1.36919 0H20.5379C21.3594 0 21.9071 0.518387 21.9071 1.29597V12.9597C21.9071 13.7373 21.3594 14.2557 20.5379 14.2557ZM20.5379 12.9597V13.6077V12.9597ZM1.36919 1.29597V12.9597H20.5379V1.29597H1.36919Z\" transform=\"translate(8.48619 12.3117)\" fill=\"white\"/\u003E\u003Cpath d=\"M10.9659 8.43548C10.829 8.43548 10.692 8.43548 10.5551 8.30588L0.286184 1.17806C0.012346 0.918864 -0.124573 0.530073 0.149265 0.270879C0.423104 0.0116857 0.833862 -0.117911 1.1077 0.141283L10.9659 7.00991L20.8241 0.141283C21.0979 -0.117911 21.5087 0.0116857 21.7825 0.270879C22.0563 0.530073 21.9194 0.918864 21.6456 1.17806L11.3766 8.30588C11.2397 8.43548 11.1028 8.43548 10.9659 8.43548Z\" transform=\"translate(8.47443 12.9478)\" fill=\"white\"/\u003E\u003Cpath d=\"M9.0906 7.13951C8.95368 7.13951 8.81676 7.13951 8.67984 7.00991L0.327768 1.17806C-0.0829894 0.918864 -0.0829899 0.530073 0.190849 0.270879C0.327768 0.0116855 0.738525 -0.117911 1.14928 0.141282L9.50136 5.97314C9.7752 6.23233 9.91212 6.62112 9.63828 6.88032C9.50136 7.00991 9.36444 7.13951 9.0906 7.13951Z\" transform=\"translate(20.6183 18.7799)\" fill=\"white\"/\u003E\u003Cpath d=\"M0.696942 7.13951C0.423104 7.13951 0.286185 7.00991 0.149265 6.88032C-0.124573 6.62112 0.012346 6.23233 0.286185 5.97314L8.63826 0.141282C9.04902 -0.117911 9.45977 0.0116855 9.59669 0.270879C9.87053 0.530073 9.73361 0.918864 9.45977 1.17806L1.1077 7.00991C0.970781 7.13951 0.833862 7.13951 0.696942 7.13951Z\" transform=\"translate(8.47443 18.7799)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#FF485F", "icon_rgb_color": "255,72,95", "channel_type": "Email", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "mailto:acetc.marketing@gmail.com", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }, { "channel": "SMS", "value": "+639176274801", "hover_text": "SMS", "chatway_position": "", "svg_icon": "\u003Csvg width=\"39\" height=\"39\" viewBox=\"0 0 39 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"\u003E\u003Ccircle class=\"color-element\" cx=\"19.4395\" cy=\"19.4395\" r=\"19.4395\" fill=\"#FF549C\"/\u003E\u003Cpath fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.60298 0H16.9194C18.351 0 19.5224 1.19321 19.5224 2.65158V14.5838C19.5224 16.0421 18.351 17.2354 16.9194 17.2354H7.4185L3.64418 20.4173C3.51402 20.5499 3.38388 20.5499 3.25372 20.5499H2.99344C2.73314 20.4173 2.60298 20.1521 2.60298 19.887V17.2354C1.17134 17.2354 0 16.0421 0 14.5838V2.65158C0 1.19321 1.17134 0 2.60298 0ZM2.60316 11.2696C2.60316 11.6673 2.86346 11.9325 3.25391 11.9325H4.5554C5.5966 11.9325 6.50764 11.0044 6.50764 9.94376C6.50764 8.88312 5.5966 7.95505 4.5554 7.95505C4.16496 7.95505 3.90465 7.68991 3.90465 7.29218C3.90465 6.89441 4.16496 6.62927 4.5554 6.62927H5.85689C6.24733 6.62927 6.50764 6.36411 6.50764 5.96637C6.50764 5.56863 6.24733 5.30347 5.85689 5.30347H4.5554C3.51421 5.30347 2.60316 6.23154 2.60316 7.29218C2.60316 8.35281 3.51421 9.28085 4.5554 9.28085C4.94585 9.28085 5.20613 9.54602 5.20613 9.94376C5.20613 10.3415 4.94585 10.6067 4.5554 10.6067H3.25391C2.86346 10.6067 2.60316 10.8718 2.60316 11.2696ZM14.9678 11.9325H13.6664C13.2759 11.9325 13.0156 11.6673 13.0156 11.2696C13.0156 10.8718 13.2759 10.6067 13.6664 10.6067H14.9678C15.3583 10.6067 15.6186 10.3415 15.6186 9.94376C15.6186 9.54602 15.3583 9.28085 14.9678 9.28085C13.9267 9.28085 13.0156 8.35281 13.0156 7.29218C13.0156 6.23154 13.9267 5.30347 14.9678 5.30347H16.2693C16.6598 5.30347 16.9201 5.56863 16.9201 5.96637C16.9201 6.36411 16.6598 6.62927 16.2693 6.62927H14.9678C14.5774 6.62927 14.3171 6.89441 14.3171 7.29218C14.3171 7.68991 14.5774 7.95505 14.9678 7.95505C16.009 7.95505 16.9201 8.88312 16.9201 9.94376C16.9201 11.0044 16.009 11.9325 14.9678 11.9325ZM10.4126 11.2697C10.4126 11.6674 10.6729 11.9326 11.0633 11.9326C11.4538 11.9326 11.7141 11.6674 11.8442 11.2697V5.96649C11.8442 5.70135 11.5839 5.43619 11.3236 5.30362C10.9332 5.30362 10.6729 5.43619 10.5427 5.70135L9.76186 7.15973L8.98094 5.70135C8.85081 5.43619 8.46034 5.17102 8.20006 5.30362C7.93977 5.43619 7.67946 5.70135 7.67946 5.96649V11.2697C7.67946 11.6674 7.93977 11.9326 8.33022 11.9326C8.72066 11.9326 8.98094 11.6674 8.98094 11.2697V8.75067L9.1111 8.88327C9.37138 9.28101 10.0221 9.28101 10.2825 8.88327L10.4126 8.75067V11.2697Z\" transform=\"translate(9.67801 10.4601)\" fill=\"white\"/\u003E\u003C/svg\u003E", "is_desktop": 1, "is_mobile": 1, "icon_color": "#FF549C", "icon_rgb_color": "255,84,156", "channel_type": "SMS", "custom_image_url": "", "order": "", "pre_set_message": "", "is_use_web_version": "1", "is_open_new_tab": "1", "is_default_open": "0", "has_welcome_message": "0", "emoji_picker": "1", "input_placeholder": "Write your message...", "chat_welcome_message": "", "wp_popup_headline": "", "wp_popup_nickname": "", "wp_popup_profile": "", "wp_popup_head_bg_color": "#4AA485", "qr_code_image_url": "", "mail_subject": "", "channel_account_type": "personal", "contact_form_settings": [], "contact_fields": [], "url": "sms:+639176274801", "mobile_target": "", "desktop_target": "", "target": "", "is_agent": 0, "agent_data": [], "header_text": "", "header_sub_text": "", "header_bg_color": "", "header_text_color": "", "widget_token": "177a6387f2", "widget_index": "", "click_event": "", "viber_url": "" }] }], "data_analytics_settings": "off", "lang": { "whatsapp_label": "WhatsApp Message", "hide_whatsapp_form": "Hide WhatsApp Form", "emoji_picker": "Show Emojis" }, "has_chatway": "" };
 		//# sourceURL=chaty-front-end-js-extra
 		/* ]]> */
 	</script>
@@ -10061,7 +10061,7 @@
 		id="sourcebuster-js-js"></script>
 	<script type="text/javascript" id="wc-order-attribution-js-extra">
 		/* <![CDATA[ */
-		var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "base64": false, "ajaxurl": null, "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+		var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "base64": false, "ajaxurl": "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
 		//# sourceURL=wc-order-attribution-js-extra
 		/* ]]> */
 	</script>
@@ -10076,7 +10076,7 @@
 		id="elementor-frontend-modules-js"></script>
 	<script type="text/javascript" id="elementor-frontend-js-before">
 		/* <![CDATA[ */
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.35.5", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "theme_builder_v2": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "e_components": true, "e_interactions": true, "e_editor_one": true, "import-export-customization": true, "e_pro_variables": true }, "urls": { "assets": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": null, "uploadUrl": "https:\/\/www.allcertifiedequipment.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "c7409d62dd" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "woocommerce_notices_elements": [] }, "post": { "id": 22432, "title": "Contact%20Us%20%E2%80%93%20All%20Certified%20Equipment%20Trading%20Corporation", "excerpt": "", "featuredImage": false } };
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.35.5", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "theme_builder_v2": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "e_components": true, "e_interactions": true, "e_editor_one": true, "import-export-customization": true, "e_pro_variables": true }, "urls": { "assets": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/www.allcertifiedequipment.com\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/www.allcertifiedequipment.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "c7409d62dd" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "woocommerce_notices_elements": [] }, "post": { "id": 22432, "title": "Contact%20Us%20%E2%80%93%20All%20Certified%20Equipment%20Trading%20Corporation", "excerpt": "", "featuredImage": false } };
 		//# sourceURL=elementor-frontend-js-before
 		/* ]]> */
 	</script>
@@ -10113,7 +10113,7 @@
 		id="elementor-pro-webpack-runtime-js"></script>
 	<script type="text/javascript" id="elementor-pro-frontend-js-before">
 		/* <![CDATA[ */
-		var ElementorProFrontendConfig = { "ajaxurl": null, "nonce": "3f1a15b2d2", "urls": { "assets": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/www.allcertifiedequipment.com\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": false }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "woocommerce": { "menu_cart": { "cart_page_url": "https:\/\/www.allcertifiedequipment.com\/cart\/", "checkout_page_url": "https:\/\/www.allcertifiedequipment.com", "fragments_nonce": "86ec9ae3ae" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
+		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/www.allcertifiedequipment.com\/wp-admin\/admin-ajax.php", "nonce": "3f1a15b2d2", "urls": { "assets": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/www.allcertifiedequipment.com\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": false }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "woocommerce": { "menu_cart": { "cart_page_url": "https:\/\/www.allcertifiedequipment.com\/cart\/", "checkout_page_url": "https:\/\/www.allcertifiedequipment.com", "fragments_nonce": "86ec9ae3ae" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/www.allcertifiedequipment.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
 		//# sourceURL=elementor-pro-frontend-js-before
 		/* ]]> */
 	</script>
@@ -10161,7 +10161,7 @@
 					perspectiveType: "global",
 					editorheight: "625,768,960,592",
 					responsiveLevels: "1240,1024,778,480",
-					ajaxUrl: null,
+					ajaxUrl: "https://www.allcertifiedequipment.com/wp-admin/admin-ajax.php",
 					progressBar: {
 						color: "rgba(0,0,0,0.15)",
 						style: "vertical",
@@ -10234,207 +10234,6 @@
 				isCart: false,
 			};
 		})();
-	</script>
-
-	<!-- PyScript SQLite Backend -->
-	<script type="py-config">
-	</script>
-
-	<script type="py">
-		import js
-		import json
-		from datetime import datetime
-
-		# ── In-Memory Database ─────────────────────────────────────────────────────────
-		class InquiryDatabase:
-			def __init__(self):
-				self.storage_key = "inquiries_db_v1"
-				self.inquiries = []
-				self.next_id = 1
-				self.load()
-
-			def load(self):
-				"""Load inquiries from localStorage"""
-				try:
-					data = js.localStorage.getItem(self.storage_key)
-					if data:
-						loaded = json.loads(data)
-						self.inquiries = loaded.get('inquiries', [])
-						self.next_id = loaded.get('next_id', 1)
-						js.console.log(f"[DB] Loaded {len(self.inquiries)} inquiries")
-					else:
-						js.console.log("[DB] Fresh database")
-				except Exception as e:
-					js.console.error(f"[DB] Load failed: {e}")
-					self.inquiries = []
-					self.next_id = 1
-
-			def save(self):
-				"""Save inquiries to localStorage"""
-				try:
-					data = {
-						'inquiries': self.inquiries,
-						'next_id': self.next_id
-					}
-					js.localStorage.setItem(self.storage_key, json.dumps(data))
-					js.console.log("[DB] Saved to localStorage")
-				except Exception as e:
-					js.console.error(f"[DB] Save failed: {e}")
-
-			def insert(self, full_name, location, contact_number, email, dealer, filename, message):
-				"""Insert a new inquiry"""
-				inquiry = {
-					'id': self.next_id,
-					'submitted_at': datetime.now().isoformat(),
-					'full_name': full_name,
-					'location': location,
-					'contact_number': contact_number,
-					'email_address': email,
-					'preferred_dealer': dealer,
-					'attachment_name': filename,
-					'message': message
-				}
-				self.inquiries.append(inquiry)
-				row_id = self.next_id
-				self.next_id += 1
-				self.save()
-				return row_id
-
-			def get_all(self):
-				"""Get all inquiries as JSON"""
-				return json.dumps(self.inquiries)
-
-			def get_count(self):
-				"""Get total count"""
-				return len(self.inquiries)
-
-			def clear(self):
-				"""Clear all inquiries"""
-				self.inquiries = []
-				self.next_id = 1
-				self.save()
-
-		# ── Initialize Database ────────────────────────────────────────────────────────
-		try:
-			database = InquiryDatabase()
-
-			# ── Expose Functions to JavaScript ─────────────────────────────────────────
-			def py_insert(full_name, location, contact_number, email, dealer, filename, message):
-				return database.insert(full_name, location, contact_number, email, dealer, filename, message)
-
-			def py_get_all():
-				return database.get_all()
-
-			def py_get_count():
-				return database.get_count()
-
-			def py_clear():
-				database.clear()
-
-			js.window.pyReady = True
-			js.window.pyInsertInquiry = py_insert
-			js.window.pyGetAllInquiries = py_get_all
-			js.window.pyGetCount = py_get_count
-			js.window.pyClearAll = py_clear
-
-			js.console.log("[DB] Ready ✓")
-
-		except Exception as e:
-			js.console.error(f"[DB] Initialization failed: {e}")
-			js.window.pyReady = False
-	</script>
-
-	<!-- Form Submission Handler -->
-	<script>
-		// Wait for PyScript to initialize with retry logic
-		async function waitForPyScript(maxRetries = 30) {
-			for (let i = 0; i < maxRetries; i++) {
-				if (window.pyReady === true && window.pyInsertInquiry) {
-					console.log('[Form] PyScript database is ready!');
-					return true;
-				}
-				await new Promise(resolve => setTimeout(resolve, 200)); // Wait 200ms between checks
-			}
-			return false;
-		}
-
-		function submitContactForm(button) {
-			// Disable button to prevent multiple submissions
-			const originalText = button.textContent;
-			button.disabled = true;
-			button.textContent = 'Saving...';
-
-			// Wait for PyScript then submit
-			waitForPyScript().then(isReady => {
-				if (!isReady) {
-					console.error('[Form] PyScript database initialization failed');
-					alert('Database failed to initialize. Please refresh the page and try again.');
-					button.disabled = false;
-					button.textContent = originalText;
-					return;
-				}
-
-				// Get the form element
-				const form = button.closest('form');
-				if (!form) {
-					alert('Form not found');
-					button.disabled = false;
-					button.textContent = originalText;
-					return;
-				}
-
-				// Collect form field values
-				const fullName = form.querySelector('[name="form_fields[name]"]')?.value?.trim() || '';
-				const location = form.querySelector('[name="form_fields[field_8d1ee09]"]')?.value?.trim() || '';
-				const contactNumber = form.querySelector('[name="form_fields[field_0fbfb8e]"]')?.value?.trim() || '';
-				const email = form.querySelector('[name="form_fields[email]"]')?.value?.trim() || '';
-				const dealer = form.querySelector('[name="form_fields[field_6c0986e]"]')?.value?.trim() || '';
-				const fileInput = form.querySelector('[name="form_fields[field_bfe1a16]"]');
-				const fileName = fileInput?.files?.[0]?.name || '';
-				const message = form.querySelector('[name="form_fields[message]"]')?.value?.trim() || '';
-
-				// Validate required fields (file and message are optional)
-				if (!fullName || !location || !contactNumber || !email || !dealer) {
-					alert('Please fill in all required fields (Full name, Location, Contact number, Email, and Preferred Dealer)');
-					button.disabled = false;
-					button.textContent = originalText;
-					return;
-				}
-
-				// Call PyScript backend
-				try {
-					const rowId = window.pyInsertInquiry(fullName, location, contactNumber, email, dealer, fileName, message);
-					console.log(`[Form] Inquiry saved with ID: ${rowId}`);
-					alert('Thank you! Your inquiry has been saved successfully.');
-
-					// Reset form
-					form.reset();
-					button.textContent = 'Request Sent ✓';
-					setTimeout(() => {
-						button.disabled = false;
-						button.textContent = originalText;
-					}, 2000);
-				} catch (error) {
-					console.error('[Form] Error submitting inquiry:', error);
-					alert('Error submitting inquiry. Please try again.');
-					button.disabled = false;
-					button.textContent = originalText;
-				}
-			});
-		}
-
-		// Attach click handlers to all "Send Request" buttons
-		document.addEventListener('DOMContentLoaded', function () {
-			const buttons = document.querySelectorAll('button.elementor-button');
-			buttons.forEach(button => {
-				if (button.textContent.includes('Send Request') || button.textContent.includes('Send')) {
-					button.addEventListener('click', function (e) {
-						e.preventDefault();
-						submitContactForm(this);
-					});
-				}
-			});
-		});
 	</script>
 </body>
 
