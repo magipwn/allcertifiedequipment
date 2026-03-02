@@ -7257,8 +7257,7 @@
 											</li>
 											<li id="menu-item-22473"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22473 nav-item">
-												<a href="https://www.allcertifiedequipment.com/contact-us/"
-													class="nav-link">Contact</a>
+												<a href="/CONTACTS/contact-us.html" class="nav-link">Contact</a>
 											</li>
 										</ul>
 									</div>
@@ -9336,6 +9335,40 @@
 				isCart: false,
 			};
 		})();
+	</script>
+	<script>
+		// Counter animation for stat values
+		document.addEventListener('DOMContentLoaded', function () {
+			const statValues = document.querySelectorAll('.stat-value');
+
+			const animateCounter = (element, target) => {
+				let current = 0;
+				const increment = target / 100; // Adjust speed by changing denominator
+				const timer = setInterval(() => {
+					current += increment;
+					if (current >= target) {
+						element.textContent = target;
+						clearInterval(timer);
+					} else {
+						element.textContent = Math.floor(current);
+					}
+				}, 30); // Adjust speed by changing interval
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const target = parseInt(entry.target.textContent);
+						animateCounter(entry.target, target);
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.5 });
+
+			statValues.forEach(stat => {
+				observer.observe(stat);
+			});
+		});
 	</script>
 </body>
 
