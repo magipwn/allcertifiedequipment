@@ -157,7 +157,6 @@
 		}
 	</style>
 
-
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://www.allcertifiedequipment.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9'
 		type='text/css' media='all' />
@@ -1489,13 +1488,13 @@
 		}
 
 		.add-to-enquiry-loop:hover {
-			background-color: #e65c00 !important;
+			background-color: #0e8010 !important;
 			color: #ffffff !important;
 			text-decoration: none !important;
 		}
 
 		.add-to-enquiry-single {
-			background-color: #ee6443 !important;
+			background-color: #209730 !important;
 			color: #ffffff !important;
 			font-size: 16px !important;
 			width: 200px !important;
@@ -1505,7 +1504,7 @@
 		}
 
 		.add-to-enquiry-single:hover {
-			background-color: #e65c00 !important;
+			background-color: #0e8010 !important;
 			color: #ffffff !important;
 			text-decoration: none !important;
 		}
@@ -5280,6 +5279,380 @@
 		}
 
 		/*# sourceURL=style-inline-css */
+
+        .products.elementor-grid .product {
+            background: #fff !important;
+            border: 1px solid #e0e0e0 !important;
+            border-radius: 12px !important;
+            padding: 16px !important;
+            transition: box-shadow 0.3s ease !important;
+        }
+        
+
+        .product_meta {
+            margin-top: 30px !important;
+            padding-top: 20px !important;
+            border-top: 1px solid #e0e0e0 !important;
+        }
+
+        .product_meta > span {
+            display: block !important;
+            margin-bottom: 12px !important;
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+        }
+
+        .product_meta .sku_wrapper,
+        .product_meta .posted_in {
+            color: #666 !important;
+        }
+
+        .product_meta a {
+            color: #239045 !important;
+            text-decoration: none !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .product_meta a:hover {
+            color: #0e8010 !important;
+            text-decoration: underline !important;
+        }
+
+        #reviews {
+            background: #f9f9f9 !important;
+            padding: 40px 30px !important;
+            border-radius: 8px !important;
+            margin-top: 40px !important;
+        }
+
+        #reviews h2 {
+            font-size: 24px !important;
+            margin-bottom: 20px !important;
+            color: #2d2d2d !important;
+        }
+
+        .woocommerce-noreviews {
+            background: white !important;
+            padding: 30px !important;
+            border-radius: 6px !important;
+            border-left: 4px solid #239045 !important;
+            font-size: 15px !important;
+        }
+
+        #rating {
+            padding: 8px 12px !important;
+            border: 1px solid #ddd !important;
+            border-radius: 4px !important;
+            font-size: 14px !important;
+        }
+
+        #review_form {
+            background: white !important;
+            padding: 30px !important;
+            border-radius: 8px !important;
+            margin-top: 30px !important;
+        }
+
+        .comment-form-rating {
+            margin-bottom: 20px !important;
+        }
+
+        .comment-form-rating label {
+            font-weight: 600 !important;
+            margin-bottom: 8px !important;
+            display: block !important;
+        }
+
+        #respond textarea,
+        #respond input[type="text"],
+        #respond input[type="email"] {
+            width: 100% !important;
+            padding: 12px 15px !important;
+            border: 1px solid #ddd !important;
+            border-radius: 4px !important;
+            font-size: 14px !important;
+            transition: border-color 0.2s ease !important;
+        }
+
+        #respond textarea:focus,
+        #respond input[type="text"]:focus,
+        #respond input[type="email"]:focus {
+            border-color: #239045 !important;
+            outline: none !important;
+        }
+
+        #respond input[type="submit"] {
+            background: #239045 !important;
+            color: white !important;
+            padding: 12px 30px !important;
+            border: none !important;
+            border-radius: 4px !important;
+            font-size: 16px !important;
+            cursor: pointer !important;
+            transition: background 0.3s ease !important;
+        }
+
+        #respond input[type="submit"]:hover {
+            background: #0e8010 !important;
+
+        }
+
+		.comment-form-rating select#rating {
+			display: none !important;
+		}
+
+		.comment-form-rating {
+			margin-bottom: 25px !important;
+		}
+
+		.comment-form-rating label {
+			display: block !important;
+			margin-bottom: 15px !important;
+			font-weight: 600 !important;
+			font-size: 15px !important;
+		}
+
+		.stars {
+			display: inline-flex !important;
+			gap: 5px !important;
+			font-size: 0 !important;
+		}
+
+		.stars a {
+			color: #ddd !important;
+			font-size: 24px !important;
+			text-decoration: none !important;
+			display: inline-block !important;
+			transition: color 0.2s ease !important;
+		}
+
+		.stars a:before {
+			content: "★" !important;
+			display: block !important;
+		}
+
+		.stars a:hover,
+		.stars a.active {
+			color: #239045 !important;
+		}
+
+		.stars:hover a {
+			color: #239045 !important;
+		}
+
+		.stars a:hover ~ a {
+			color: #ddd !important;
+		}
+
+		#respond .comment-form-rating {
+			order: 3 !important; 
+		}
+
+		#respond .comment-form-author {
+			order: 1 !important; 
+		}
+
+		#respond .comment-form-email {
+			order: 2 !important;
+		}
+
+		#respond .comment-form-comment {
+			order: 4 !important; 
+		}
+
+		#respond .comment-form-cookies-consent {
+			order: 5 !important;
+			margin-top: 20px !important;
+			margin-bottom: 25px !important;
+		}
+
+		#respond .form-submit {
+			order: 6 !important; 
+		}
+
+		#respond .comment-form {
+			display: flex !important;
+			flex-direction: column !important;
+		}
+
+		#respond .comment-form-author,
+		#respond .comment-form-email {
+			max-width: 400px !important;
+		}
+
+		#respond .comment-form-author input,
+		#respond .comment-form-email input {
+			max-width: 100% !important;
+		}
+
+		#respond .comment-form-author,
+		#respond .comment-form-email,
+		#respond .comment-form-comment,
+		#respond .comment-form-rating {
+			margin-bottom: 20px !important;
+		}
+
+		#respond .comment-form-cookies-consent,
+		#respond .form-submit {
+			max-width: 100% !important;
+		}
+
+		#respond .comment-notes,
+		#respond .comment-form .comment-notes {
+			display: none !important;
+		}
+
+		#reviews {
+			background: #f9f9f9 !important;
+			padding: 40px 30px !important;
+			border-radius: 8px !important;
+			margin-top: 40px !important;
+			margin-left: 0 !important;
+			margin-right: auto !important;
+			max-width: 100% !important;
+		}
+
+		#reviews h2 {
+			font-size: 24px !important;
+			margin-bottom: 20px !important;
+			color: #2d2d2d !important;
+			text-align: left !important;
+		}
+
+		.woocommerce-Reviews {
+			margin-left: 0 !important;
+			text-align: left !important;
+		}
+
+		#review_form_wrapper,
+		#comments {
+			margin-left: 0 !important;
+		}
+
+		#respond {
+			margin-left: 0 !important;
+		}
+
+		.comment-form-rating .stars {
+			display: inline-flex !important;
+			gap: 5px !important;
+			font-size: 0 !important;
+		}
+
+		.comment-form-rating .stars a {
+			color: #ddd !important;
+			font-size: 0 !important;
+			text-decoration: none !important;
+			display: inline-block !important;
+			transition: color 0.2s ease !important;
+			width: auto !important;
+			height: auto !important;
+			line-height: 1 !important;
+			text-indent: 0 !important;
+			overflow: visible !important;
+		}
+
+		.comment-form-rating .stars a:before {
+			content: "★" !important;
+			display: block !important;
+			font-size: 24px !important;
+			line-height: 1 !important;
+		}
+
+		.comment-form-rating .stars a:hover,
+		.comment-form-rating .stars a.active {
+			color: #239045 !important;
+		}
+
+		.comment-form-rating .stars:hover a {
+			color: #239045 !important;
+		}
+
+		.comment-form-rating .stars a:hover ~ a {
+			color: #ddd !important;
+		}
+
+		.comment-form-rating .stars a * {
+			display: none !important;
+		}
+
+		.comment-form-rating {
+			margin-bottom: 25px !important;
+			text-align: left !important;
+		}
+
+		.comment-form-rating label {
+			display: block !important;
+			margin-bottom: 15px !important;
+			font-weight: 600 !important;
+			font-size: 15px !important;
+			text-align: left !important;
+		}
+
+		.woocommerce-noreviews {
+			background: white !important;
+			padding: 30px !important;
+			border-radius: 6px !important;
+			border-left: 4px solid #239045 !important;
+			font-size: 15px !important;
+			margin-left: 0 !important;
+		}
+
+		#review_form {
+			background: white !important;
+			padding: 30px !important;
+			border-radius: 8px !important;
+			margin-top: 30px !important;
+			margin-left: 0 !important;
+		}
+
+		#respond textarea,
+		#respond input[type="text"],
+		#respond input[type="email"] {
+			width: 100% !important;
+			padding: 12px 15px !important;
+			border: 1px solid #ddd !important;
+			border-radius: 4px !important;
+			font-size: 14px !important;
+			transition: border-color 0.2s ease !important;
+		}
+
+		#respond textarea:focus,
+		#respond input[type="text"]:focus,
+		#respond input[type="email"]:focus {
+			border-color: #239045 !important;
+			outline: none !important;
+		}
+
+		#respond input[type="submit"] {
+			background: #239045 !important;
+			color: white !important;
+			padding: 12px 30px !important;
+			border: none !important;
+			border-radius: 4px !important;
+			font-size: 16px !important;
+			cursor: pointer !important;
+			transition: background 0.3s ease !important;
+		}
+
+		#respond input[type="submit"]:hover {
+			background: #0e8010 !important;
+		}
+
+		.product-desc-row {
+			margin-left: 0 !important;
+		}
+
+		.woocommerce-tabs {
+			margin-left: 0 !important;
+		}
+
+		.woocommerce-Tabs-panel {
+			margin-left: 0 !important;
+			text-align: left !important;
+		}
+
+
 	</style>
 	<link rel='stylesheet' id='mobile-css' href='/HOME/Style Sheets/mobile.css?ver=13.4' type='text/css' media='all' />
 	<link rel='stylesheet' id='wp-css' href='/HOME/Style Sheets/wp.css?ver=13.4' type='text/css' media='all' />
@@ -5904,34 +6277,33 @@
 																			email address will not be published.</span>
 																		<span class="required-field-message">Required
 																			fields are marked <span
-																				class="required">*</span></span>
+																				class="required"></span></span>
 																	</p>
 																	<div class="comment-form-rating"><label for="rating"
-																			id="comment-form-rating-label">Your
-																			rating&nbsp;<span
-																				class="required">*</span></label><select
+																			id="comment-form-rating-label">Rating&nbsp;<span
+																				class="required"></span></label><select
 																			name="rating" id="rating" required>
 																			<option value="">Rate&hellip;</option>
 																			<option value="5">Perfect</option>
 																			<option value="4">Good</option>
 																			<option value="3">Average</option>
-																			<option value="2">Not that bad</option>
+																			<option value="2">Poor</option>
 																			<option value="1">Very poor</option>
 																		</select></div>
 																	<p class="comment-form-comment"><label
-																			for="comment">Your review&nbsp;<span
-																				class="required">*</span></label><textarea
+																			for="comment">Review&nbsp;<span
+																				class="required"></span></label><textarea
 																			id="comment" name="comment" cols="45"
 																			rows="8" required></textarea></p>
 																	<p class="comment-form-author"><label
 																			for="author">Name&nbsp;<span
-																				class="required">*</span></label><input
+																				class="required"></span></label><input
 																			id="author" name="author" type="text"
 																			autocomplete="name" value="" size="30"
 																			required /></p>
 																	<p class="comment-form-email"><label
 																			for="email">Email&nbsp;<span
-																				class="required">*</span></label><input
+																				class="required"></span></label><input
 																			id="email" name="email" type="email"
 																			autocomplete="email" value="" size="30"
 																			required /></p>
